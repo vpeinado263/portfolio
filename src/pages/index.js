@@ -40,49 +40,6 @@ export default function Home() {
           />
       
         <h2>Bienvenido a mi portafolio.</h2> 
-         {/* <section>
-          <h2>1. Lenguajes</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>SQL</li>
-            <li>NoSQL (MongoDB)</li>
-            </ul>
-         </section>
-         <section>
-      <h2>3. Tecnologías</h2>
-      <ul>
-        <li>Cliente-Servidor</li>
-        <li>Frontend y Backend</li>
-        <li>Responsive Web Design</li>
-        <li>Cloud</li>
-        <li>Virtual DOM</li>
-        <li>Node.js</li>
-        <li>Bases de datos</li>
-        <li>Nginx</li>
-        <li>CORS y Autenticación</li>
-        <li>SEO</li>
-      </ul>
-         </section>
-         <section>
-      <h2>4. Herramientas</h2>
-      <ul>
-        <li>Git y GitHub</li>
-        <li>Metodologías Ágiles y Scrum</li>
-        <li>Pre-procesadores (SASS)</li>
-        <li>Webpack y Babel</li>
-        <li>Knex</li>
-        <li>Postman</li>
-        <li>MongoDB Client</li>
-        <li>CLI (Command Line Interface)</li>
-        <li>Firebase</li>
-        <li>Nodemailer y Twilio</li>
-        <li>Analizadores de rendimiento</li>
-      </ul>
-         </section> */}
-
           <div className={styles.ctas}>
             <a
               className={styles.primary}
@@ -109,7 +66,7 @@ export default function Home() {
             </a>
           </div>
         </main>
-        <footer className={styles.footer}>
+        {/* <footer className={styles.footer}>
           <a
             href="https://github.com/vpeinado263"
             target="_blank"
@@ -152,7 +109,7 @@ export default function Home() {
             />
             Descargar CV ↓
           </a>
-        </footer>
+        </footer> */}
       </div>
     </>
   );
