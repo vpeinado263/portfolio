@@ -34,9 +34,10 @@ export default function Home() {
             priority
           />
         <h1>Hola, soy Victor</h1>
-        <p>Bienvenido a mi portafolio.  Aquí podrás explorar mis habilidades y proyectos en desarrollo web.
-        Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.
-        Te invito a conocer más sobre mi trabajo y mis conocimientos.</p>
+        <h2>Bienvenido a mi portafolio.</h2> 
+         {/* <h3>Aquí podrás explorar mis habilidades y proyectos en desarrollo web.</h3>
+          <p> Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.</p>
+           <p>Te invito a conocer más sobre mi trabajo y mis conocimientos.</p> */}
          {/* <section>
           <h2>1. Lenguajes</h2>
           <ul>
@@ -122,32 +123,32 @@ export default function Home() {
             GitHub
           </a>
           <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/victor-peinado1739/?trk=opento_sprofile_details"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
               aria-hidden
-              src="/window.svg"
+              src="/linkedin.svg"
               alt="Window icon"
               width={16}
               height={16}
             />
-            Examples
+            Linkedin
           </a>
           <a
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
               aria-hidden
-              src="/globe.svg"
+              src="/file.svg"
               alt="Globe icon"
               width={16}
               height={16}
             />
-            Go to nextjs.org →
+            Descargar CV ↓
           </a>
         </footer>
       </div>

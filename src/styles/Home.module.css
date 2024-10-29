@@ -3,8 +3,8 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: rgb(95, 2, 145);
-  --button-secondary-hover: #626161;
+  --button-primary-hover: rgb(4, 10, 33);
+  --button-secondary-hover: rgb(4, 10, 33);
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -25,6 +25,11 @@
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
+}
+
+.parrafo {
+  justify-self: center;
+  align-items: center;
 }
 
 .main {
