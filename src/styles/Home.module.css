@@ -3,8 +3,8 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-primary-hover: rgb(95, 2, 145);
+  --button-secondary-hover: #626161;
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;

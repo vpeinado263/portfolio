@@ -34,9 +34,9 @@ export default function Home() {
             priority
           />
         <h1>Hola, soy Victor</h1>
-        <p>Bienvenido a mi portafolio.  Aquí podrás explorar mis habilidades y proyectos en desarrollo web.</p>
-        <p>Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.</p>
-        <p>Te invito a conocer más sobre mi trabajo y mis conocimientos.</p>
+        <p>Bienvenido a mi portafolio.  Aquí podrás explorar mis habilidades y proyectos en desarrollo web.
+        Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.
+        Te invito a conocer más sobre mi trabajo y mis conocimientos.</p>
          {/* <section>
           <h2>1. Lenguajes</h2>
           <ul>
@@ -83,13 +83,13 @@ export default function Home() {
           <div className={styles.ctas}>
             <a
               className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
                 className={styles.logo}
-                src="./proyectos.svg"
+                src="/file.svg"
                 alt="proyectos"
                 width={25}
                 height={25}
@@ -97,7 +97,7 @@ export default function Home() {
               Proyectos Personales
             </a>
             <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="www.linkedin.com/in/victor-peinado1739."
               target="_blank"
               rel="noopener noreferrer"
               className={styles.secondary}
@@ -108,18 +108,18 @@ export default function Home() {
         </main>
         <footer className={styles.footer}>
           <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://github.com/vpeinado263"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
               aria-hidden
-              src="/file.svg"
-              alt="File icon"
+              src="./github.svg"
+              alt="Github icon"
               width={16}
               height={16}
             />
-            Learn
+            GitHub
           </a>
           <a
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
