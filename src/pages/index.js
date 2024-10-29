@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
-import Navbar from "@/components/Navbar";
-
 
 
 const geistSans = localFont({
@@ -26,9 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-
-      <Navbar/>
-      
+  
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
           <Image
@@ -39,11 +35,8 @@ export default function Home() {
             height={180}
             priority
           />
-        <h1>Hola, soy Victor</h1>
+      
         <h2>Bienvenido a mi portafolio.</h2> 
-         {/* <h3>Aquí podrás explorar mis habilidades y proyectos en desarrollo web.</h3>
-          <p> Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.</p>
-           <p>Te invito a conocer más sobre mi trabajo y mis conocimientos.</p> */}
          {/* <section>
           <h2>1. Lenguajes</h2>
           <ul>
