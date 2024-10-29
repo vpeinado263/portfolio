@@ -33,9 +33,11 @@ export default function Home() {
             height={180}
             priority
           />
-         <h1>Hola mi nombre es Victor</h1>
-         <p>Bienvenido a mi portafolio. Aquí puedes explorar mis habilidades y conocimientos en desarrollo web.</p>
-         <section>
+        <h1>Hola, soy Victor</h1>
+        <p>Bienvenido a mi portafolio.  Aquí podrás explorar mis habilidades y proyectos en desarrollo web.</p>
+        <p>Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.</p>
+        <p>Te invito a conocer más sobre mi trabajo y mis conocimientos.</p>
+         {/* <section>
           <h2>1. Lenguajes</h2>
           <ul>
             <li>HTML</li>
@@ -76,7 +78,7 @@ export default function Home() {
         <li>Nodemailer y Twilio</li>
         <li>Analizadores de rendimiento</li>
       </ul>
-         </section>
+         </section> */}
 
           <div className={styles.ctas}>
             <a
@@ -87,10 +89,10 @@ export default function Home() {
             >
               <Image
                 className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
+                src="./proyectos.svg"
+                alt="proyectos"
+                width={25}
+                height={25}
               />
               Proyectos Personales
             </a>
