@@ -23,24 +23,60 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
+      <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
           <Image
             className={styles.logo}
             src="/myPhoto.jpeg"
-            alt="Next.js logo"
-            width={250}
+            alt="Foto personal"
+            width={290}
             height={180}
             priority
           />
-          <ol>
-            <li>
-              Get started by editing <code>src/pages/index.js</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
+         <h1>Hola mi nombre es Victor</h1>
+         <p>Bienvenido a mi portafolio. Aquí puedes explorar mis habilidades y conocimientos en desarrollo web.</p>
+         <section>
+          <h2>1. Lenguajes</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>SQL</li>
+            <li>NoSQL (MongoDB)</li>
+            </ul>
+         </section>
+         <section>
+      <h2>3. Tecnologías</h2>
+      <ul>
+        <li>Cliente-Servidor</li>
+        <li>Frontend y Backend</li>
+        <li>Responsive Web Design</li>
+        <li>Cloud</li>
+        <li>Virtual DOM</li>
+        <li>Node.js</li>
+        <li>Bases de datos</li>
+        <li>Nginx</li>
+        <li>CORS y Autenticación</li>
+        <li>SEO</li>
+      </ul>
+         </section>
+         <section>
+      <h2>4. Herramientas</h2>
+      <ul>
+        <li>Git y GitHub</li>
+        <li>Metodologías Ágiles y Scrum</li>
+        <li>Pre-procesadores (SASS)</li>
+        <li>Webpack y Babel</li>
+        <li>Knex</li>
+        <li>Postman</li>
+        <li>MongoDB Client</li>
+        <li>CLI (Command Line Interface)</li>
+        <li>Firebase</li>
+        <li>Nodemailer y Twilio</li>
+        <li>Analizadores de rendimiento</li>
+      </ul>
+         </section>
 
           <div className={styles.ctas}>
             <a
@@ -56,7 +92,7 @@ export default function Home() {
                 width={20}
                 height={20}
               />
-              Deploy now
+              Proyectos Personales
             </a>
             <a
               href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -64,7 +100,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className={styles.secondary}
             >
-              Read our docs
+             Contactame
             </a>
           </div>
         </main>
