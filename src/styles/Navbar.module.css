@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  color: white;
+  z-index: 10;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.scrolled {
+  background-color: var(--foreground);
+  color: var(--background);
+}
