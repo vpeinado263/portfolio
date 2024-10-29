@@ -23,9 +23,9 @@ const Navbar = () => {
           <h1>Victor's Portfolio</h1>
         </Link>
         <ul className={styles.menu}>
-          <li><Link href="#about" className={styles.link}>About</Link></li>
-          <li><Link href="#skills" className={styles.link}>Skills</Link></li>
-          <li><Link href="#projects" className={styles.link}>Projects</Link></li>
+          <li><Link href="#about" className={styles.link}>Lenguajes</Link></li>
+          <li><Link href="#skills" className={styles.link}>Tegnologías</Link></li>
+          <li><Link href="#projects" className={styles.link}>Herramientas</Link></li>
           <li><Link href="#contact" className={styles.link}>Contact</Link></li>
         </ul>
       </nav>

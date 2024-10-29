@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("/path-to-your-background-image.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
