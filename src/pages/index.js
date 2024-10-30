@@ -1,21 +1,22 @@
 import Head from "next/head";
-import Image from "next/image";
-import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
+// import Image from "next/image";
+// import localFont from "next/font/local";
+// import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Main from "@/components/Main";
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export default function Home() {
   return (
@@ -27,7 +28,8 @@ export default function Home() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
       <Header/>
-      <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+      <Main/>
+      {/* <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
           <Image
             className={styles.foto}
@@ -65,7 +67,7 @@ export default function Home() {
             </a>
           </div>
         </main>
-      </div>
+      </div> */}
       <Footer/>
     </>
   );
