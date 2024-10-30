@@ -39,7 +39,7 @@ const Footer = () => {
       Linkedin
     </Link>
     <Link
-      href=""
+      href="/CV.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className={styles.a}

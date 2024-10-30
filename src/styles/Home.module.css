@@ -36,7 +36,7 @@
 
 
 .main code {
-  font-family: inherit;
+
   background: var(--gray-alpha-100);
   padding: 2px 4px;
   border-radius: 4px;
@@ -96,9 +96,7 @@
 .foto {
   width: 17rem;
   height: 13rem;
-  border-radius: 50%;
-  /* color de fondo */
-  
+  border-radius: 50%; 
 }
 
 /* Enable hover only on non-touch devices */
@@ -126,14 +124,11 @@
     align-items: center;
   }
 
-  .ctas {
-    flex-direction: column;
-  }
-
   .ctas  {
     font-size: 14px;
     height: 40px;
     padding: 0 16px;
+    flex-direction: column;
   }
 
  .secondary {

@@ -8,15 +8,10 @@ const Bienvenida = () => {
   const [mostrarParrafo, setMostrarParrafo] = useState(false);
 
   useEffect(() => {
-    // Mostrar título inmediatamente
     setMostrarTitulo(true);
-
-    // Mostrar párrafo después de 2 segundos
     const timer = setTimeout(() => {
       setMostrarParrafo(true);
     }, 2000);
-
-    // Limpiar el temporizador cuando el componente se desmonte
     return () => clearTimeout(timer);
   }, []);
 
@@ -26,7 +21,7 @@ const Bienvenida = () => {
     <header className={styles.header}>
     <div className={styles.content}>
       <h1 className={`${styles.titulo} ${mostrarTitulo ? styles.fadeIn : ''}`}>
-        ¡Hola soy Victor!
+        ¡Mi Mombre es Victor!
       </h1>
       <h2 className={`${styles.subtitulo} ${mostrarParrafo ? styles.fadeIn : ''}`}>
         Aquí podrás explorar mis habilidades y proyectos en desarrollo web.
