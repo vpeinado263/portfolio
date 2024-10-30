@@ -6,6 +6,7 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <div className={`${styles.footContainer}`}>
+      
     <footer className={styles.footer}>
     <Link
       href="https://github.com/vpeinado263"
@@ -52,7 +53,9 @@ const Footer = () => {
       />
       Descargar CV ↓
     </Link>
+    
   </footer>
+  
     </div>
   )
 }

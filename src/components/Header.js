@@ -30,13 +30,14 @@ const Bienvenida = () => {
       </h1>
       <h2 className={`${styles.subtitulo} ${mostrarParrafo ? styles.fadeIn : ''}`}>
         Aquí podrás explorar mis habilidades y proyectos en desarrollo web.
-      </h2>
+     </h2>
+     {/*
       <h2 className={`${styles.subtitulo} ${mostrarParrafo ? styles.fadeIn : ''}`}>
         Soy desarrollador web y enfermero profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás. 
       </h2>
       <p>
         Te invito a conocer más sobre mi trabajo y mis conocimientos.
-      </p>
+      </p> */}
     </div>
     </header>
     </>
