@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 import styles from '@/styles/Header.module.css';
 import Navbar from './Navbar';
@@ -6,24 +6,26 @@ import SectionHome from './SectionHome';
 
 const Bienvenida = () => {
   const [mostrarTexto, setMostrarTexto] = useState([]);
-  const secciones = [
+  const secciones = useMemo(() => [
     {
-      titulo: '¡Bienvenido a mi portafolio!',
-      contenido: 'Aquí podrás explorar mis habilidades y proyectos en desarrollo web.'
+      titulo: "¡Bienvenido a mi portafolio!",
+      contenido: "Aquí podrás explorar mis habilidades y proyectos en desarrollo web."
     },
     {
-      titulo: 'Sobre mí',
-      contenido: 'Soy Desarrollador Web y Enfermero Profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.'
+      titulo: "Sobre mí",
+      contenido: "Soy Desarrollador Web y Enfermero Profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás."
     },
     {
-      titulo: 'Mi Misión',
-      contenido: 'Siempre busco aprender y mejorar mis habilidades.'
+      titulo: "Mi Misión",
+      contenido: "Siempre busco aprender y mejorar mis habilidades."
     }
-  ];
+  ], []);
 
   const textRefs = useRef([]);
+
   useEffect(() => {
     let index = 0;
+
     const mostrar = () => {
       if (index < secciones.length) {
         setMostrarTexto((prev) => [...prev, secciones[index]]);
@@ -41,12 +43,13 @@ const Bienvenida = () => {
         }, 3000);
       }
     };
-    mostrar();
-  
+
+    mostrar(); 
+
     return () => {
-      setMostrarTexto([]);
+      setMostrarTexto([]); // Limpiar el estado al desmontar el componente
     };
-  }, [secciones]);
+  }, [secciones]); // No hay necesidad de incluir 'secciones' en el array de dependencias ya que se memoizó.
 
   return (
     <>
@@ -71,3 +74,4 @@ const Bienvenida = () => {
 };
 
 export default Bienvenida;
+
