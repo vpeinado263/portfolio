@@ -1,30 +1,30 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const TypingEffect = ({ text }) => {
-  const [displayedText, setDisplayedText] = useState(""); // Estado para el texto mostrado
-  const typingSpeed = 150; // Velocidad de escritura en milisegundos
+  const textRef = useRef("");
 
   useEffect(() => {
-    if (!text) return; // Si el texto está vacío o no definido, no hacer nada
+    if (!text) return;
 
-    let currentIndex = 0; // Índice del carácter actual
+    let currentIndex = 0;
 
     const typeCharacter = () => {
-      // Solo escribe si hay caracteres restantes
       if (currentIndex < text.length) {
-        setDisplayedText((prev) => prev + text[currentIndex]); // Agrega el siguiente carácter
-        currentIndex++; // Incrementa el índice
+        textRef.current += text[currentIndex];
+        document.querySelector("#typedText").innerText = textRef.current;
+        currentIndex++;
       } else {
-        clearInterval(typingInterval); // Detiene el intervalo cuando se completa el texto
+        clearInterval(typingInterval);
       }
     };
 
-    const typingInterval = setInterval(typeCharacter, typingSpeed); // Configura el intervalo para escribir
+    const typingInterval = setInterval(typeCharacter, 150);
 
-    return () => clearInterval(typingInterval); // Limpia el intervalo al desmontar el componente
-  }, [text]); // Dependencia para el efecto
+    return () => clearInterval(typingInterval);
+  }, [text]);
 
-  return <h1>{displayedText}</h1>; // Renderiza el texto mostrado
+  return <h1 id="typedText"></h1>;
 };
 
 export default TypingEffect;
