@@ -42,11 +42,11 @@ const Bienvenida = () => {
           }
           index++;
           mostrar();
-        }, 3000); // Esperar 3 segundos antes de mostrar la siguiente sección
+        }, 3000); 
       }
     };
 
-    mostrar(); // Inicia la secuencia de mostrar texto
+    mostrar(); 
 
     return () => {
       setMostrarTexto([]); // Limpiar el estado al desmontar el componente
