@@ -24,13 +24,9 @@ const Bienvenida = () => {
   const textRefs = useRef([]);
   useEffect(() => {
     let index = 0;
-
     const mostrar = () => {
       if (index < secciones.length) {
-        setMostrarTexto((prev) => [
-          ...prev,
-          secciones[index]
-        ]);
+        setMostrarTexto((prev) => [...prev, secciones[index]]);
         setTimeout(() => {
           const currentIndex = index;
           if (textRefs.current[currentIndex]) {
@@ -42,16 +38,15 @@ const Bienvenida = () => {
           }
           index++;
           mostrar();
-        }, 3000); 
+        }, 3000);
       }
     };
-
-    mostrar(); 
-
+    mostrar();
+  
     return () => {
-      setMostrarTexto([]); // Limpiar el estado al desmontar el componente
+      setMostrarTexto([]);
     };
-  }, []);
+  }, []); // Dependencias vacías  
 
   return (
     <>
