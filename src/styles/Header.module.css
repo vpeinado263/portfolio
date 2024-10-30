@@ -10,9 +10,13 @@
 }
 .content {
   position: relative;
-  z-index: 1;
 }
-.titulo, .subtitulo {
+.subtitulo {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.titulo {
     opacity: 0;
     transform: translateY(20px); 
     transition: opacity 2s ease, transform 2s ease; 
