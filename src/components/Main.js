@@ -1,6 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Main.module.css";
+import TypingEffect from "./TypingEffect";
 
 const geistSans = localFont({
     src: "../fonts/GeistVF.woff",
@@ -28,7 +29,8 @@ const Main = () => {
             priority
           />
       
-        <h2>Bienvenido a mi portafolio.</h2> 
+        <TypingEffect text ="Funciona la concha de tu madre"/>
+        
           <div className={styles.ctas}>
             <a
               className={styles.primary}

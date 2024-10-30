@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const TypingEffect = () => {
-  const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Bienvenido a mi portafolio"; 
-  const typingSpeed = 150; 
+const TypingEffect = ({ text }) => {
+  const [displayedText, setDisplayedText] = useState(""); // Estado para el texto mostrado
+  const typingSpeed = 150; // Velocidad de escritura en milisegundos
 
   useEffect(() => {
-    let currentIndex = 0;
+    if (!text) return; // Si el texto está vacío o no definido, no hacer nada
+
+    let currentIndex = 0; // Índice del carácter actual
 
     const typeCharacter = () => {
-      if (currentIndex < fullText.length) {
-        setDisplayedText((prev) => prev + fullText[currentIndex]);
-        currentIndex++;
+      // Solo escribe si hay caracteres restantes
+      if (currentIndex < text.length) {
+        setDisplayedText((prev) => prev + text[currentIndex]); // Agrega el siguiente carácter
+        currentIndex++; // Incrementa el índice
       } else {
-        clearInterval(typingInterval); 
+        clearInterval(typingInterval); // Detiene el intervalo cuando se completa el texto
       }
     };
-    const typingInterval = setInterval(typeCharacter, typingSpeed); 
 
-    return () => clearInterval(typingInterval); 
-  }, []);
+    const typingInterval = setInterval(typeCharacter, typingSpeed); // Configura el intervalo para escribir
 
-  return (
-    <h1>{displayedText}</h1>
-  );
+    return () => clearInterval(typingInterval); // Limpia el intervalo al desmontar el componente
+  }, [text]); // Dependencia para el efecto
+
+  return <h1>{displayedText}</h1>; // Renderiza el texto mostrado
 };
 
 export default TypingEffect;
-
