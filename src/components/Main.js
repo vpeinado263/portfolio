@@ -29,7 +29,7 @@ const Main = () => {
             priority
           />
       
-        <TypingEffect text ="Funciona la concha de tu madre"/>
+        <TypingEffect text ="Bienvenido a mi portafolio"/>
         
           <div className={styles.ctas}>
             <a

@@ -19,7 +19,7 @@ const TypingEffect = ({ text }) => {
       }
     };
 
-    const typingInterval = setInterval(typeCharacter, 150);
+    const typingInterval = setInterval(typeCharacter, 210);
 
     return () => clearInterval(typingInterval);
   }, [text]);
