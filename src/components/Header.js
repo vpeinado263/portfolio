@@ -6,6 +6,8 @@ import SectionHome from './SectionHome';
 
 const Bienvenida = () => {
   const [mostrarTexto, setMostrarTexto] = useState([]);
+  
+  // Uso de useMemo para memorizar el array de secciones
   const secciones = useMemo(() => [
     {
       titulo: "¡Bienvenido a mi portafolio!",
@@ -47,9 +49,9 @@ const Bienvenida = () => {
     mostrar(); 
 
     return () => {
-      setMostrarTexto([]); // Limpiar el estado al desmontar el componente
+      setMostrarTexto([]); 
     };
-  }, [secciones]); // No hay necesidad de incluir 'secciones' en el array de dependencias ya que se memoizó.
+  }, [secciones]);
 
   return (
     <>
@@ -61,7 +63,7 @@ const Bienvenida = () => {
             <div 
               key={index} 
               ref={(el) => (textRefs.current[index] = el)} 
-              className={`${styles.subtitulo}`}
+              className={styles.subtitulo} // Se eliminó el uso de template strings ya que no es necesario aquí
             >
               <h2>{texto.titulo}</h2>
               <p>{texto.contenido}</p>
@@ -74,4 +76,3 @@ const Bienvenida = () => {
 };
 
 export default Bienvenida;
-
