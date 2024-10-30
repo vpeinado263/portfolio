@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <nav className={styles.navContainer}>
         <Link href="/" className={styles.logo}>
-          <h1>Victor's Portfolio</h1>
+          <h1>Victor Portfolio</h1>
         </Link>
         <ul className={styles.menu}>
           <li><Link href="#about" className={styles.link}>Lenguajes</Link></li>
