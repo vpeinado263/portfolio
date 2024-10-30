@@ -46,7 +46,7 @@ const Bienvenida = () => {
     return () => {
       setMostrarTexto([]);
     };
-  }, []); // Dependencias vacías  
+  }, []);
 
   return (
     <>
