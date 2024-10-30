@@ -15,7 +15,7 @@ const geistSans = localFont({
   });
   
 
-const Main = () => {
+const SectionHome = () => {
   return (
     <>
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
@@ -29,7 +29,7 @@ const Main = () => {
             priority
           />
       
-        <TypingEffect text ="Bienvenido a mi portafolio"/>
+        <TypingEffect text ="Me llamo Victor"/>
         
           <div className={styles.ctas}>
             <a
@@ -62,4 +62,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default SectionHome;
