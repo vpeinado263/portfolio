@@ -8,16 +8,16 @@ const Bienvenida = () => {
   const [mostrarTexto, setMostrarTexto] = useState([]);
   const secciones = [
     {
-      titulo: "¡Bienvenido a mi portafolio!",
-      contenido: "Aquí podrás explorar mis habilidades y proyectos en desarrollo web."
+      titulo: '¡Bienvenido a mi portafolio!',
+      contenido: 'Aquí podrás explorar mis habilidades y proyectos en desarrollo web.'
     },
     {
-      titulo: "Sobre mí",
-      contenido: "Soy Desarrollador Web y Enfermero Profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás."
+      titulo: 'Sobre mí',
+      contenido: 'Soy Desarrollador Web y Enfermero Profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás.'
     },
     {
-      titulo: "Mi Misión",
-      contenido: "Siempre busco aprender y mejorar mis habilidades."
+      titulo: 'Mi Misión',
+      contenido: 'Siempre busco aprender y mejorar mis habilidades.'
     }
   ];
 
@@ -46,7 +46,7 @@ const Bienvenida = () => {
     return () => {
       setMostrarTexto([]);
     };
-  }, []);
+  }, [secciones]);
 
   return (
     <>
