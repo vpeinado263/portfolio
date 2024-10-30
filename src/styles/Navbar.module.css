@@ -5,7 +5,7 @@
   padding: 1rem;
   background-color: transparent;
   transition: background-color 0.5s ease;
-  color: white;
+  color: var(--rgb5);
   z-index: 10;
 }
 
@@ -29,5 +29,5 @@
 
 .scrolled {
   background-color: var(--foreground);
-  color: var(--background);
+  color: var(--rgb6);
 }

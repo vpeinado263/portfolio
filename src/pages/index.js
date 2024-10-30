@@ -3,6 +3,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 const geistSans = localFont({
@@ -25,14 +26,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-
       <Header/>
-  
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
           <Image
-            className={styles.logo}
-            src="/myPhoto.jpeg"
+            className={styles.foto}
+            src="/myPhoto.png"
             alt="Foto personal"
             width={290}
             height={180}
@@ -66,51 +65,8 @@ export default function Home() {
             </a>
           </div>
         </main>
-        {/* <footer className={styles.footer}>
-          <a
-            href="https://github.com/vpeinado263"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="./github.svg"
-              alt="Github icon"
-              width={16}
-              height={16}
-            />
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/victor-peinado1739/?trk=opento_sprofile_details"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/linkedin.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Linkedin
-          </a>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Descargar CV ↓
-          </a>
-        </footer> */}
       </div>
+      <Footer/>
     </>
   );
 }

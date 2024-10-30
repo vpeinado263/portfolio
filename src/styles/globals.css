@@ -1,6 +1,14 @@
 :root {
-  --background: #588fe2;
-  --foreground: rgb(245, 245, 245);
+  --rgb1: rgb(1, 80, 115);
+  --rgb2: rgb(14, 125, 172);
+  --rgb3: rgb(22, 154, 211);
+  --rgb4: rgb(28, 187, 216);
+  --rgb5: rgb(169, 229, 255);
+  --rgb6: rgb(255, 255, 255);
+  --background:   rgb(14, 125, 172);
+  --foreground:  rgb(1, 80, 115);
+ 
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +25,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--rgb5);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;

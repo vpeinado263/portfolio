@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     background: url("/path-to-your-background-image.jpg") center/cover no-repeat;
-    color: white;
+    color: var(--rgb5);
     text-align: center;
 }
 
