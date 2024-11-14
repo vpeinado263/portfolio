@@ -9,16 +9,10 @@
   font-family: var(--font-primary);
 }
  .a {
-    appearance: none;
     border-radius: 128px;
     height: 48px;
     padding: 0 20px;
-    border: none;
     border: 1px solid transparent;
-    transition:
-      background 0.2s,
-      color 0.2s,
-      border-color 0.2s;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -38,28 +32,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-  
-  .footer {
-    flex-shrink: 0;
-  }
-  
-  /* Enable hover only on non-touch devices */
-  @media (hover: hover) and (pointer: fine) {
-    .a {
-      background: var(--button-primary-hover);
-      border-color: transparent;
-    }
-  
-    .a {
-      background: var(--button-secondary-hover);
-      border-color: transparent;
-    }
-  
-    .footer .a:hover {
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
   }
   
   @media (max-width: 600px) {
