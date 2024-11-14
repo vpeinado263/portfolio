@@ -55,9 +55,9 @@ const Bienvenida = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <header className={styles.header}>
-        <SectionHome />
+        <SectionHome/>
         <div className={styles.content}>
           {mostrarTexto.length > 0 && mostrarTexto.map((texto, index) => (
             <div 

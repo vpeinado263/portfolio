@@ -1,9 +1,6 @@
+import Footer from "@/components/organisms/Footer";
+import Bienvenida from "@/components/organisms/Header";
 import Head from "next/head";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-
-
 
 export default function Home() {
   return (
@@ -14,7 +11,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      <Header/>
+
+      <Bienvenida/>
       <Footer/>
     </>
   );
