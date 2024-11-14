@@ -48,7 +48,7 @@ const SectionHome = () => {
               Proyectos Personales
             </a>
             <a
-              href="www.linkedin.com/in/victor-peinado1739."
+              href="https://www.linkedin.com/in/victor-peinado1739."
               target="_blank"
               rel="noopener noreferrer"
               className={styles.secondary}
