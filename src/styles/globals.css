@@ -1,5 +1,30 @@
+/*Importacioon de fuentes*/
+@font-face {
+  font-family: 'Geist Mono';
+  src:url('/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist VF';
+  src:url('/fonts/GeistVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*Paleta de colores*/
 :root {
-  /* Colores */
   --rgb1: rgb(1, 80, 115);
   --rgb2: rgb(14, 125, 172);
   --rgb3: rgb(22, 154, 211);
@@ -8,12 +33,18 @@
   --rgb6: rgb(255, 255, 255);
   --background: rgb(14, 125, 172);
   --foreground: rgb(1, 80, 115);
-
-  /* Fuentes */
-  --font-primary: 'Geist Mono', sans-serif;
-  --font-secundary: 'Geist VF', sans-serif;
+  
 }
 
+/*Tpografía*/
+:root {
+  --font-primary: 'Geist Mono', sans-serif;
+  --font-secundary: 'Geist VF', sans-serif;
+  --font-size-base: 16px;
+  --line-height: 1.6;
+}
+
+/*Estilos Generales*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
@@ -24,52 +55,15 @@
     color-scheme: dark;
   }
 }
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 body {
   color: var(--rgb5);
   background: var(--background);
-  font-family: var(--font-primary); /* Usando fuente primaria */
+  font-family: var(--font-secundary); 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@font-face {
-  font-family: 'Geist Mono';
-  src:url('/fonts/GeistMonoVF.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Geist VF';
-  src:url('/fonts/GeistVF.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Tipografía */
-:root {
-  --font-primary: 'Geist Mono';
-  --font-secundary: 'Geist VF';
-}
-
-body {
-  font-family: var(--font-secundary); 
 }
