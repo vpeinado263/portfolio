@@ -38,17 +38,15 @@ a {
 
 /*Tpografía*/
 :root {
-  --font-primary: 'Geist Mono', sans-serif;
-  --font-secundary: 'Geist VF', sans-serif;
-  --font-size-base: 16px;
-  --line-height: 1.6;
+  --font-primary: 'Geist Mono';
+  --font-secundary: 'Geist VF';
 }
 
 /*Estilos Generales*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #000000;
+    --foreground: #070625;
   }
 
   html {
