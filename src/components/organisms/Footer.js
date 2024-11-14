@@ -5,17 +5,14 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className={`${styles.footContainer}`}>
+    <div className={styles.footContainer}>
       
     <footer className={styles.footer}>
     <Link
       href="https://github.com/vpeinado263"
-      target="_blank"
-      rel="noopener noreferrer"
       className={styles.a}
     >
       <Image
-        aria-hidden
         src="/github.svg"
         alt="Github icon"
         width={16}
@@ -25,12 +22,9 @@ const Footer = () => {
     </Link>
     <Link
       href="https://www.linkedin.com/in/victor-peinado1739/?trk=opento_sprofile_details"
-      target="_blank"
-      rel="noopener noreferrer"
       className={styles.a}
     >
       <Image
-        aria-hidden
         src="/linkedin.svg"
         alt="Window icon"
         width={16}
@@ -40,12 +34,10 @@ const Footer = () => {
     </Link>
     <Link
       href="/CV.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
+      alt="Descarga cv"
       className={styles.a}
     >
       <Image
-        aria-hidden
         src="/file.svg"
         alt="Globe icon"
         width={16}
