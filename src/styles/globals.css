@@ -49,4 +49,26 @@ a {
   }
 }
 
+@font-face {
+  font-family: 'Geist Mono'; 
+  src: url('/fonts/GeistMono.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist VF'; 
+  src: url('/fonts/GeistVF.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*Tpografía*/
+:root {
+  --font-primary: 'Geist Mono';
+  --font-secundary: 'Geist VF';
+  --font-size-base: 16px;
+  --line-height: 1.6;
+}
 
