@@ -1,5 +1,5 @@
 import Image from "next/image";
-import localFont from "next/font/local";
+import localFont from "next/font/local"
 import styles from "@/styles/Main.module.css";
 import TypingEffect from "../molecules/TypingEffect";
 
