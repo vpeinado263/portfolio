@@ -1,20 +1,27 @@
 :root {
+  /* Colores */
   --rgb1: rgb(1, 80, 115);
   --rgb2: rgb(14, 125, 172);
   --rgb3: rgb(22, 154, 211);
   --rgb4: rgb(28, 187, 216);
   --rgb5: rgb(169, 229, 255);
   --rgb6: rgb(255, 255, 255);
-  --background:   rgb(14, 125, 172);
-  --foreground:  rgb(1, 80, 115);
- 
+  --background: rgb(14, 125, 172);
+  --foreground: rgb(1, 80, 115);
 
+  /* Fuentes */
+  --font-primary: 'Geist Mono', sans-serif;
+  --font-secundary: 'Geist VF', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
     --foreground: #000000;
+  }
+
+  html {
+    color-scheme: dark;
   }
 }
 
@@ -27,7 +34,7 @@ body {
 body {
   color: var(--rgb5);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary); /* Usando fuente primaria */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,32 +50,26 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 @font-face {
-  font-family: 'Geist Mono'; 
-  src: url('/fonts/GeistMono.woff');
+  font-family: 'Geist Mono';
+  src:url('/fonts/GeistMonoVF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geist VF'; 
-  src: url('/fonts/GeistVF.woff');
+  font-family: 'Geist VF';
+  src:url('/fonts/GeistVF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-
-/*Tpografía*/
+/* Tipografía */
 :root {
   --font-primary: 'Geist Mono';
   --font-secundary: 'Geist VF';
-  --font-size-base: 16px;
-  --line-height: 1.6;
 }
 
+body {
+  font-family: var(--font-secundary); 
+}
