@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/Main.module.css";
 import TypingEffect from "../molecules/TypingEffect";
+import Link from "next/link";
 
 
 
