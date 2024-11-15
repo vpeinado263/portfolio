@@ -31,6 +31,7 @@ a {
   --rgb4: rgb(28, 187, 216);
   --rgb5: rgb(202, 213, 218);
   --rgb6: rgb(22, 174, 157);
+  --rgb7: rgb(243, 246, 248);
   --background: rgb(14, 125, 172);
   --foreground: rgb(1, 80, 115);
   --gray-rgb: 0, 0, 0;
@@ -65,7 +66,7 @@ body {
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #5a5252;
-    --foreground: #e2e1fb;
+    --foreground: #ffffff;
   }
 
   html {
