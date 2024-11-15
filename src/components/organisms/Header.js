@@ -26,13 +26,13 @@ const Bienvenida = () => {
           if (textRefs.current[currentIndex]) {
             gsap.fromTo(
               textRefs.current[currentIndex],
-              { opacity: 0, y: 50 },
-              { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+              { opacity: 0, y: 40 },
+              { opacity: 1, y: 0, duration: 0, ease: 'power2.out' }
             );
           }
           index++;
           mostrar();
-        }, 5000); 
+        }, 2000); 
       }
     };
 
