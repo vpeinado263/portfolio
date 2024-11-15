@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const TextoAnimado = () => {
+const TextoAnimado = ({secciones}) => {
     const [mostrarTexto, setMostrarTexto] = useState([])
     const textRefs = useRef([]);
 
@@ -22,7 +22,7 @@ const TextoAnimado = () => {
                     }
                     index++;
                     mostrar();
-                }, 200);
+                }, 2000);
             }
         };
         mostrar();
