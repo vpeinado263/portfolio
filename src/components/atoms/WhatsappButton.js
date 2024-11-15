@@ -5,8 +5,8 @@ const WhatsappButton = () => {
     <Image
     src="/whatsapp.svg"
     alt="Chat"
-    width={64}
-    height={64}
+    width={39}
+    height={37}
     />
   )
 }
