@@ -58,9 +58,7 @@ body {
 body {
   color: var(--rgb5);
   background: var(--background);
-  font-family: var(--font-primary); 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);  
 }
 
 /*Medi query*/
