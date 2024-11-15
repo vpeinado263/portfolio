@@ -1,7 +1,12 @@
-import { forwardRef } from "react";
+import React, { forwardRef } from "react";
 
-const TypedText = forwardRef((props, ref) => {
-  return <h1 {...props} ref={ref} id="typedText"></h1>;
-});
+const TypedText = forwardRef(({ text }, ref) => (
+  <h1 ref={ref} id="typedText">
+    {text}
+  </h1>
+));
+
+// Asigna un displayName
+TypedText.displayName = "TypedText";
 
 export default TypedText;

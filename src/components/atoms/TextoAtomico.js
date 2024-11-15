@@ -8,4 +8,7 @@ const TextoAtomico = forwardRef(({ titulo, contenido, className }, ref) => (
   </div>
 ));
 
+// Asigna un displayName para que ESLint no marque error
+TextoAtomico.displayName = "TextoAtomico";
+
 export default TextoAtomico;
