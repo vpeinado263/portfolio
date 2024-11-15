@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/Main.module.css";
 import TypingEffect from "../molecules/TypingEffect";
-import Link from "next/link";
+import WhatsappButton from "../atoms/WhatsappButton";
 
 
 
@@ -37,14 +37,10 @@ const SectionHome = () => {
               />
               Proyectos Personales
             </a>
-            <a
-              href="https://www.linkedin.com/in/victor-peinado1739."
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.secondary}
-            >
+            <span className={styles.secondary}>
              Contactame
-            </a>
+             <WhatsappButton/>
+            </span>
           </div>
         </main>
       </div>
