@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 import styles from '@/styles/Header.module.css';
-import Navbar from './Navbar';
 import SectionHome from './SectionHome';
 
 const Header = () => {
@@ -45,7 +44,6 @@ const Header = () => {
 
   return (
     <>
-      <Navbar />
       <header className={styles.header}>
         <SectionHome />
         <div className={styles.content}>
