@@ -11,15 +11,15 @@ const Bienvenida = () => {
   const secciones = useMemo(() => [
     {
       titulo: "¡Bienvenido a mi portafolio!",
-      contenido: "Aquí podrás explorar mis habilidades y proyectos en desarrollo web."
+      contenido: "Soy un Desarrollador Web en formación con experiencia en enfermería. Me apasiona encontrar soluciones digitales efectivas que puedan aplicarse en diversos sectores, desde la salud hasta cualquier desafío empresarial."
     },
     {
-      titulo: "Sobre mí",
-      contenido: "Soy Desarrollador Web y Enfermero Profesional apasionado por crear soluciones digitales y contribuir al bienestar de los demás."
+        titulo: "Sobre mí",
+        contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional. A lo largo de mi carrera, he trabajado en proyectos Full Stack, y mi objetivo es aplicar mis habilidades tanto en el desarrollo web como en otros campos, ayudando a las empresas a resolver problemas mediante soluciones digitales innovadoras."
     },
     {
       titulo: "Mi Misión",
-      contenido: "Siempre busco aprender y mejorar mis habilidades."
+      contenido:  "Mi misión es aplicar mis conocimientos en desarrollo web y mi experiencia en el ámbito de la salud para crear soluciones digitales que impacten positivamente en cualquier área. Estoy comprometido con el aprendizaje continuo y con aportar valor a las empresas, independientemente de su sector, utilizando tecnología avanzada para resolver problemas."
     }
   ], []);
 
