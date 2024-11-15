@@ -1,11 +1,10 @@
-import React from 'react'
 
-const TypedText = () => {
+const TypedText = ({text}) => {
   return (
-    <div>
-      
-    </div>
+    <h1 id="Mi nombre es Victor">
+      {text}
+    </h1>
   )
 }
 
-export default TypedText
+export default TypedText;
