@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import styles from "TextoAnimado.module.css";
+import styles from "@/styles/TextoAnimado.module.css";
 
 const TextoAnimado = ({secciones}) => {
     const [mostrarTexto, setMostrarTexto] = useState([])
