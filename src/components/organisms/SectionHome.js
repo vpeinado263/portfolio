@@ -1,14 +1,13 @@
 import Image from "next/image";
 import styles from "@/styles/SectionHome.module.css";
 import TypingEffect from "../molecules/TypingEffect";
-import WhatsappButton from "../atoms/WhatsappButton";
 import Link from "next/link";
+import Whatsapp from "../molecules/Whatsapp";
 
 
 
 const SectionHome = () => {
-  const whatsappMessage = `Hola`;
-
+  const whatsappMessage = `"Hola, ¿podemos conversar sobre oportunidades laborales?"`;
   const text ="Hola, soy Victor.";
 
   return (
@@ -43,7 +42,7 @@ const SectionHome = () => {
             </Link>
             <span className={styles.secondary}>
              Contactame
-             <WhatsappButton  message={whatsappMessage}/>
+             <Whatsapp  message={whatsappMessage}/>
             </span>
           </div>
         </main>
