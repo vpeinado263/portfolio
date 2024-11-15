@@ -1,11 +1,17 @@
 import ImageLink from "../atoms/ImageLink"
 
-const Whatsapp = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Whatsapp = ({message}) => {
+    const phoneNumber = "+542612448018";
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
-export default Whatsapp
+  return (
+    <ImageLink
+     href={whatsappLink}
+     src="/whatsapp.svg"
+     alt="Chat"
+     width={39}
+     height={37}/>
+  );
+};
+
+export default Whatsapp;
