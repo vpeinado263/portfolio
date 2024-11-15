@@ -1,10 +1,13 @@
-import React from 'react'
+import Image from "next/image"
 
 const WhatsappButton = () => {
   return (
-    <div>
-      
-    </div>
+    <Image
+    src="/whatsapp.svg"
+    alt="Chat"
+    width={64}
+    height={64}
+    />
   )
 }
 
