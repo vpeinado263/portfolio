@@ -1,11 +1,8 @@
-import React from 'react'
 
-const Icon = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+import Image from "next/image"
+
+const Icon = ({ src, alt, width, height}) => {
+  return <Image src={src} alt={alt} width={width} height={height}/>;
 }
 
-export default Icon
+export default Icon;
