@@ -1,11 +1,11 @@
-import React from 'react'
+import Link from "next/link";
 
-const LinkText = () => {
+const LinkText = ({ href, children, className}) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Link href={href} className={className}>
+        {children}
+    </Link>
+  );
+};
 
 export default LinkText
