@@ -47,4 +47,4 @@ const TextoAnimado = () => {
   );
 };
 
-export default TextoAnimado
+export default TextoAnimado;
