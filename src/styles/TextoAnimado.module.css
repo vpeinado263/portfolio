@@ -1,17 +1,20 @@
 .subtituloContainer {
     margin-top: 20px;
-}
-.subtitulo {
+  }
+  
+  .subtitulo {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.subtitulo h2 {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.subtitulo p {
+  }
+  
+  .subtitulo h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .subtitulo p {
     font-size: 1rem;
-    color: #fffbfb;
-}
+    color: #666;
+  }
+  

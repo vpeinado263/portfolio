@@ -12,12 +12,10 @@ const Header = () => {
   ];
 
   return (
-    <>
       <header className={styles.header}>
         <SectionHome />
         <TextoAnimado secciones={secciones}/>
       </header>
-    </>
   );
 };
 
