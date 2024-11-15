@@ -29,5 +29,5 @@
 
 .scrolled {
   background-color: var(--foreground);
-  color: var(--rgb6);
+  color: var(--button-primary-hover);
 }

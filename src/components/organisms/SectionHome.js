@@ -9,10 +9,9 @@ import Link from "next/link";
 const SectionHome = () => {
 
   const text ="Hola, soy Victor.";
-  console.log(text)
 
   return (
-      <div className={styles.page}>
+      <div className={styles.mainContainer}>
         <main className={styles.main}>
           <Image
             className={styles.foto}

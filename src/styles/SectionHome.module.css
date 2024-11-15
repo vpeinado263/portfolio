@@ -1,11 +1,4 @@
-.page {
-    --gray-rgb: 0, 0, 0;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-  
-    --button-primary-hover: rgb(4, 10, 33);
-    --button-secondary-hover: rgb(4, 10, 33);
-  
+.mainContainer {
     display: grid;
     grid-template-rows: 20px 1fr 20px;
     align-items: center;
@@ -13,30 +6,15 @@
     min-height: 100svh;
     padding: 80px;
     gap: 64px;
-    font-family: var( --font-primary);
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    .page {
-      --gray-rgb: 255, 255, 255;
-      --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-      --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-  
-      --button-primary-hover: #ccc;
-      --button-secondary-hover: #1a1a1a;
-    }
-  }
-  
+    font-family: var( --font-secundary);
+  }  
   .main {
     display: flex;
     flex-direction: column;
     gap: 32px;
     grid-row-start: 2;
   }
-  
-  
   .main code {
-  
     background: var(--gray-alpha-100);
     padding: 2px 4px;
     border-radius: 4px;
