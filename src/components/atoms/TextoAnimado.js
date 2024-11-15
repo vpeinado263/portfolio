@@ -13,42 +13,44 @@ const TextoAnimado = ({ secciones }) => {
       if (index < secciones.length) {
         setMostrarTexto((prev) => [...prev, secciones[index]]);
         
-        // Espera antes de animar el siguiente
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Aquí espera un poco más entre las animaciones
+        await new Promise(resolve => setTimeout(resolve, 2500));  // Ajusta este tiempo según lo necesario
 
         const currentIndex = index;
         if (textRefs.current[currentIndex]) {
-          // Mostrar el texto con animación
+          // Animación de aparición (más suave)
           gsap.fromTo(
             textRefs.current[currentIndex],
-            { opacity: 0, y: 40 },
-            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 1.2, ease: "power4.out" }
           );
-          
-          // Desaparecer el texto después de un tiempo (ej. 3 segundos)
+
+          // Ahora, espera un tiempo antes de que desaparezca (esto da tiempo al usuario a leer)
           setTimeout(() => {
+            // Animación de desaparición más suave
             gsap.to(textRefs.current[currentIndex], {
               opacity: 0,
-              y: -40,
-              duration: 0.6,
-              ease: "power2.in",
+              y: -20,
+              duration: 1,  // Más tiempo para que desaparezca suavemente
+              ease: "power4.in",
             });
-            // Eliminar el texto después de que desaparezca
+            
+            // Eliminar el texto después de la animación
             setTimeout(() => {
               setMostrarTexto((prev) => prev.filter((_, i) => i !== currentIndex));
-            }, 600); // 600ms = tiempo que tarda en desaparecer
-          }, 3000); // El texto se mantiene visible por 3 segundos
+            }, 1000);  // 1 segundo después de la desaparición
+          }, 40000);  // Muestra el texto durante 4 segundos antes de desaparecer
         }
 
         index++;
-        mostrar(); // Recursión para continuar con el siguiente texto
+        mostrar();  // Recursión para mostrar el siguiente texto
       }
     };
 
     mostrar();
 
     return () => {
-      setMostrarTexto([]); // Limpia el estado cuando el componente se desmonta
+      setMostrarTexto([]);  // Limpia el estado cuando el componente se desmonta
     };
   }, [secciones]);
 
