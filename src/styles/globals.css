@@ -45,8 +45,8 @@ a {
 /*Estilos Generales*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #070625;
+    --background: #5a5252;
+    --foreground: #e2e1fb;
   }
 
   html {
