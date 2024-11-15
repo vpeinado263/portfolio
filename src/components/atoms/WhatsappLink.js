@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const ImageLink = ({ href, src, alt, width, height}) => {
+const WhatsappLink = ({ href, src, alt, width, height}) => {
   return (
     <Link href={href}>
         <Image src={src} alt={alt} width={width} height={height}/>
@@ -9,4 +9,4 @@ const ImageLink = ({ href, src, alt, width, height}) => {
   );
 };
 
-export default ImageLink;
+export default WhatsappLink;
