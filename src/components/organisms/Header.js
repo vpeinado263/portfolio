@@ -4,7 +4,7 @@ import styles from '@/styles/Header.module.css';
 import Navbar from './Navbar';
 import SectionHome from './SectionHome';
 
-const Bienvenida = () => {
+const Header = () => {
   const [mostrarTexto, setMostrarTexto] = useState([]);
   const secciones = useMemo(() => [
     {
@@ -65,4 +65,4 @@ const Bienvenida = () => {
   );
 };
 
-export default Bienvenida;
+export default Header;
