@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const WhatsappButton = () => {
   return (
@@ -8,8 +8,8 @@ const WhatsappButton = () => {
     width={39}
     height={37}
     />
-  )
-}
+  );
+};
 
-export default WhatsappButton
+export default WhatsappButton;
 

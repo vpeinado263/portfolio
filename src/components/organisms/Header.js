@@ -1,5 +1,5 @@
 import styles from '@/styles/Header.module.css';
-import TextoAnimado from '../atoms/TextoAnimado';
+import TextoAnimado from '../molecules/TextoAnimado';
 import SectionHome from './SectionHome';
 
 const Header = () => {
