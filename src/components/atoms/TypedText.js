@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 
 const TypedText = forwardRef(({ text }, ref) => (
   <h1 ref={ref} id="typedText">

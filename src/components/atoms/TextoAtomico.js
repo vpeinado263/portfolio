@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import styles from "@/styles/TextoAnimado.module.css";
 
 const TextoAtomico = forwardRef(({ titulo, contenido, className }, ref) => (
