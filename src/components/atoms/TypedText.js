@@ -1,10 +1,7 @@
+import { forwardRef } from "react";
 
-const TypedText = ({text}) => {
-  return (
-    <h1 id="Mi nombre es Victor">
-      {text}
-    </h1>
-  )
-}
+const TypedText = forwardRef((props, ref) => {
+  return <h1 {...props} ref={ref} id="typedText"></h1>;
+});
 
 export default TypedText;

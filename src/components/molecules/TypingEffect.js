@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import TypedText from "../atoms/TypedText";
 
 const TypingEffect = ({ text }) => {
-  const textRef = useRef("");
+  const textRef = useRef(""); // Ref para mantener el texto acumulado
+  const elementRef = useRef(null); // Ref para apuntar al nodo DOM
 
   useEffect(() => {
     if (!text) return;
@@ -10,8 +12,10 @@ const TypingEffect = ({ text }) => {
 
     const typeCharacter = () => {
       if (currentIndex < text.length) {
-        textRef.current += text[currentIndex];
-        document.querySelector("#typedText").innerText = textRef.current;
+        textRef.current += text[currentIndex]; // Acumula el texto
+        if (elementRef.current) {
+          elementRef.current.innerText = textRef.current; // Actualiza el DOM
+        }
         currentIndex++;
       } else {
         clearInterval(typingInterval);
@@ -20,10 +24,10 @@ const TypingEffect = ({ text }) => {
 
     const typingInterval = setInterval(typeCharacter, 210);
 
-    return () => clearInterval(typingInterval);
+    return () => clearInterval(typingInterval); // Limpieza al desmontar el componente
   }, [text]);
 
-  return <h1 id="typedText"></h1>;
+  return <TypedText ref={elementRef} />;
 };
 
 export default TypingEffect;

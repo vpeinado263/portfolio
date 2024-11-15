@@ -7,8 +7,11 @@ import Link from "next/link";
 
 
 const SectionHome = () => {
+
+  const text ="Hola, soy Victor.";
+  console.log(text)
+
   return (
-    <>
       <div className={styles.page}>
         <main className={styles.main}>
           <Image
@@ -20,7 +23,7 @@ const SectionHome = () => {
             priority
           />
       
-        <TypingEffect text ="Me llamo Victor"/>
+        <TypingEffect text ={text}/>
         
           <div className={styles.ctas}>
             <Link
@@ -45,7 +48,6 @@ const SectionHome = () => {
           </div>
         </main>
       </div>
-    </>
   )
 }
 
