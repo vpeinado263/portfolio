@@ -6,34 +6,39 @@ const Footer = () => {
     <div className={styles.footContainer}>
       
     <footer className={styles.footer}>
+      <div className={styles.a}>
       <SocialLink
       href="https://github.com/vpeinado263"
       iconSrc="/github.svg"
       iconAlt="Github icon"
-      iconWidth={16}
-      iconHeight={16}
+      iconWidth={20}
+      iconHeight={20}
     >
       GitHub
     </SocialLink>
-    <SocialLink
+      </div>
+      <div className={styles.a}>
+      <SocialLink
       href="https://www.linkedin.com/in/victor-peinado1739/?trk=opento_sprofile_details"
       iconSrc="/linkedin.svg"
       iconAlt="LinkedIn icon"
-      iconWidth={16}
-      iconHeight={16}
+      iconWidth={20}
+      iconHeight={20}
       >
       Linkedin
     </SocialLink>
-    <SocialLink
+      </div>
+      <div className={styles.a}>
+      <SocialLink
       href="/CV.pdf"
       iconSrc="/file.svg"
       iconAlt="CV icon"
-      iconWidth={16}
-      iconHeight={16}
+      iconWidth={20}
+      iconHeight={20}
       >
         Descargar CV ↓
     </SocialLink>
-    
+      </div>
   </footer>
   
     </div>
