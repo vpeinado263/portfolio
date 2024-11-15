@@ -7,6 +7,7 @@ import Link from "next/link";
 
 
 const SectionHome = () => {
+  const whatsappMessage = `Hola`;
 
   const text ="Hola, soy Victor.";
 
@@ -42,7 +43,7 @@ const SectionHome = () => {
             </Link>
             <span className={styles.secondary}>
              Contactame
-             <WhatsappButton/>
+             <WhatsappButton  message={whatsappMessage}/>
             </span>
           </div>
         </main>
