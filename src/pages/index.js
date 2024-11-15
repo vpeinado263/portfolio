@@ -1,8 +1,7 @@
-import Footer from "@/components/organisms/Footer";
-import Bienvenida from "@/components/organisms/Header";
+import Home from "@/components/templates/Home";
 import Head from "next/head";
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Head>
@@ -12,8 +11,7 @@ export default function Home() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
 
-      <Bienvenida/>
-      <Footer/>
+      <Home/>
     </>
   );
 }
