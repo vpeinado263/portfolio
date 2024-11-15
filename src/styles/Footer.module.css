@@ -20,6 +20,10 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
+    
+  }
+  .a:hover {
+    text-decoration: underline;
   }
     
   .footer {
@@ -40,12 +44,8 @@
       font-size: 14px;
       height: 40px;
       padding: 0 16px;
-    }
-  
-    .a {
       min-width: auto;
     }
-  
     .footer {
       flex-wrap: wrap;
       align-items: center;
