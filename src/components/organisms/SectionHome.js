@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "@/styles/Main.module.css";
 import TypingEffect from "../molecules/TypingEffect";
 import WhatsappButton from "../atoms/WhatsappButton";
+import Link from "next/link";
 
 
 
@@ -22,9 +23,9 @@ const SectionHome = () => {
         <TypingEffect text ="Me llamo Victor"/>
         
           <div className={styles.ctas}>
-            <a
+            <Link
               className={styles.primary}
-              href=""
+              href="https://github.com/vpeinado263"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,7 +37,7 @@ const SectionHome = () => {
                 height={25}
               />
               Proyectos Personales
-            </a>
+            </Link>
             <span className={styles.secondary}>
              Contactame
              <WhatsappButton/>
