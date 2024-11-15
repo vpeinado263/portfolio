@@ -37,7 +37,7 @@
       background 0.2s,
       color 0.2s,
       border-color 0.2s;
-    cursor: pointer;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,6 @@
       background 0.2s,
       color 0.2s,
       border-color 0.2s;
-    cursor: pointer;
     border-color: var(--gray-alpha-200);
     min-width: 180px;
   }
