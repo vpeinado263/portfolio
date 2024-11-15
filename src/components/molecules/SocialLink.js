@@ -1,11 +1,13 @@
-import React from 'react'
+import Icon from "../atoms/Icon";
+import LinkText from "../atoms/LinkText";
 
-const SocialLink = () => {
+const SocialLink = ({ href, iconSrc, iconAlt, iconWidth, iconHeight, children}) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+   <LinkText href={href}>
+    <Icon src={iconSrc} alt={iconAlt} width={width} height={height}/>
+    {children}
+   </LinkText>
+  );
+};
 
-export default SocialLink
+export default SocialLink;
