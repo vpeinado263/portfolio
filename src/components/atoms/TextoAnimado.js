@@ -36,7 +36,7 @@ const TextoAnimado = ({ secciones }) => {
             setTimeout(() => {
               setMostrarTexto((prev) => prev.filter((_, i) => i !== currentIndex));
             }, 1000);  
-          }, 35000);  
+          }, 30000);  
         }
 
         index++;
