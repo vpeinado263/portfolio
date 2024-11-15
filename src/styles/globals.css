@@ -82,3 +82,31 @@ body {
     --button-secondary-hover: #1a1a1a;
   }
 }
+
+  @media (max-width: 600px) {
+    .page {
+      padding: 32px;
+      padding-bottom: 80px;
+    }
+  
+    .main {
+      align-items: center;
+    }
+  
+    .ctas  {
+      font-size: 14px;
+      height: 40px;
+      padding: 0 16px;
+      flex-direction: column;
+    }
+  
+   .secondary {
+      min-width: auto;
+    }
+  
+  } 
+  @media (prefers-color-scheme: dark) {
+    .logo {
+      filter: invert();
+    }
+  } 

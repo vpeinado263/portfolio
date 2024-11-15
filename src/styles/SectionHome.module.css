@@ -77,46 +77,17 @@
     border-radius: 50%; 
   }
   
-  /* Enable hover only on non-touch devices */
-   @media (hover: hover) and (pointer: fine) {
-    .primary:hover {
-      background: var(--button-primary-hover);
-      border-color: transparent;
+    /* Habilitar hover solo en dispositivos que no sean táctiles */
+    @media (hover: hover) and (pointer: fine) {
+      .primary:hover {
+        background: var(--button-primary-hover);
+        border-color: transparent;
+      }
+    
+      .secondary:hover {
+        background: var(--button-secondary-hover);
+        border-color: transparent;
+        color: inherit;
+        text-decoration: none;
+      }
     }
-  
-    .secondary:hover {
-      background: var(--button-secondary-hover);
-      border-color: transparent;
-      color: inherit;
-      text-decoration: none;
-    }
-  } 
-  
-  @media (max-width: 600px) {
-    .page {
-      padding: 32px;
-      padding-bottom: 80px;
-    }
-  
-    .main {
-      align-items: center;
-    }
-  
-    .ctas  {
-      font-size: 14px;
-      height: 40px;
-      padding: 0 16px;
-      flex-direction: column;
-    }
-  
-   .secondary {
-      min-width: auto;
-    }
-  
-  } 
-  @media (prefers-color-scheme: dark) {
-    .logo {
-      filter: invert();
-    }
-  } 
-  
