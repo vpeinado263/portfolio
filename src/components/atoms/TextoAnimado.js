@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import styles from "TextoAnimado.module.css";
 
 const TextoAnimado = ({secciones}) => {
     const [mostrarTexto, setMostrarTexto] = useState([])
@@ -32,12 +33,13 @@ const TextoAnimado = ({secciones}) => {
         };
     }, [secciones]);
   return (
-    <div>
+    <div className={styles.subtituloContainer}>
       {mostrarTexto.length > 0 &&
         mostrarTexto.map((texto, index) => (
             <div
             key={index}
             ref={(el) => (textRefs.current[index] = el)}
+            className={styles.subtitulo}
             >
                 <h2>{texto.titulo}</h2>
                 <p>{texto.contenido}</p>
