@@ -1,49 +1,38 @@
 import styles from "@/styles/Footer.module.css";
-import Link from 'next/link';
-import Image from 'next/image';
+import SocialLink from "../molecules/SocialLink";
 
 const Footer = () => {
   return (
     <div className={styles.footContainer}>
       
     <footer className={styles.footer}>
-    <Link
+      <SocialLink
       href="https://github.com/vpeinado263"
-      className={styles.a}
+      iconSrc="/github.svg"
+      iconAlt="Github icon"
+      iconWidth={16}
+      iconHeight={16}
     >
-      <Image
-        src="/github.svg"
-        alt="Github icon"
-        width={16}
-        height={16}
-      />
       GitHub
-    </Link>
-    <Link
+    </SocialLink>
+    <SocialLink
       href="https://www.linkedin.com/in/victor-peinado1739/?trk=opento_sprofile_details"
-      className={styles.a}
-    >
-      <Image
-        src="/linkedin.svg"
-        alt="Window icon"
-        width={16}
-        height={16}
-      />
+      iconSrc="/linkedin.svg"
+      iconAlt="LinkedIn icon"
+      iconWidth={16}
+      iconHeight={16}
+      >
       Linkedin
-    </Link>
-    <Link
+    </SocialLink>
+    <SocialLink
       href="/CV.pdf"
-      alt="Descarga cv"
-      className={styles.a}
-    >
-      <Image
-        src="/file.svg"
-        alt="Globe icon"
-        width={16}
-        height={16}
-      />
-      Descargar CV ↓
-    </Link>
+      iconSrc="/file.svg"
+      iconAlt="CV icon"
+      iconWidth={16}
+      iconHeight={16}
+      >
+        Descargar CV ↓
+    </SocialLink>
     
   </footer>
   

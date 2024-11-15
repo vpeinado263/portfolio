@@ -1,12 +1,12 @@
-import Icon from "../atoms/Icon";
-import LinkText from "../atoms/LinkText";
+import Icon from '@/components/atoms/Icon';
+import LinkText from '@/components/atoms/LinkText';
 
-const SocialLink = ({ href, iconSrc, iconAlt, iconWidth, iconHeight, children}) => {
+const SocialLink = ({ href, iconSrc, iconAlt, iconWidth, iconHeight, children }) => {
   return (
-   <LinkText href={href}>
-    <Icon src={iconSrc} alt={iconAlt} width={width} height={height}/>
-    {children}
-   </LinkText>
+    <LinkText href={href}>
+      <Icon src={iconSrc} alt={iconAlt} width={iconWidth} height={iconHeight} />
+      {children}
+    </LinkText>
   );
 };
 
