@@ -13,44 +13,41 @@ const TextoAnimado = ({ secciones }) => {
       if (index < secciones.length) {
         setMostrarTexto((prev) => [...prev, secciones[index]]);
         
-        // Aquí espera un poco más entre las animaciones
-        await new Promise(resolve => setTimeout(resolve, 2500));  // Ajusta este tiempo según lo necesario
+        await new Promise(resolve => setTimeout(resolve, 2500)); 
 
         const currentIndex = index;
         if (textRefs.current[currentIndex]) {
-          // Animación de aparición (más suave)
           gsap.fromTo(
             textRefs.current[currentIndex],
             { opacity: 0, y: 20 },
             { opacity: 1, y: 0, duration: 1.2, ease: "power4.out" }
           );
 
-          // Ahora, espera un tiempo antes de que desaparezca (esto da tiempo al usuario a leer)
           setTimeout(() => {
-            // Animación de desaparición más suave
+          
             gsap.to(textRefs.current[currentIndex], {
               opacity: 0,
               y: -20,
-              duration: 1,  // Más tiempo para que desaparezca suavemente
+              duration: 1, 
               ease: "power4.in",
             });
             
-            // Eliminar el texto después de la animación
+          
             setTimeout(() => {
               setMostrarTexto((prev) => prev.filter((_, i) => i !== currentIndex));
-            }, 1000);  // 1 segundo después de la desaparición
-          }, 40000);  // Muestra el texto durante 4 segundos antes de desaparecer
+            }, 1000);  
+          }, 35000);  
         }
 
         index++;
-        mostrar();  // Recursión para mostrar el siguiente texto
+        mostrar();  
       }
     };
 
     mostrar();
 
     return () => {
-      setMostrarTexto([]);  // Limpia el estado cuando el componente se desmonta
+      setMostrarTexto([]);  
     };
   }, [secciones]);
 
