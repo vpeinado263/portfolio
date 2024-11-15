@@ -25,6 +25,7 @@ a {
 
 /*Paleta de colores*/
 :root {
+  --rgb0: rgb(5, 14, 49);
   --rgb1: rgb(1, 80, 115);
   --rgb2: rgb(14, 125, 172);
   --rgb3: rgb(22, 154, 211);

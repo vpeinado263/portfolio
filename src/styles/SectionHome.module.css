@@ -65,9 +65,9 @@
     background: var(--rgb7);
     color: var(--button-primary-hover);
     transition:
-      background 0.2s,
-      color 0.2s,
-      border-color 0.2s;
+      background 0.4s,
+      color 0.4s,
+      border-color 0.4s;
     border-color: var(--gray-alpha-200);
     min-width: 180px;
   }

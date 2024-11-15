@@ -28,6 +28,6 @@
 }
 
 .scrolled {
-  background-color: var(--foreground);
-  color: var(--button-primary-hover);
+  background-color: var(--rgb0);
+  color: var(--rgb5);
 }
