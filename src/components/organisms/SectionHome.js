@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/Main.module.css";
+import styles from "@/styles/SectionHome.module.css";
 import TypingEffect from "../molecules/TypingEffect";
 import WhatsappButton from "../atoms/WhatsappButton";
 import Link from "next/link";
