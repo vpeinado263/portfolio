@@ -1,11 +1,12 @@
-import ImageLink from "../atoms/ImageLink"
+import WhatsappLink from "../atoms/WhatsappLink";
+
 
 const Whatsapp = ({message}) => {
     const phoneNumber = "+542612448018";
     const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
   return (
-    <ImageLink
+    <WhatsappLink
      href={whatsappLink}
      src="/whatsapp.svg"
      alt="Chat"
