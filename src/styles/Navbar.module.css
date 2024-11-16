@@ -14,6 +14,6 @@
   align-items: center;
 }
 .scrolled {
-  background-color: var(--rgb0);
+  background-color: var(--rgb1);
   color: var(--rgb5);
 }
