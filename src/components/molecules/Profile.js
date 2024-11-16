@@ -1,12 +1,12 @@
 import Avatar from "../atoms/Avatar";
 import TypingEffect from "./TypingEffect";
-import styles from "./Profile.module.css";
+import styles from "@/styles/Profile.module.css";
 
 const Profile = ({ avatarSrc, avatarAlt, avatarWidth, avatarHeight, text }) => {
   return (
     <div className={styles.profile}>
       <Avatar
-        src={avatarSrc}
+        src={avatarSrc} // Aquí pasas src correctamente
         alt={avatarAlt}
         width={avatarWidth}
         height={avatarHeight}

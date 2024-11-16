@@ -1,94 +1,16 @@
+/* SectionHome.module.css */
 .mainContainer {
-    display: grid;
-    grid-template-rows: 20px 1fr 20px;
-    align-items: center;
-    justify-items: center;
-    min-height: 100svh;
-    padding: 80px;
-    gap: 64px;
-    font-family: var( --font-secundary);
-  }  
-  .main {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    grid-row-start: 2;
-  }
-  .main code {
-    background: var(--gray-alpha-100);
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-weight: 600;
-  }
-  
-  .ctas {
-    display: flex;
-    gap: 16px;
-  }
-  
-  .ctas .primary{
-    appearance: none;
-    border-radius: 128px;
-    height: 48px;
-    padding: 0 20px;
-    border: none;
-    border: 1px solid transparent;
-    transition:
-      background 0.2s,
-      color 0.2s,
-      border-color 0.2s;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-  }
-  
-  .primary {
-    background: var(--foreground);
-    color: var(--rgb5);
-    gap: 8px;
-  }
-  
-  .secondary {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    appearance: none;
-    border-radius: 128px;
-    height: 48px;
-    padding: 0 20px;
-    border: none;
-    border: 1px solid transparent;
-    background: var(--rgb7);
-    color: var(--button-primary-hover);
-    transition:
-      background 0.4s,
-      color 0.4s,
-      border-color 0.4s;
-    border-color: var(--gray-alpha-200);
-    min-width: 180px;
-  }
-  
-  .foto {
-    width: 17rem;
-    height: 13rem;
-    border-radius: 50%; 
-  }
-  
-    /* Habilitar hover solo en dispositivos que no sean táctiles */
-    @media (hover: hover) and (pointer: fine) {
-      .primary:hover {
-        background: var(--button-primary-hover);
-        border-color: transparent;
-      }
-    
-      .secondary:hover {
-        background: var(--button-secondary-hover);
-        border-color: transparent;
-        color: inherit;
-        text-decoration: none;
-      }
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--rgb0);
+}
+
+.main {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--rgb1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

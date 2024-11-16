@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Button.module.css";
+import styles from "@/styles/Button.module.css";
 
 const Button = ({ href, target, rel, children }) => {
   return (

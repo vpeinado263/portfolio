@@ -1,7 +1,7 @@
 import Button from "../atoms/Button";
 import Whatsapp from "./Whatsapp";
 import Image from "next/image";
-import styles from "./CTAButtons.module.css";
+import styles from "@/styles/CTAButtons.module.css";
 
 const CTAButtons = ({ whatsappMessage }) => {
   return (
