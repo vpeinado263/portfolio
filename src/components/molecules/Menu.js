@@ -5,7 +5,6 @@ const Menu = () => {
   return (
    <ul className={styles.menu}>
     <LinkItem href="#about" text="Lenguajes"/>
-    <LinkItem href="#skills" text="Tegnologías"/>
     <LinkItem href="#projectc" text="Herramientas"/>
    </ul>
   );
