@@ -6,7 +6,7 @@ const Profile = ({ avatarSrc, avatarAlt, avatarWidth, avatarHeight, text }) => {
   return (
     <div className={styles.profile}>
       <Avatar
-        src={avatarSrc} // Aquí pasas src correctamente
+        src={avatarSrc} 
         alt={avatarAlt}
         width={avatarWidth}
         height={avatarHeight}

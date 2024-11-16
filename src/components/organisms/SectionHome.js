@@ -10,7 +10,7 @@ const SectionHome = () => {
     <div className={styles.mainContainer}>
       <main className={styles.main}>
         <Profile
-          avatarSrc="/myPhoto.png" // Aquí defines el src correctamente
+          avatarSrc="/myPhoto.png" 
           avatarAlt="Foto personal"
           avatarWidth={290}
           avatarHeight={180}
