@@ -1,3 +1,6 @@
+/* Navbar.module.css */
+
+/* Estilos para la barra de navegación */
 .navbar {
   position: fixed;
   top: 0;
@@ -9,25 +12,75 @@
   z-index: 10;
 }
 
+/* Contenedor de la barra de navegación */
 .navContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Estilos para los enlaces en el menú */
 .menu {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
+/* Estilos para cada enlace */
 .link {
   text-decoration: none;
-  color: inherit;
-  font-weight: bold;
+  font-size: 1.2rem; /* Aumenta el tamaño de fuente */
+  color: var(--rgb5);
+  font-weight: 600; /* Hace que el texto sea un poco más grueso */
+  letter-spacing: 0.05em; /* Añade espaciado entre letras */
+  transition: color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
 }
 
+.link:hover {
+  color: var(--rgb1); /* Cambia el color al pasar el mouse */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+.link.active {
+  color: var(--rgb2); /* Color destacado para el enlace activo */
+  border-bottom: 2px solid var(--rgb2); /* Subrayado decorativo */
+}
+
+/* Cuando la barra de navegación hace scroll */
 .scrolled {
   background-color: var(--rgb0);
   color: var(--rgb5);
+}
+
+/* Estilos del logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Estilos para los elementos de la lista en el menú (moleculas) */
+.menuItem {
+  padding: 0.5rem 1rem; /* Ajusta el espaciado alrededor de cada texto */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s ease;
+}
+
+.menuItem:hover {
+  background-color: var(--rgb3); /* Fondo suave al pasar el mouse */
+}
+
+/* Estilos para el contenedor de enlaces (átomos) */
+.linkItem {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--rgb5);
+  font-weight: normal;
+}
+
+.linkItem:hover {
+  color: var(--rgb0); /* Agregar un efecto hover */
 }

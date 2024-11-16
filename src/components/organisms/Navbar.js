@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import styles from "@/styles/Navbar.module.css";
+import Logo from "../atoms/Logo";
+import Menu from "../molecules/Menu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,17 +19,11 @@ const Navbar = () => {
 
   return (
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
-      <nav className={styles.navContainer}>
-        <Link href="/" className={styles.logo}>
-          <h1>Victor Portfolio</h1>
-        </Link>
-        <ul className={styles.menu}>
-          <li><Link href="#about" className={styles.link}>Lenguajes</Link></li>
-          <li><Link href="#skills" className={styles.link}>Tegnologías</Link></li>
-          <li><Link href="#projects" className={styles.link}>Herramientas</Link></li>
-        </ul>
-      </nav>
-    </header>
+    <nav className={styles.navContainer}>
+      <Logo/>
+      <Menu/>
+    </nav>
+  </header>
   );
 };
 
