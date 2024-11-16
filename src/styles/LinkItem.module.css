@@ -1,0 +1,19 @@
+
+.link {
+    text-decoration: none;
+    color: var(--rgb5);
+    font-weight: 600; 
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .link:hover {
+    color: var(--rgb1);
+    transform: scale(1.05);
+  }
+  
+  .linkItem {
+    display: inline-block; 
+  }
+  
