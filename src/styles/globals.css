@@ -64,7 +64,7 @@ body {
 /*Medi query*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #5a5252;
+    --background: #0a606c;
     --foreground: #ffffff;
   }
 
