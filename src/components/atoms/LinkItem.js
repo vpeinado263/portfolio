@@ -1,10 +1,9 @@
 import Link from "next/link";
-import styles from "@/styles/Navbar.module.css";
 
 const LinkItem = ({ href, text}) => {
   return (
    <li>
-    <Link href={href} className={styles.link}>
+    <Link href={href}>
         {text}
     </Link>
    </li>
