@@ -10,7 +10,7 @@ const SectionHome = () => {
     <div className={styles.mainContainer}>
       <main className={styles.main}>
         <Profile
-          avatarSrc="/myPhoto.png" 
+          avatarSrc="/myphoto.png" 
           avatarAlt="Foto personal"
           avatarWidth={290}
           avatarHeight={180}
