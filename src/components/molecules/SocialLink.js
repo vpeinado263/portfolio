@@ -1,6 +1,6 @@
 import LinkText from '@/components/atoms/LinkText';
 import Icon from '@/components/atoms/Icon';
-import styles from './SocialLink.module.css'; 
+import styles from '@/styles/SocialLink.module.css'; 
 
 const SocialLink = ({ href, iconSrc, iconAlt, iconWidth, iconHeight, children }) => {
   return (
@@ -10,7 +10,7 @@ const SocialLink = ({ href, iconSrc, iconAlt, iconWidth, iconHeight, children })
         alt={iconAlt} 
         width={iconWidth} 
         height={iconHeight} 
-        className={styles.icon} />
+        className={styles.icon} /> 
       {children}
     </LinkText>
   );
