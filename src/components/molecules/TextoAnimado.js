@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import styles from "@/styles/TextoAnimado.module.css";
 import TextoAtomico from "../atoms/TextoAtomico";
 
-
 const TextoAnimado = ({ secciones }) => {
   const [mostrarTexto, setMostrarTexto] = useState([]);
   const textRefs = useRef([]);
@@ -15,7 +14,7 @@ const TextoAnimado = ({ secciones }) => {
       if (index < secciones.length) {
         setMostrarTexto((prev) => [...prev, secciones[index]]);
         
-        await new Promise((resolve) => setTimeout(resolve, 2500)); 
+        await new Promise((resolve) => setTimeout(resolve, 2500));
 
         const currentIndex = index;
         if (textRefs.current[currentIndex]) {
@@ -57,12 +56,16 @@ const TextoAnimado = ({ secciones }) => {
     <div className={styles.subtituloContainer}>
       {mostrarTexto.length > 0 &&
         mostrarTexto.map((texto, index) => (
-          <TextoAtomico
+          <div
             key={index}
             ref={(el) => (textRefs.current[index] = el)}
-            titulo={texto.titulo}
-            contenido={texto.contenido}
-          />
+            className={`${styles.texto} ${styles.textoVisible}`}
+          >
+            <TextoAtomico
+              titulo={texto.titulo}
+              contenido={texto.contenido}
+            />
+          </div>
         ))}
     </div>
   );
