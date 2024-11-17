@@ -12,8 +12,8 @@ const SectionHome = () => {
         <Profile
           avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4" 
           avatarAlt="Foto personal"
-          avatarWidth={195}
-          avatarHeight={140}
+          avatarWidth={165}
+          avatarHeight={150}
           text={text}
         />
         <CTAButtons whatsappMessage={whatsappMessage} />

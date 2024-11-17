@@ -1,3 +1,11 @@
 .avatar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 2px solid var(--rgb4);
+    box-shadow: 0 4px 6px var(--rgb6);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .avatar:hover {
+    transform: scale(1.1);
+     box-shadow: 0 6px 10px var(--rgb4);
   }
