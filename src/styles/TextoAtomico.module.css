@@ -16,6 +16,11 @@
   color: var(--rgb0); 
   margin-bottom: 1.3rem; 
   text-align: center; 
+  transition: opacity 0.3s ease;
+}
+
+.subtitulo:hover .h2 {
+  opacity: 0.8; 
 }
 
 .p {
