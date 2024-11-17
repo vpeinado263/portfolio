@@ -50,7 +50,7 @@ a {
 /* Tipografía */
 body {
   font-family: var(--font-primary);
-  background-color: var(--background);
+  background-color: var(--rgb0);
   color: var(--rgb5);
   max-width: 100vw;
   overflow-x: hidden;
