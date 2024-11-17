@@ -1,19 +1,20 @@
 .typedText {
-  display: inline-block; 
-  font-size: 2rem; 
-  font-family: var(--font-secundary); 
-  white-space: nowrap; 
-  border-right: 2px solid #333; 
-  padding-right: 0.1rem; 
-  animation: typing 1s steps(20) 0s 1 normal both, blink 0.75s step-end infinite; 
+  display: inline-block;
+  font-size: 2rem;
+  font-family: var(--font-secundary);
+  white-space: nowrap;
+  overflow: hidden; 
+  border-right: 2px solid #333;
+  padding-right: 0.1rem;
+  animation: typing 4s steps(40) 1 normal both, blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
   from {
-    width: 0;
+    width: 0; 
   }
   to {
-    width: 100%;
+    width: 100%; 
   }
 }
 
