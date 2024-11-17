@@ -1,11 +1,11 @@
-import React from 'react'
+import Link from "next/link";
 
-const ProjectLink = () => {
+const ProjectLink = ({ href, children }) => {
   return (
-    <div>
-      
-    </div>
+    <Link href={href} target="_blank" rel="noopener noreferrer" className="project-link">
+    {children}
+    </Link>
   )
 }
 
-export default ProjectLink
+export default ProjectLink;
