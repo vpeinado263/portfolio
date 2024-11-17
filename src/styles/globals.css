@@ -1,13 +1,13 @@
-/*Importar fuentes*/
+/* Importar fuentes */
 @font-face {
   font-family: 'Geist Mono';
-  src:url('/fonts/GeistMonoVF.woff') format('woff');
+  src: url('/fonts/GeistMonoVF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Geist VF';
-  src:url('/fonts/GeistVF.woff') format('woff');
+  src: url('/fonts/GeistVF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-/*Paleta de colores*/
+/* Paleta de colores */
 :root {
   --rgb0: rgb(5, 14, 49);
   --rgb1: rgb(1, 80, 115);
@@ -43,73 +43,97 @@ a {
   --hover-bg: rgb(52, 160, 206);
   --hover-color: rgb(255, 255, 255);
   --focus-color: rgb(1, 80, 115);
-}
-
-/*Tpografía*/
-:root {
   --font-primary: 'Geist VF';
-  --font-secundary: 'Geist Mono';
+  --font-secondary: 'Geist Mono';
 }
 
-/*Estilos Generales*/
-
-html,
+/* Tipografía */
 body {
+  font-family: var(--font-primary);
+  background-color: var(--background);
+  color: var(--rgb5);
   max-width: 100vw;
   overflow-x: hidden;
-}
-body {
-  color: var(--rgb5);
-  background: var(--background);
-  font-family: var(--font-primary);  
+  line-height: 1.6;
 }
 
-/*Medi query*/
+/* Contenedores */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Media Queries */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a606c;
     --foreground: #ffffff;
-  }
-
-  html {
-    color-scheme: dark;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+  }
+
+  .logo {
+    filter: invert();
+  }
 }
 
-  @media (max-width: 600px) {
-    .page {
-      padding: 32px;
-      padding-bottom: 80px;
-    }
-  
-    .main {
-      align-items: center;
-    }
-  
-    .ctas  {
-      font-size: 14px;
-      height: 40px;
-      padding: 0 16px;
-      flex-direction: column;
-    }
-  
-   .secondary {
-      min-width: auto;
-    }
-  
-  } 
-  @media (prefers-color-scheme: dark) {
-    .logo {
-      filter: invert();
-    }
-  } 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .page {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+  .main {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ctas {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .secondary {
+    min-width: auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
