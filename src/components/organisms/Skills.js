@@ -7,8 +7,15 @@ import {
   SiJquery, SiAxios, SiTailwindcss, SiPostman, SiNpm, SiHeroku, SiVercel 
 } from 'react-icons/si';
 import { FaClipboardList, FaTasks, FaUsers, FaComments, FaLightbulb } from 'react-icons/fa';
+import TextoAnimado from "../molecules/TextoAnimado";
 
 const Skills = () => {
+    const secciones = [
+        {
+          titulo: "Bienvenido a mi portafolio",
+          contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional. Mi objetivo es aplicar mis habilidades tanto en el desarrollo web como en diversos sectores, buscando siempre crear soluciones digitales innovadoras que resuelvan problemas de cualquier área, desde la salud hasta desafíos empresariales. Estoy comprometido con el aprendizaje continuo y con aportar valor a las empresas utilizando tecnología avanzada."
+        }
+      ];
   // Asignación de iconos a habilidades
   const skillIcons = {
     // Lenguajes de Programación
@@ -85,6 +92,8 @@ const Skills = () => {
   ];
 
   return (
+    <>
+    <TextoAnimado secciones={secciones}/>
     <section className={styles.skillsSection}>
       <h2 className={styles.title}>Habilidades y Conocimientos</h2>
       <div className={styles.skillsContainer}>
@@ -103,6 +112,7 @@ const Skills = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 
