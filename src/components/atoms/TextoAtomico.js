@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import styles from "@/styles/TextoAnimado.module.css";
+import styles from "@/styles/TextoAtomico.module.css"; 
 
 const TextoAtomico = forwardRef(({ titulo, contenido, className }, ref) => (
   <div ref={ref} className={`${styles.subtitulo} ${className}`}>
@@ -8,7 +8,7 @@ const TextoAtomico = forwardRef(({ titulo, contenido, className }, ref) => (
   </div>
 ));
 
-// Asigna un displayName para que ESLint no marque error
 TextoAtomico.displayName = "TextoAtomico";
 
 export default TextoAtomico;
+
