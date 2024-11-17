@@ -1,6 +1,6 @@
 .skillsSection {
     padding: 2rem;
-    background-color: #f9f9f9;
+    background-color: var(--rgb4);
   }
   
   .skillsContainer {
