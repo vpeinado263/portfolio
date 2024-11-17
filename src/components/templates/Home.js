@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div>
-      <TextoAnimado secciones={secciones}/>
+        <TextoAnimado secciones={secciones}/>
         <Header/> 
         <Navbar/>
         <Footer/>
