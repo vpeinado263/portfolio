@@ -1,7 +1,23 @@
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  
-  }
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 1.5rem; 
+  gap: 1rem;  
+  box-shadow: 0 4px 10px var(--rgb0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px var(--rgb0); 
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+  .profile {
+    padding: 1rem; 
+    gap: 0.8rem; 
+    max-width: 90%; 
+}
+}
