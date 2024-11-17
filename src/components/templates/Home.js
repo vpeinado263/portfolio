@@ -2,6 +2,7 @@ import TextoAnimado from "../molecules/TextoAnimado";
 import Footer from "../organisms/Footer";
 import Header from "../organisms/Header";
 import Navbar from "../organisms/Navbar";
+import Skills from "../organisms/Skills";
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
         <TextoAnimado secciones={secciones}/>
         <Header/> 
         <Navbar/>
+        <Skills/>
         <Footer/>
     </div>
   )
