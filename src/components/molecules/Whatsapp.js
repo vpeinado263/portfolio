@@ -10,8 +10,8 @@ const Whatsapp = ({message}) => {
      href={whatsappLink}
      src="/whatsapp.svg"
      alt="Chat"
-     width={39}
-     height={37}/>
+     width={34}
+     height={34}/>
   );
 };
 
