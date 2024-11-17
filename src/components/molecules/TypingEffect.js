@@ -2,18 +2,20 @@ import { useEffect, useRef } from "react";
 import TypedText from "../atoms/TypedText";
 
 const TypingEffect = ({ text }) => {
-  const elementRef = useRef(null); 
+  const elementRef = useRef(null);
 
   useEffect(() => {
     if (!text) return;
 
     let currentIndex = 0;
 
+    const element = elementRef.current;
+
     const typeCharacter = () => {
       if (currentIndex < text.length) {
         const currentText = text.slice(0, currentIndex + 1); 
-        if (elementRef.current) {
-          elementRef.current.textContent = currentText; 
+        if (element) {
+          element.textContent = currentText; 
         }
         currentIndex++;
         setTimeout(typeCharacter, 210); 
@@ -23,9 +25,6 @@ const TypingEffect = ({ text }) => {
     typeCharacter(); 
 
     return () => {
-      if (elementRef.current) {
-        elementRef.current.textContent = ""; 
-      }
     };
   }, [text]);
 
