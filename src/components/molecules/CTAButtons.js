@@ -5,7 +5,7 @@ import styles from "@/styles/CTAButtons.module.css";
 
 const CTAButtons = ({ whatsappMessage }) => {
   return (
-    <div className={styles.ctas}>
+    <div className={styles.container}>
       <Button
         href="https://github.com/vpeinado263"
         target="_blank"
@@ -21,7 +21,7 @@ const CTAButtons = ({ whatsappMessage }) => {
       </Button>
       <span className={styles.secondary}>
         Contactame
-        <Whatsapp message={whatsappMessage} />
+        <Whatsapp message={whatsappMessage}/>
       </span>
     </div>
   );
