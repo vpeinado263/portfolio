@@ -11,4 +11,4 @@ const LinkItem = ({ href, text}) => {
   );
 };
 
-export default LinkItem
+export default LinkItem;

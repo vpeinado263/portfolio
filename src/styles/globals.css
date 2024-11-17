@@ -40,6 +40,9 @@ a {
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
   --button-primary-hover: rgb(4, 10, 33);
   --button-secondary-hover: rgb(4, 10, 33);
+  --hover-bg: rgb(52, 160, 206);
+  --hover-color: rgb(255, 255, 255);
+  --focus-color: rgb(1, 80, 115);
 }
 
 /*Tpografía*/
