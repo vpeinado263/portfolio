@@ -1,0 +1,24 @@
+#typedText {
+  display: inline-block; 
+  font-size: 2rem; 
+  font-family: "Courier New", Courier, monospace; 
+  white-space: nowrap; 
+  border-right: 2px solid #333; 
+  padding-right: 0.1rem; 
+  animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite; 
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; 
+  }
+}
