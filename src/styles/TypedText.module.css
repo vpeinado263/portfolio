@@ -1,7 +1,7 @@
 .typedText {
   display: inline-block;
   font-size: 2rem;
-  font-family: var(--font-secundary);
+  font-family: var(--font-secondary);
   white-space: nowrap;
   overflow: hidden; 
   border-right: 2px solid #333;
