@@ -1,0 +1,40 @@
+.icon {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--rgb2); 
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon:focus {
+    outline: 2px solid var(--rgb5);
+    outline-offset: 2px;
+  }
+  
+  .icon-small {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-medium {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .icon-large {
+    width: 72px;
+    height: 72px;
+  }
+  
+  .icon-rounded {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .icon-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
