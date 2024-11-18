@@ -4,7 +4,7 @@ import styles from "@/styles/SectionHome.module.css";
 
 const SectionHome = () => {
   const whatsappMessage = `"Hola, ¿podemos conversar sobre oportunidades laborales?"`;
-  const text = "Hola soy Victor.";
+  const text = "Hello, I'm Victor.";
 
   return (
     <div className={styles.mainContainer}>
