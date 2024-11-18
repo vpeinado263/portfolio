@@ -16,19 +16,16 @@ const TextoAnimadoTemplate = () => {
   ];
 
   useEffect(() => {
-    // Tiempo para mostrar el spinner (1.5 segundos)
     const spinnerTimeout = setTimeout(() => {
       setMostrarSpinner(false);
     }, 1500);
 
-    // Tiempo total para las animaciones de las secciones
-    const tiempoCarga = secciones.length * 3000 + 1000; // Calcula el tiempo basado en secciones
+    const tiempoCarga = secciones.length * 6000 + 2000; 
     const textoTimeout = setTimeout(() => {
       setCargaCompleta(true);
       router.push("/Index");
     }, tiempoCarga);
 
-    // Limpieza de timeouts al desmontar el componente
     return () => {
       clearTimeout(spinnerTimeout);
       clearTimeout(textoTimeout);
