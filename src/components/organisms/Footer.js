@@ -36,7 +36,7 @@ const Footer = () => {
       iconWidth={20}
       iconHeight={20}
       >
-        Descargar CV ↓
+        Download CV ↓
     </SocialLink>
       </div>
   </footer>
