@@ -1,23 +1,25 @@
 .subtitulo {
-  margin: 2rem 0; 
-  padding: 0 1rem; 
-  background-color: var(--rgb2); 
+  margin: 4rem 0; 
+  padding: 0 5rem; 
+  background-color: var(--rgb5); 
   box-shadow: 0 4px 8px var(--rgb7); 
   transition: background-color 0.3s ease; 
-  height: 4rem;
+  min-height: 4rem; 
 }
+
 .subtitulo:hover {
   background-color: var(--hover-bg);
 }
-.h2 {
+
+.subtitulo-titulo {
   font-size: 2rem; 
   color: var(--rgb0); 
-  margin-bottom: 1rem; 
+  margin-bottom: 7rem; 
   text-align: center; 
 }
 
-.subtitulo:hover .h2 {
-  opacity: 8; 
+.subtitulo:hover .subtitulo-titulo {
+  opacity: 0.8; 
 }
 
 .p {
@@ -28,16 +30,14 @@
 
 @media (max-width: 768px) {
   .subtitulo {
-    padding: 1rem; 
+    padding: 1rem;
   }
 
-  .h2 {
+  .subtitulo-titulo {
     font-size: 1.5rem; 
   }
 
   .p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
-
-  
