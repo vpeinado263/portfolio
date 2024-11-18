@@ -1,11 +1,11 @@
 .button {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   text-decoration: none;
   color: var(--rgb5);
-  padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
-  border-radius: 8px;
+  padding: clamp(0.4rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
+  border-radius: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
