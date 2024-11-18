@@ -1,3 +1,5 @@
+import Footer from "@/components/organisms/Footer";
+import Navbar from "@/components/organisms/Navbar";
 import Home from "@/components/templates/Home";
 import Head from "next/head";
 
@@ -11,7 +13,9 @@ export default function Index() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
 
+      <Navbar/>
       <Home/>
+      <Footer/>
     </>
   );
 };
