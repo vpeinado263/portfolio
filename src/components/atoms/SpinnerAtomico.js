@@ -6,4 +6,4 @@ const SpinnerAtomico = () => {
   )
 }
 
-export default SpinnerAtomico
+export default SpinnerAtomico;
