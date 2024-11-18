@@ -1,4 +1,5 @@
 import Header from "../organisms/Header";
+import TextoAnimadoTemplate from "./TextoAnimadoTemplate";
 
 const Home = () => {
 
@@ -6,6 +7,7 @@ const Home = () => {
 
   return (
     <div>
+      <TextoAnimadoTemplate/>
         <Header/> 
     </div>
   )

@@ -1,58 +1,46 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { gsap } from "gsap";
 import TextoAtomico from "../atoms/TextoAtomico";
 import styles from "@/styles/TextoAnimado.module.css";
 
 const TextoAnimado = ({ secciones }) => {
+  const [index, setIndex] = useState(0); // Para controlar cuál sección mostrar
   const [mostrarTexto, setMostrarTexto] = useState(null); 
   const textRef = useRef(null);
 
+  // Memorizar 'secciones' para que no cause un re-render innecesario en el 'useEffect'
+  const seccionesMemorizadas = useMemo(() => secciones, [secciones]);
+
   useEffect(() => {
-    let index = 0;
+    if (seccionesMemorizadas && seccionesMemorizadas.length > 0 && index < seccionesMemorizadas.length) {
+      setMostrarTexto(seccionesMemorizadas[index]);
 
-    const mostrar = async () => {
-      if (index < secciones.length) {
-        setMostrarTexto(secciones[index]); 
+      // Animación de entrada con GSAP
+      gsap.fromTo(
+        textRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 1.2, ease: "power4.out" }
+      );
 
-        await new Promise((resolve) => {
-          if (textRef.current) {
-            gsap.fromTo(
-              textRef.current,
-              { opacity: 0, y: 20 },
-              { opacity: 1, y: 0, duration: 1.2, ease: "power4.out", onComplete: resolve }
-            );
-          } else {
-            resolve();
+      // Esperamos el tiempo que tarda la animación
+      const timeout = setTimeout(() => {
+        // Animación de salida con GSAP
+        gsap.to(textRef.current, {
+          opacity: 0,
+          y: -20,
+          duration: 1,
+          ease: "power4.in",
+          onComplete: () => {
+            setIndex((prevIndex) => prevIndex + 1); // Aumentamos el índice para la siguiente sección
           }
         });
+      }, 6000); // Este es el tiempo que la sección se muestra en pantalla
 
-        await new Promise((resolve) => setTimeout(resolve, 3000)); 
-        
-        await new Promise((resolve) => {
-          if (textRef.current) {
-            gsap.to(textRef.current, {
-              opacity: 0,
-              y: -20,
-              duration: 1,
-              ease: "power4.in",
-              onComplete: resolve,
-            });
-          } else {
-            resolve();
-          }
-        });
-
-        index++;
-        mostrar();
-      } else {
-        setMostrarTexto(null); 
-      }
-    };
-
-    mostrar();
-
-    return () => setMostrarTexto(null); 
-  }, [secciones]);
+      return () => clearTimeout(timeout); // Limpiamos el timeout cuando el componente se desmonte o cambie
+    } else {
+      setMostrarTexto(null); // Terminamos cuando llegamos al final de las secciones o si 'secciones' está vacío
+    }
+  }, [index, seccionesMemorizadas]); // Usamos 'seccionesMemorizadas' como dependencia
 
   return (
     <div className={styles.subtituloContainer}>
@@ -69,4 +57,3 @@ const TextoAnimado = ({ secciones }) => {
 };
 
 export default TextoAnimado;
-

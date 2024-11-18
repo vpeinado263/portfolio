@@ -8,6 +8,8 @@ const TextoAnimadoTemplate = () => {
   const router = useRouter();
   const [cargaCompleta, setCargaCompleta] = useState(false);
   const [mostrarSpinner, setMostrarSpinner] = useState(true);
+  const [mostrarTitulo, setMostrarTitulo] = useState(false);
+  const [mostrarPresentaciones, setMostrarPresentaciones] = useState(false);
 
   const secciones = [
     { titulo: "Presentación #1", contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional." },
@@ -17,38 +19,61 @@ const TextoAnimadoTemplate = () => {
 
   useEffect(() => {
     const spinnerTimeout = setTimeout(() => {
-      setMostrarSpinner(false);
+      setMostrarSpinner(false); // Ocultar el spinner después de 1.5 segundos
+      setMostrarTitulo(true); // Mostrar el título después de 1.5 segundos
     }, 1500);
 
-    const tiempoCarga = secciones.length * 6000 + 2000; 
+    const tituloTimeout = setTimeout(() => {
+      setMostrarPresentaciones(true); // Mostrar las presentaciones después de que se muestre el título
+    }, 2500);
+
+    // Tiempo total para las animaciones de las presentaciones (total de secciones)
+    const tiempoCarga = secciones.length * 3000 + 1000;
     const textoTimeout = setTimeout(() => {
       setCargaCompleta(true);
-      router.push("/Index");
+      router.push("/"); // Redirigir a la página principal
     }, tiempoCarga);
 
+    // Limpiar timeouts
     return () => {
       clearTimeout(spinnerTimeout);
+      clearTimeout(tituloTimeout);
       clearTimeout(textoTimeout);
     };
   }, [router, secciones]);
 
   return (
     <main className={styles.templateContainer}>
-      {mostrarSpinner ? (
+      {mostrarSpinner && (
         <div className={styles.spinnerWrapper}>
           <SpinnerAtomico />
         </div>
-      ) : !cargaCompleta ? (
-        <div className={styles.animationWrapper}>
-          <SectionTextoAnimado
-            tituloSeccion="Bienvenido a mi portafolio"
-            secciones={secciones}
-          />
-          <p className={styles.loadingMessage}>
-            Cargando, por favor espera...
-          </p>
+      )}
+      
+      {mostrarTitulo && !cargaCompleta && (
+        <div className={styles.titleWrapper}>
+          <h1 className={styles.title}>Bienvenido a mi portafolio</h1>
         </div>
-      ) : null}
+      )}
+      
+      {mostrarPresentaciones && !cargaCompleta && (
+        <div className={styles.animationWrapper}>
+          {secciones.map((seccion, index) => (
+            <SectionTextoAnimado
+              key={index}
+              tituloSeccion={seccion.titulo}
+              contenido={seccion.contenido}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Mensaje de carga final */}
+      {cargaCompleta && (
+        <p className={styles.loadingMessage}>
+          ¡Gracias por esperar! Ahora te redirigiré a la página principal.
+        </p>
+      )}
     </main>
   );
 };

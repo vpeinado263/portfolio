@@ -1,7 +1,7 @@
 import Footer from "@/components/organisms/Footer";
 import Navbar from "@/components/organisms/Navbar";
 import Home from "@/components/templates/Home";
-import TextoAnimadoTemplate from "@/components/templates/TextoAnimadoTemplate";
+
 import Head from "next/head";
 
 export default function Index() {
@@ -14,7 +14,7 @@ export default function Index() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
 
-      <TextoAnimadoTemplate/>
+    
 
       <Navbar/>
       <Home/>
