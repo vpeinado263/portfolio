@@ -4,8 +4,8 @@ import styles from "@/styles/Menu.module.css";
 const Menu = () => {
   return (
    <ul className={styles.menu}>
-    <LinkItem href="#about" text="Lenguajes"/>
-    <LinkItem href="#projectc" text="Herramientas"/>
+    <LinkItem href="#about" text="My Projects"/>
+    <LinkItem href="#projectc" text="The Skillset"/>
    </ul>
   );
 };
