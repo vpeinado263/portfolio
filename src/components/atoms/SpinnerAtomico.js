@@ -1,4 +1,4 @@
-
+import styles from "@/styles/SpinnerAtomico.module.css";
 
 const SpinnerAtomico = () => {
   return (
