@@ -13,6 +13,10 @@
     flex: 1;
     min-width: 200px;
   }
+
+  .categoryTitle {
+    background-color: transparent;
+  }
   
   .skillList {
     list-style: none;
