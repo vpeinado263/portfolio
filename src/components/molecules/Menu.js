@@ -5,7 +5,7 @@ const Menu = () => {
   return (
    <ul className={styles.menu}>
     <LinkItem href="/projectsPage" text="My Projects"/>
-    <LinkItem href="" text="The Skillset"/>
+    <LinkItem href="#skillset" text="The Skillset"/>
    </ul>
   );
 };
