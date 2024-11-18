@@ -1,11 +1,10 @@
+import Skills from "../organisms/Skills";
 
 
-const SkillsTemplate = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const SkillsTemplate = ({skillData, skillIcons}) => (
+    <main>
+        <Skills skillData={skillData} skillIcons={skillIcons}/>
+    </main>
+) 
 
 export default SkillsTemplate;
