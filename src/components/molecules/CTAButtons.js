@@ -17,10 +17,10 @@ const CTAButtons = ({ whatsappMessage }) => {
           width={25}
           height={25}
         />
-        Proyectos Personales
+        Projects on GitHub
       </Button>
       <span className={styles.secondary}>
-        Contactame
+        Whatsapp
         <Whatsapp message={whatsappMessage}/>
       </span>
     </div>
