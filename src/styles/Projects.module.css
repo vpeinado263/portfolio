@@ -1,0 +1,42 @@
+.projectsSection {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .projectCategory {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .categoryTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .categoryDescription {
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .projectList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projectItem a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .projectItem a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,4 +1,6 @@
 import Home from "@/components/templates/Home";
+import Projects from "@/components/templates/Proyects";
+
 import Head from "next/head";
 
 export default function Index() {
@@ -12,6 +14,9 @@ export default function Index() {
       </Head>
 
       <Home/>
+
+      <Projects/>
+
     </>
   );
 };

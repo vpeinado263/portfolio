@@ -1,6 +1,6 @@
 import ProjectCategory from "../organisms/ProjectCategory";
 
-const ProjectsSection = ({data}) => {
+const ProjectsSection = ({ data = [] }) => {
   return (
     <section className="projects-section">
     <h2 className="section-title">Proyectos</h2>
