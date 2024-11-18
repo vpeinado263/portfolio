@@ -1,4 +1,3 @@
-import TextoAnimado from "@/components/molecules/TextoAnimado"
 import Footer from "@/components/organisms/Footer";
 import Navbar from "@/components/organisms/Navbar"
 import Projects from "@/components/templates/Proyects"
@@ -6,12 +5,7 @@ import Head from "next/head";
 
 
 const proyectsPage = () => {
-  const secciones = [
-    {
-      titulo: "Bienvenido a mi portafolio",
-      contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional. Mi objetivo es aplicar mis habilidades tanto en el desarrollo web como en diversos sectores, buscando siempre crear soluciones digitales innovadoras que resuelvan problemas de cualquier área, desde la salud hasta desafíos empresariales. Estoy comprometido con el aprendizaje continuo y con aportar valor a las empresas utilizando tecnología avanzada."
-    }
-  ];
+
   return (
     <>
      <Head>
@@ -22,7 +16,6 @@ const proyectsPage = () => {
      </Head>
 
      <Navbar/>
-     <TextoAnimado secciones={secciones}/>
      <Projects/>
      <Footer/>
     </>
