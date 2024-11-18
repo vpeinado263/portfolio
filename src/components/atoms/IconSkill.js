@@ -1,11 +1,4 @@
 
-
-const IconSkill = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const IconSkill = ({ icon }) => <span>{icon}</span>
 
 export default IconSkill
