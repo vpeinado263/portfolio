@@ -6,6 +6,7 @@ const Menu = () => {
    <ul className={styles.menu}>
     <LinkItem href="/projectsPage" text="My Projects"/>
     <LinkItem href="/skillPage" text="The Skillset"/>
+    <LinkItem href="/" text="Insights"/>
    </ul>
   );
 };
