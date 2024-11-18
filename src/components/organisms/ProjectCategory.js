@@ -1,9 +1,12 @@
+import ProjectList from "../molecules/ProjectList";
 
 
-const ProjectCategory = () => {
+const ProjectCategory = ({category, description, projects}) => {
   return (
-    <div>
-      
+    <div className="proyect-category">
+     <h3 className="category-title">{category}</h3>
+     <p className="category-description">{description}</p>
+     <ProjectList projects={projects} />
     </div>
   )
 }
