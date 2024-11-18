@@ -18,28 +18,22 @@ const TextoAnimadoTemplate = () => {
   ];
 
   useEffect(() => {
-    const spinnerTimeout = setTimeout(() => {
-      setMostrarSpinner(false); // Ocultar el spinner después de 1.5 segundos
-      setMostrarTitulo(true); // Mostrar el título después de 1.5 segundos
-    }, 1500);
+    const iniciarCarga = async () => {
+      await new Promise(resolve => setTimeout(resolve, 1500)); // Espera de spinner
+      setMostrarSpinner(false);
+      setMostrarTitulo(true);
 
-    const tituloTimeout = setTimeout(() => {
-      setMostrarPresentaciones(true); // Mostrar las presentaciones después de que se muestre el título
-    }, 2500);
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Espera antes de mostrar presentaciones
+      setMostrarPresentaciones(true);
 
-    // Tiempo total para las animaciones de las presentaciones (total de secciones)
-    const tiempoCarga = secciones.length * 3000 + 1000;
-    const textoTimeout = setTimeout(() => {
-      setCargaCompleta(true);
-      router.push("/"); // Redirigir a la página principal
-    }, tiempoCarga);
-
-    // Limpiar timeouts
-    return () => {
-      clearTimeout(spinnerTimeout);
-      clearTimeout(tituloTimeout);
-      clearTimeout(textoTimeout);
+      const tiempoCarga = secciones.length * 3000 + 1000; // Tiempo estimado según secciones
+      setTimeout(() => {
+        setCargaCompleta(true);
+        router.push("/"); // Redirigir al home
+      }, tiempoCarga);
     };
+
+    iniciarCarga();
   }, [router, secciones]);
 
   return (
@@ -68,7 +62,6 @@ const TextoAnimadoTemplate = () => {
         </div>
       )}
 
-      {/* Mensaje de carga final */}
       {cargaCompleta && (
         <p className={styles.loadingMessage}>
           ¡Gracias por esperar! Ahora te redirigiré a la página principal.

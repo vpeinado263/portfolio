@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f3f4f6;
+  background-color: var(--rgb0);
   position: relative;
 }
 
@@ -34,5 +34,5 @@
 .loadingMessage {
   margin-top: 30px;
   font-size: 1.2rem;
-  color: #6b7280;
+  color: var(--rgb4);
 }
