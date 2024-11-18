@@ -3,7 +3,6 @@ import styles from "@/styles/Avatar.module.css";
 
 const Avatar = ({ src, alt, width, height }) => {
   if (!src) {
-    console.error("El atributo 'src' es obligatorio en el componente Avatar.");
     return null;
   }
 
