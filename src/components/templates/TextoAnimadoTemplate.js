@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import SectionTextoAnimado from "../organisms/SectionTextoAnimado";
-import SpinnerAtomico from "../atoms/SpinnerAtomico"; // Importa el spinner
+import SpinnerAtomico from "../atoms/SpinnerAtomico"; 
+import styles from "@/styles/TextoAnimadoTemplate.module.css";
 
 const TextoAnimadoTemplate = () => {
   const router = useRouter();
   const [cargaCompleta, setCargaCompleta] = useState(false);
-  const [mostrarSpinner, setMostrarSpinner] = useState(true); // Estado del spinner
+  const [mostrarSpinner, setMostrarSpinner] = useState(true);
 
   const secciones = [
     { titulo: "Presentación #1", contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional." },
@@ -15,17 +16,19 @@ const TextoAnimadoTemplate = () => {
   ];
 
   useEffect(() => {
-    const tiempoCarga = secciones.length * 3000 + 1000;
-
+    // Tiempo para mostrar el spinner (1.5 segundos)
     const spinnerTimeout = setTimeout(() => {
-      setMostrarSpinner(false); // Oculta el spinner antes de iniciar la animación de texto
-    }, 1500); // Tiempo que el spinner se muestra antes de iniciar las animaciones
+      setMostrarSpinner(false);
+    }, 1500);
 
+    // Tiempo total para las animaciones de las secciones
+    const tiempoCarga = secciones.length * 3000 + 1000; // Calcula el tiempo basado en secciones
     const textoTimeout = setTimeout(() => {
       setCargaCompleta(true);
-      router.push("/Index"); // Ajusta esta ruta según sea necesario
+      router.push("/Index");
     }, tiempoCarga);
 
+    // Limpieza de timeouts al desmontar el componente
     return () => {
       clearTimeout(spinnerTimeout);
       clearTimeout(textoTimeout);
@@ -33,18 +36,22 @@ const TextoAnimadoTemplate = () => {
   }, [router, secciones]);
 
   return (
-    <main>
-      {!cargaCompleta && (
-        <>
-          {mostrarSpinner && <SpinnerAtomico />} {/* Muestra el spinner */}
-          {!mostrarSpinner && (
-            <SectionTextoAnimado
-              tituloSeccion="Bienvenido a mi portafolio"
-              secciones={secciones}
-            />
-          )}
-        </>
-      )}
+    <main className={styles.templateContainer}>
+      {mostrarSpinner ? (
+        <div className={styles.spinnerWrapper}>
+          <SpinnerAtomico />
+        </div>
+      ) : !cargaCompleta ? (
+        <div className={styles.animationWrapper}>
+          <SectionTextoAnimado
+            tituloSeccion="Bienvenido a mi portafolio"
+            secciones={secciones}
+          />
+          <p className={styles.loadingMessage}>
+            Cargando, por favor espera...
+          </p>
+        </div>
+      ) : null}
     </main>
   );
 };

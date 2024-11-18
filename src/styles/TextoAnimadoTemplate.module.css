@@ -1,25 +1,26 @@
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #121212;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .fade-out {
-    animation: fadeOut 1s forwards;
-  }
-  
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
+.templateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f3f4f6; /* Color de fondo neutro */
+  font-family: Arial, sans-serif;
+}
+
+.spinnerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.animationWrapper {
+  text-align: center;
+}
+
+.loadingMessage {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #6b7280; /* Gris para un estilo suave */
+}
