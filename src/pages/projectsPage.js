@@ -1,4 +1,5 @@
 import TextoAnimado from "@/components/molecules/TextoAnimado"
+import Footer from "@/components/organisms/Footer";
 import Navbar from "@/components/organisms/Navbar"
 import Projects from "@/components/templates/Proyects"
 import Head from "next/head";
@@ -23,6 +24,7 @@ const proyectsPage = () => {
      <Navbar/>
      <TextoAnimado secciones={secciones}/>
      <Projects/>
+     <Footer/>
     </>
   );
 };

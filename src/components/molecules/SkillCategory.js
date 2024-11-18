@@ -1,12 +1,12 @@
-import ListItem from '../atoms/ListItem';
 import styles from "@/styles/Skills.module.css";
+import ListemItem from "../atoms/ListemItem";
 
-const SkillCategory = ({ category, items, skillIcons }) => (
+const SkillCategory = ({ category, items, skillsIcons }) => (
   <div className={styles.skillCategory}>
     <h3 className={styles.categoryTitle}>{category}</h3>
     <ul className={styles.skillList}>
-      {items.map((item, index) => (
-        <ListItem key={index} icon={skillIcons[item]} text={item} />
+      {items.map((items, index) => (
+        <ListemItem key={index} icon={skillsIcons[items]} text={items} />
       ))}
     </ul>
   </div>

@@ -1,7 +1,7 @@
-import styles from "@/styles/Skill.module.css";
+import styles from "@/styles/Skills.module.css";
 
 const ListemItem = ({ icon, text}) => (
-    <li className={styles.skillItme}>
+    <li className={styles.skillItem}>
         {icon}
         <span>{text}</span>
     </li>

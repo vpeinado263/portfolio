@@ -1,7 +1,7 @@
 import styles from "@/styles/Skills.module.css";
 import SkillCategory from "../molecules/SkillCategory";
 
-const Skills = ({ skillsData, skillIcons }) => (
+const Skills = ({ skillsData, skillsIcons }) => (
   <section className={styles.skillsSection} id="skillset">
     <h2 className={styles.title}>Habilidades y Conocimientos</h2>
     <div className={styles.skillsContainer}>
@@ -10,7 +10,7 @@ const Skills = ({ skillsData, skillIcons }) => (
           key={skill.category}
           category={skill.category}
           items={skill.items}
-          skillIcons={skillIcons}
+          skillsIcons={skillsIcons}
         />
       ))}
     </div>

@@ -1,9 +1,9 @@
 import Skills from "../organisms/Skills";
 
 
-const SkillsTemplate = ({skillData, skillIcons}) => (
+const SkillsTemplate = ({skillsData, skillsIcons}) => (
     <main>
-        <Skills skillData={skillData} skillIcons={skillIcons}/>
+        <Skills skillsData={skillsData} skillsIcons={skillsIcons}/>
     </main>
 ) 
 
