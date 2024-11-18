@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import SectionTextoAnimado from "../organisms/SectionTextoAnimado";
+import SpinnerAtomico from "../atoms/SpinnerAtomico"; // Importa el spinner
 
 const TextoAnimadoTemplate = () => {
   const router = useRouter();
   const [cargaCompleta, setCargaCompleta] = useState(false);
+  const [mostrarSpinner, setMostrarSpinner] = useState(true); // Estado del spinner
 
   const secciones = [
     { titulo: "Presentación #1", contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional." },
@@ -13,22 +15,35 @@ const TextoAnimadoTemplate = () => {
   ];
 
   useEffect(() => {
-    const tiempoCarga = secciones.length * 3000 + 1000; 
-    const timeout = setTimeout(() => {
-      setCargaCompleta(true); 
-      router.push("/Index"); 
+    const tiempoCarga = secciones.length * 3000 + 1000;
+
+    const spinnerTimeout = setTimeout(() => {
+      setMostrarSpinner(false); // Oculta el spinner antes de iniciar la animación de texto
+    }, 1500); // Tiempo que el spinner se muestra antes de iniciar las animaciones
+
+    const textoTimeout = setTimeout(() => {
+      setCargaCompleta(true);
+      router.push("/Index"); // Ajusta esta ruta según sea necesario
     }, tiempoCarga);
 
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(spinnerTimeout);
+      clearTimeout(textoTimeout);
+    };
   }, [router, secciones]);
 
   return (
     <main>
       {!cargaCompleta && (
-        <SectionTextoAnimado
-          tituloSeccion="Bienvenido a mi portafolio"
-          secciones={secciones}
-        />
+        <>
+          {mostrarSpinner && <SpinnerAtomico />} {/* Muestra el spinner */}
+          {!mostrarSpinner && (
+            <SectionTextoAnimado
+              tituloSeccion="Bienvenido a mi portafolio"
+              secciones={secciones}
+            />
+          )}
+        </>
       )}
     </main>
   );
