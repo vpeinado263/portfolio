@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/router";
 import SectionTextoAnimado from "../organisms/SectionTextoAnimado";
 import SpinnerAtomico from "../atoms/SpinnerAtomico"; 
@@ -11,11 +11,12 @@ const TextoAnimadoTemplate = () => {
   const [mostrarTitulo, setMostrarTitulo] = useState(false);
   const [mostrarPresentaciones, setMostrarPresentaciones] = useState(false);
 
-  const secciones = [
+  // Memorizar 'secciones' para evitar que cambie en cada renderizado
+  const secciones = useMemo(() => [
     { titulo: "Presentación #1", contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional." },
     { titulo: "Presentación #2", contenido: "Mi objetivo es aplicar mis habilidades tanto en el desarrollo web como en diversos sectores, buscando siempre crear soluciones digitales innovadoras que resuelvan problemas de cualquier área, desde la salud hasta desafíos empresariales." },
     { titulo: "Presentación #3", contenido: "Estoy comprometido con el aprendizaje continuo y con aportar valor a las empresas utilizando tecnología avanzada." },
-  ];
+  ], []);  // 'secciones' se recalcula solo si sus dependencias cambian (en este caso, no tiene dependencias)
 
   useEffect(() => {
     const iniciarCarga = async () => {
@@ -34,7 +35,7 @@ const TextoAnimadoTemplate = () => {
     };
 
     iniciarCarga();
-  }, [router, secciones]);
+  }, [router, secciones]); // Ahora 'secciones' está memoizado y no cambia en cada renderizado
 
   return (
     <main className={styles.templateContainer}>
