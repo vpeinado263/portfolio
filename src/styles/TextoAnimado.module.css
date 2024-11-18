@@ -1,39 +1,25 @@
 .subtituloContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .textoVisible {
-    opacity: 1; 
-    transform: translateY(0); 
-  }
-  
-  .textoSalida {
-    opacity: 0; 
-    transform: translateY(-20px); 
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px); 
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 0;
-      transform: translateY(20px); 
-    }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.texto {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.textoVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.textoInvisible {
+  opacity: 0;
+  transform: translateY(-20px);
+}
