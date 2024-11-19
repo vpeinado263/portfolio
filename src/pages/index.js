@@ -1,7 +1,56 @@
 import { useState, useEffect } from 'react';
 import Head from "next/head";
-
 import TextoAnimadoTemplate from '@/components/templates/TextoAnimadoTemplate';
+import Navbar from '@/components/organisms/Navbar';
+import Home from '@/components/templates/Home';
+import Footer from '@/components/organisms/Footer';
+import SkillsTemplate from '@/components/templates/SkillsTemplate';
+import { FaReact, FaNodeJs, FaGit, FaHtml5, FaCss3Alt, FaGithub, FaSlack, FaBootstrap } from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiGraphql, SiJquery, SiAxios, SiTailwindcss, SiPostman, SiNpm, SiHeroku, SiVercel } from 'react-icons/si';
+import { FaClipboardList, FaTasks, FaUsers, FaComments, FaLightbulb } from 'react-icons/fa';
+import Projects from '@/components/templates/Projects';
+
+const skillsIcons = {
+  JavaScript: <SiJavascript />,
+  HTML: <FaHtml5 />,
+  CSS: <FaCss3Alt />,
+  TypeScript: <SiTypescript />,
+  React: <FaReact />,
+  "Next.js": <SiNextdotjs />,
+  "Express.js": <SiExpress />,
+  jQuery: <SiJquery />,
+  Axios: <SiAxios />,
+  Bootstrap: <FaBootstrap />,
+  "Tailwind CSS": <SiTailwindcss />,
+  "Node.js": <FaNodeJs />,
+  MongoDB: <SiMongodb />,
+  MySQL: <SiMysql />,
+  "REST APIs": <FaClipboardList />,
+  GraphQL: <SiGraphql />,
+  Git: <FaGit />,
+  GitHub: <FaGithub />,
+  NPM: <SiNpm />,
+  Postman: <SiPostman />,
+  Slack: <FaSlack />,
+  Vercel: <SiVercel />,
+  Heroku: <SiHeroku />,
+  Scrum: <FaClipboardList />,
+  Kanban: <FaTasks />,
+  "Trabajo en equipo": <FaUsers />,
+  Comunicación: <FaComments />,
+  "Resolución de problemas": <FaLightbulb />,
+};
+
+const skillsData = [
+  { category: "Lenguajes de Programación", items: ["JavaScript", "HTML", "CSS", "TypeScript"] },
+  { category: "Frameworks", items: ["React", "Next.js", "Express.js"] },
+  { category: "Librerías", items: ["jQuery", "Axios", "Bootstrap", "Tailwind CSS"] },
+  { category: "Tecnologías", items: ["Node.js", "MongoDB", "MySQL", "REST APIs", "GraphQL"] },
+  { category: "Herramientas", items: ["Git", "GitHub", "NPM", "Postman", "Slack", "Vercel", "Heroku"] },
+  { category: "Metodologías", items: ["Scrum", "Kanban"] },
+  { category: "Certificaciones", items: ["Diploma en Desarrollo Web Full Stack", "Cursos en línea"] },
+  { category: "Soft Skills", items: ["Trabajo en equipo", "Comunicación", "Resolución de problemas"] },
+];
 
 export default function Index() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,17 +71,18 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      {/* {isLoading ? (
+       {isLoading ? (
         <TextoAnimadoTemplate/>
       ) : (
         <>
          <Navbar/>
          <Home/>
+         <SkillsTemplate skillsData={skillsData} skillsIcons={skillsIcons}/>
+         <Projects/>
          <Footer/>
         </>
-      )} */}
+      )}
 
-      <TextoAnimadoTemplate/>
     </>
   );
 };
