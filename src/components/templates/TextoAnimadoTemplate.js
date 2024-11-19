@@ -4,10 +4,9 @@ import SpinnerAtomico from "../atoms/SpinnerAtomico";
 import styles from "@/styles/TextoAnimadoTemplate.module.css";
 
 const TextoAnimadoTemplate = () => {
-  const [etapa, setEtapa] = useState("spinner"); // Etapas: "spinner", "titulo", "secciones", "final"
+  const [etapa, setEtapa] = useState("spinner");
   const [indiceSeccion,] = useState(-1);
 
-  const secciones = [];
 
   useEffect(() => {
     const animarContenido = async () => {
@@ -18,9 +17,6 @@ const TextoAnimadoTemplate = () => {
       // 2. Mostrar Título por 2 segundos
       await new Promise(resolve => setTimeout(resolve, 2000));
       setEtapa("secciones");
-
-    
-
     };
 
     animarContenido();
