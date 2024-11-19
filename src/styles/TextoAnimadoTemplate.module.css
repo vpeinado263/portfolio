@@ -19,20 +19,15 @@
   justify-content: center;
   margin-top: 30px;
 }
-
 .title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
   text-align: center;
+  color: var(--rgb5);
 }
 
 .animationWrapper {
   text-align: center;
   margin-top: 40px;
-}
-
-.loadingMessage {
-  margin-top: 30px;
-  font-size: 1.2rem;
-  color: var(--rgb4);
+  background-color: aqua;
+  color: red;
 }

@@ -1,73 +1,57 @@
-import { useState, useEffect, useMemo } from "react";
-import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import SectionTextoAnimado from "../organisms/SectionTextoAnimado";
 import SpinnerAtomico from "../atoms/SpinnerAtomico"; 
 import styles from "@/styles/TextoAnimadoTemplate.module.css";
 
 const TextoAnimadoTemplate = () => {
-  const router = useRouter();
-  const [cargaCompleta, setCargaCompleta] = useState(false);
-  const [mostrarSpinner, setMostrarSpinner] = useState(true);
-  const [mostrarTitulo, setMostrarTitulo] = useState(false);
-  const [mostrarPresentaciones, setMostrarPresentaciones] = useState(false);
+  const [etapa, setEtapa] = useState("spinner"); // Etapas: "spinner", "titulo", "secciones", "final"
+  const [indiceSeccion,] = useState(-1);
 
-  // Memorizar 'secciones' para evitar que cambie en cada renderizado
-  const secciones = useMemo(() => [
-    { titulo: "Presentación #1", contenido: "Soy un Desarrollador Web Full Stack en formación y Enfermero Profesional." },
-    { titulo: "Presentación #2", contenido: "Mi objetivo es aplicar mis habilidades tanto en el desarrollo web como en diversos sectores, buscando siempre crear soluciones digitales innovadoras que resuelvan problemas de cualquier área, desde la salud hasta desafíos empresariales." },
-    { titulo: "Presentación #3", contenido: "Estoy comprometido con el aprendizaje continuo y con aportar valor a las empresas utilizando tecnología avanzada." },
-  ], []);  // 'secciones' se recalcula solo si sus dependencias cambian (en este caso, no tiene dependencias)
+  const secciones = [];
 
   useEffect(() => {
-    const iniciarCarga = async () => {
-      await new Promise(resolve => setTimeout(resolve, 1500)); // Espera de spinner
-      setMostrarSpinner(false);
-      setMostrarTitulo(true);
+    const animarContenido = async () => {
+      // 1. Mostrar Spinner por 1.5 segundos
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      setEtapa("titulo");
 
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Espera antes de mostrar presentaciones
-      setMostrarPresentaciones(true);
+      // 2. Mostrar Título por 2 segundos
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      setEtapa("secciones");
 
-      const tiempoCarga = secciones.length * 3000 + 1000; // Tiempo estimado según secciones
-      setTimeout(() => {
-        setCargaCompleta(true);
-        router.push("/"); // Redirigir al home
-      }, tiempoCarga);
+    
+
     };
 
-    iniciarCarga();
-  }, [router, secciones]); // Ahora 'secciones' está memoizado y no cambia en cada renderizado
+    animarContenido();
+  }, []);
 
   return (
     <main className={styles.templateContainer}>
-      {mostrarSpinner && (
-        <div className={styles.spinnerWrapper}>
-          <SpinnerAtomico />
-        </div>
-      )}
-      
-      {mostrarTitulo && !cargaCompleta && (
-        <div className={styles.titleWrapper}>
-          <h1 className={styles.title}>Bienvenido a mi portafolio</h1>
-        </div>
-      )}
-      
-      {mostrarPresentaciones && !cargaCompleta && (
-        <div className={styles.animationWrapper}>
-          {secciones.map((seccion, index) => (
-            <SectionTextoAnimado
-              key={index}
-              tituloSeccion={seccion.titulo}
-              contenido={seccion.contenido}
-            />
-          ))}
+      {/* Spinner */}
+      <div
+        className={`${styles.spinnerWrapper} ${etapa === "spinner" ? styles.visible : styles.hidden}`}
+      >
+        <SpinnerAtomico />
+      </div>
+
+      {/* Título */}
+      <div
+        className={`${styles.titleWrapper} ${etapa === "titulo" ? styles.visible : styles.hidden}`}
+      >
+        <h1 className={styles.title}>Bienvenido a mi portafolio</h1>
+      </div>
+
+      {/* Secciones */}
+      {etapa === "secciones" && indiceSeccion >= 0 && (
+        <div className={`${styles.animationWrapper} ${styles.visible}`}>
+          <SectionTextoAnimado
+            tituloSeccion={secciones[indiceSeccion].titulo}
+            contenido={secciones[indiceSeccion].contenido}
+          />
         </div>
       )}
 
-      {cargaCompleta && (
-        <p className={styles.loadingMessage}>
-          ¡Gracias por esperar! Ahora te redirigiré a la página principal.
-        </p>
-      )}
     </main>
   );
 };

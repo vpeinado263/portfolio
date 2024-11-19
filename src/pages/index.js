@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
-import Footer from "@/components/organisms/Footer";
-import Navbar from "@/components/organisms/Navbar";
-import Home from "@/components/templates/Home";
 import Head from "next/head";
+
 import TextoAnimadoTemplate from '@/components/templates/TextoAnimadoTemplate';
 
 export default function Index() {
@@ -24,7 +22,7 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      {isLoading ? (
+      {/* {isLoading ? (
         <TextoAnimadoTemplate/>
       ) : (
         <>
@@ -32,8 +30,9 @@ export default function Index() {
          <Home/>
          <Footer/>
         </>
-      )}
+      )} */}
 
+      <TextoAnimadoTemplate/>
     </>
   );
 };
