@@ -59,7 +59,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className={styles.projectsSection}>
+    <section className={styles.projectsSection} >
       <h2 className={styles.title}>Proyectos</h2>
       <div className={styles.projectsContainer}>
         {projectsData.map((category, index) => (
