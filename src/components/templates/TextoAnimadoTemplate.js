@@ -11,11 +11,11 @@ const TextoAnimadoTemplate = () => {
   useEffect(() => {
     const animarContenido = async () => {
       // 1. Mostrar Spinner por 1.5 segundos
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      await new Promise(resolve => setTimeout(resolve, 3000));
       setEtapa("titulo");
 
       // 2. Mostrar Título por 2 segundos
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 1000));
       setEtapa("secciones");
     };
 
