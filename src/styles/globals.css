@@ -94,13 +94,7 @@ a {
     align-items: center;
     flex-direction: column;
   }
-  .ctas {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-    flex-direction: column;
-    gap: 10px;
-  }
+ 
   .secondary {
     min-width: auto;
     text-align: center;
