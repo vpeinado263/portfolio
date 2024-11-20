@@ -12,9 +12,6 @@ const MyMenu = () => {
     <div className={styles.burgerContainer} >
       <button className={styles.burger} onClick={toggleMyMenu} aria-expanded={isMyMenuOpen} aria-label={"MyMenu"}>
        <FaBars size={30} color="white"/> 
-       <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span> 
       </button>  
     </div>  
  

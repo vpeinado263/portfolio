@@ -28,13 +28,12 @@
   .burgerContainer {
     display: flex; 
   }
-
   .menu {
     display: none; 
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
+    top: 65px;
+    left: 0;
+    width: 30%;
     background-color: var(--rgb1);
     flex-direction: column;
     gap: 10px;
