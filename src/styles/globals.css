@@ -46,14 +46,6 @@ body {
   line-height: 1.6;
 }
 
-/* Contenedores */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* Media Queries */
 @media (prefers-color-scheme: dark) {
   :root {
