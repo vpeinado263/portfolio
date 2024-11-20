@@ -45,13 +45,13 @@ a {
 /* Media Queries */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a606c;
-    --foreground: #ffffff;
+    --background: #19b8cd;
+    --foreground: #2e2727;
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
     --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
+    --button-secondary-hover: #050202;
   }
 
   body {
@@ -63,32 +63,37 @@ a {
     filter: invert();
   }
 }
-
+/* Pantallas medianas (hasta 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  
+  .ctas {
+    font-size: 16px;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+}
+/* Pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
   }
-
-  .container {
-    padding: 0 15px;
-  }
 }
-
+/* Pantallas extra pequeñas (hasta 600px) */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
   }
-
   .page {
     padding: 20px;
     padding-bottom: 60px;
   }
-
   .main {
     align-items: center;
     flex-direction: column;
   }
-
   .ctas {
     font-size: 14px;
     height: 40px;
@@ -96,20 +101,16 @@ a {
     flex-direction: column;
     gap: 10px;
   }
-
   .secondary {
     min-width: auto;
     text-align: center;
   }
-
   h1 {
     font-size: 24px;
   }
-
   h2 {
     font-size: 20px;
   }
-
   h3 {
     font-size: 18px;
   }
