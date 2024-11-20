@@ -25,7 +25,7 @@ li {
 }
 /* Paleta de colores */
 :root {
-  --rgb0: rgb(64, 75, 144);
+  --rgb0: rgb(21, 31, 94);
   --rgb1: rgb(1, 80, 115);
   --rgb2: rgb(14, 125, 172);
   --rgb3: rgb(22, 154, 211);
@@ -35,14 +35,10 @@ li {
   --rgb7: rgb(243, 246, 248);
   --background: rgb(14, 125, 172);
   --foreground: rgb(1, 80, 115);
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
   --button-primary-hover: rgb(4, 10, 33);
   --button-secondary-hover: rgb(4, 10, 33);
   --hover-bg: rgb(106, 117, 122);
   --hover-color: rgb(255, 255, 255);
-  --focus-color: rgb(1, 80, 115);
   --font-first: 'Roboto Mono';
   --font-second: 'Inerti';
   --font-third: 'Cormorant SC', serif;
@@ -52,9 +48,6 @@ li {
   :root {
     --background: #19b8cd;
     --foreground: #2e2727;
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
     --button-primary-hover: #ccc;
     --button-secondary-hover: #050202;
   }

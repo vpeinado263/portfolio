@@ -1,27 +1,15 @@
 .menu {
   display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 2rem; 
-  background-color: var(--background);
-  border-bottom: 2px solid var(--rgb0); 
-  box-shadow: 0 2px 5px var(--rgb0);
-
-}
-.menu a {
-  color: var(--foreground); 
+  gap: 3rem; 
+  color: var(--rgb0); 
   text-transform: uppercase;
-  letter-spacing: 0.05em; 
-  padding: 0.5rem 1rem; 
+  padding: 1rem; 
   transition: all 0.3s ease; 
 }
-.menu a:hover {
-  background-color: var(--hover-bg);
-  color: var(--hover-color); 
+
+.menu:hover {
+  color: var(--hover-bg); 
   transform: scale(1.05); 
 }
 
-.menu a:focus {
-  outline: 2px solid var(--focus-color);
-}
 
