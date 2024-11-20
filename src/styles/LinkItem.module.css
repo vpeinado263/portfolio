@@ -1,9 +1,8 @@
 .linkItem {
-  color: var(--rgb2);  
+  color: var(--rgb3);  
   transition: all 0.5s ease; 
 }
 .linkItem:hover {
-  background-color: var(--hover-bg); 
   color: var(--hover-color); 
   transform: scale(1.1); 
 }
