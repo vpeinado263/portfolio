@@ -1,25 +1,13 @@
 .linkItem {
-  list-style: none; 
-  margin: 0.5rem 0; 
+  color: var(--rgb2);  
+  transition: all 0.5s ease; 
 }
-.link {
-  text-decoration: none; 
-  color: var(--rgb0); 
-  font-weight: bold; 
-  padding: 0.5rem 1rem; 
- 
-  transition: all 0.3s ease; 
-  display: inline-block; 
-}
-.link:hover {
+.linkItem:hover {
   background-color: var(--hover-bg); 
   color: var(--hover-color); 
-  transform: scale(1.05); 
+  transform: scale(1.1); 
 }
-.link:active {
-  transform: scale(0.95); 
-}
-.link:focus {
-  outline: 1px solid var(--focus-color); 
-  outline-offset: 4px;
+.link {
+ background-color: transparent;
+ border-radius: 2rem;
 }

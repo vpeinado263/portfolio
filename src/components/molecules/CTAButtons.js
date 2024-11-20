@@ -5,7 +5,7 @@ import styles from "@/styles/CTAButtons.module.css";
 
 const CTAButtons = ({ whatsappMessage }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.containerButton}>
       <Button
         href="https://github.com/vpeinado263"
         target="_blank"

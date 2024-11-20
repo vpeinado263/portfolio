@@ -1,28 +1,15 @@
 .button {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  text-decoration: none;
+  gap: 0.5rem;
   color: var(--rgb5);
   padding: clamp(0.4rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   border-radius: 1rem;
-  font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .button:hover {
-  background-color: var(--rgb0);
+  background-color: var(--rgb5);
   transform: scale(1.05);
-  box-shadow: 0 4px 8px var(--rgb0);
+  box-shadow: 0 4px 8px var(--rgb7);
 }
 
-.button:active {
-  transform: scale(0.95);
-  background-color: var(--rgb0-hover);
-  box-shadow: 0 2px 4px var(--rgb0);
-}
-
-.button:focus {
-  outline: 2px solid var(--rgb5);
-  outline-offset: 2px;
-}

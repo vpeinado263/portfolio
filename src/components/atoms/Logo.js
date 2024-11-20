@@ -4,7 +4,7 @@ import styles from "@/styles/Logo.module.css";
 const Logo = () => {
   return (
     <Link href="/" className={styles.logo}>
-      <h1>Victor Portfolio</h1>
+      <h2 className={styles.logoTitle}>Victor Portfolio</h2>
     </Link>
   );
 };

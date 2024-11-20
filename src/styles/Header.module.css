@@ -1,11 +1,7 @@
 .header {
-    height: 100vh;
-    width: auto;
+    height: 100svh;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     color: var(--rgb5);
-    text-align: center;
     padding: 1rem;
 }
