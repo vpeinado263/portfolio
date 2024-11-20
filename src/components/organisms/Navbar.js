@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import styles from "@/styles/Navbar.module.css";
 import Logo from "../atoms/Logo";
-import Menu from "../molecules/Menu";
+import MyMenu from "../molecules/MyMenu";
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
     <nav className={styles.navContainer}>
       <Logo/>
-      <Menu/>
+     <MyMenu/>
     </nav>
   </header>
   );

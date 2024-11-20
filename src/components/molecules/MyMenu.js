@@ -1,7 +1,7 @@
 import LinkItem from "../atoms/LinkItem";
-import styles from "@/styles/Menu.module.css";
+import styles from "@/styles/MyMenu.module.css";
 
-const Menu = () => {
+const MyMenu = () => {
   return (
    <ul className={styles.menu}>
     <LinkItem href="" text="My Projects"/>
@@ -11,4 +11,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MyMenu;
