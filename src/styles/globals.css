@@ -1,5 +1,5 @@
 /* Importar fuentes */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
 
 /* Reset básico */
 * {
@@ -32,8 +32,8 @@ a {
   --hover-bg: rgb(52, 160, 206);
   --hover-color: rgb(255, 255, 255);
   --focus-color: rgb(1, 80, 115);
-  --font-primary: 'Geist VF';
-  --font-secondary: 'Geist Mono';
+  --font-primary: 'Roboto Mono';
+  --font-secondary: 'Inerti';
 }
 
 /* Tipografía */
