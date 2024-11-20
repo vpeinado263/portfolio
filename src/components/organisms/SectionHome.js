@@ -8,7 +8,7 @@ const SectionHome = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <main className={styles.main}>
+      <main>
         <Profile
           avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4" 
           avatarAlt="Foto personal"
