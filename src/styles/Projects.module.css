@@ -1,42 +1,33 @@
 .projectsSection {
-    padding: 6rem;
-    background-color: #f9f9f9;
+  margin: 3rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: var(--rgb6);
   }
-  
   .projectsContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  
   .projectCategory {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
+    border: 1px solid var(--rgb0);
+    padding: 4rem;
+    border-radius: 0.5rem;
   }
-  
   .categoryTitle {
-    font-size: 1.5rem;
-    color: #333;
+    color: var(--rgb0);
     margin-bottom: 0.5rem;
+    font-family: var(--font-third);
   }
-  
   .categoryDescription {
     margin-bottom: 1rem;
-    color: #666;
+    color: var(--rgb7);
+    font-family: var(--font-second);
   }
-  
   .projectList {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .projectItem a {
-    color: #0070f3;
-    text-decoration: none;
-  }
-  
-  .projectItem a:hover {
-    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.1rem;
   }
   

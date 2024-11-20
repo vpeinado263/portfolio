@@ -1,4 +1,5 @@
 import styles from "@/styles/Projects.module.css";
+import Link from "next/link";
 
 const projectsData = [
   {
@@ -68,10 +69,10 @@ const Projects = () => {
             <p className={styles.categoryDescription}>{category.description}</p>
             <ul className={styles.projectList}>
               {category.projects.map((project, idx) => (
-                <li key={idx} className={styles.projectItem}>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <li key={idx}>
+                  <Link href={project.link} target="_blank" rel="noopener noreferrer">
                     {project.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
