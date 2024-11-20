@@ -5,8 +5,10 @@
 .linkItem:hover {
   color: var(--hover-color); 
   transform: scale(1.1); 
+  
 }
 .link {
  background-color: transparent;
  border-radius: 2rem;
+ color: inherit;
 }

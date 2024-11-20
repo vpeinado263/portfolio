@@ -35,8 +35,6 @@ li {
   --rgb7: rgb(243, 246, 248);
   --background: rgb(14, 125, 172);
   --foreground: rgb(1, 80, 115);
-  --button-primary-hover: rgb(4, 10, 33);
-  --button-secondary-hover: rgb(4, 10, 33);
   --hover-bg: rgb(106, 117, 122);
   --hover-color: rgb(255, 255, 255);
   --font-first: 'Roboto Mono';
@@ -61,18 +59,7 @@ li {
     filter: invert();
   }
 }
-/* Pantallas medianas (hasta 1024px) */
-@media (max-width: 1024px) {
-  body {
-    font-size: 18px;
-  }
-  
-  .ctas {
-    font-size: 16px;
-    padding: 0 20px;
-    flex-direction: column;
-  }
-}
+
 /* Pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   body {

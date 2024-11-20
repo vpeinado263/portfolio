@@ -1,15 +1,49 @@
+.burgerContainer {
+  display: none;
+}
+.burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
 .menu {
-  display: flex; 
-  gap: 3rem; 
+  display: flex;
+  gap: 3rem;
   color: var(--rgb0); 
   text-transform: uppercase;
   padding: 1rem; 
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
+  font-family: var(--font-);
 }
-
+.menu.activar {
+  display: flex; 
+}
 .menu:hover {
   color: var(--hover-bg); 
   transform: scale(1.05); 
 }
 
+@media (max-width: 768px) {
+  .burgerContainer {
+    display: flex; 
+  }
+
+  .menu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: var(--rgb1);
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .menu.activar {
+    display: flex; 
+  }
+}
 
