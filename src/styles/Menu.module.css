@@ -7,7 +7,6 @@
   border-bottom: 2px solid var(--rgb0); 
   box-shadow: 0 2px 5px var(--rgb0);
 
-  background-color: red;
 }
 .menu a {
   color: var(--foreground); 
@@ -25,5 +24,4 @@
 .menu a:focus {
   outline: 2px solid var(--focus-color);
 }
-
 
