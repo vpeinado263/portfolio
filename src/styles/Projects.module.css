@@ -1,8 +1,9 @@
 .projectsSection {
-  margin: 3rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 8rem;
   box-sizing: border-box;
-  background-color: var(--rgb6);
+  background-color: var(--rgb4);
+  
   }
   .projectsContainer {
     display: flex;
