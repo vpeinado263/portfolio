@@ -25,13 +25,13 @@ li {
 }
 /* Paleta de colores */
 :root {
-  --rgb0: rgb(21, 31, 94);
-  --rgb1: rgb(1, 80, 115);
-  --rgb2: rgb(14, 125, 172);
-  --rgb3: rgb(22, 154, 211);
+  --rgb0: rgb(38, 46, 97);
+  --rgb1: rgb(10, 40, 54);
+  --rgb2: rgb(92, 158, 187);
+  --rgb3: rgb(66, 143, 176);
   --rgb4: rgb(28, 187, 216);
   --rgb5: rgb(202, 213, 218);
-  --rgb6: rgb(22, 174, 157);
+  --rgb6: rgb(80, 120, 116);
   --rgb7: rgb(243, 246, 248);
   --background: rgb(14, 125, 172);
   --foreground: rgb(1, 80, 115);
