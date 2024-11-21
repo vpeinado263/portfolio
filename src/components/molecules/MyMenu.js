@@ -17,7 +17,7 @@ const MyMenu = () => {
  
       <ul className={`${styles.menu} ${isMyMenuOpen ? styles.activar : ""}`}>
        <LinkItem href="" text="My Projects" />
-       <LinkItem href="" text="The Skillset"/>
+       <LinkItem href="#skillset" text="The Skillset"/>
        <LinkItem href="" text="Insights"/>
       </ul>
     </>

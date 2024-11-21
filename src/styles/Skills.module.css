@@ -1,9 +1,21 @@
 .skillsSection {
-    padding: 2rem;
-    background-color: var(--rgb4);
-  }
-  
-  .skillsContainer {
+    height: 100svh;
+    padding: 7rem;
+    background-color: var(--rgb6);
+}
+.skillsTitle {
+  font-family: var(--font-third);
+ 
+  color: var(--rgb6);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: var(--rgb0);
+text-align: center;
+  text-shadow: 2px 2px 4px var(--title-shadow);
+  border-bottom: 3px solid rgba(14, 125, 172, 0.5);
+}
+
+.skillsContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;

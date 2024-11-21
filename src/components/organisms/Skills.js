@@ -2,8 +2,11 @@ import styles from "@/styles/Skills.module.css";
 import SkillCategory from "../molecules/SkillCategory";
 
 const Skills = ({ skillsData, skillsIcons }) => (
-  <section className={styles.skillsSection} id="skillset">
-    <h2 className={styles.title}>Habilidades y Conocimientos</h2>
+
+  <section id="skillset">
+    <div className={styles.skillsSection}>
+    <h2 className={styles.skillsTitle}>Habilidades y Conocimientos</h2>
+
     <div className={styles.skillsContainer}>
       {skillsData.map((skill) => (
         <SkillCategory
@@ -13,6 +16,7 @@ const Skills = ({ skillsData, skillsIcons }) => (
           skillsIcons={skillsIcons}
         />
       ))}
+    </div>
     </div>
   </section>
 );
