@@ -58,7 +58,7 @@ export default function Index() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 300000);
 
     return () => clearTimeout(timer);
   }, [])
