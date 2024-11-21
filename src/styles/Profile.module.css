@@ -1,7 +1,6 @@
 .profile {
   display: flex; 
   align-items: center; 
-  width: auto;
   box-shadow: 0 4px 10px var(--rgb0);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
