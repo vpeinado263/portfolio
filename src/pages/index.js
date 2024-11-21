@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Head from "next/head";
-import TextoAnimadoTemplate from '@/components/templates/TextoAnimadoTemplate';
+
 import Navbar from '@/components/organisms/Navbar';
 import Home from '@/components/templates/Home';
 import Footer from '@/components/organisms/Footer';
@@ -9,6 +9,7 @@ import { FaReact, FaNodeJs, FaGit, FaHtml5, FaCss3Alt, FaGithub, FaSlack, FaBoot
 import { SiJavascript, SiTypescript, SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiGraphql, SiJquery, SiAxios, SiTailwindcss, SiPostman, SiNpm, SiHeroku, SiVercel } from 'react-icons/si';
 import { FaClipboardList, FaTasks, FaUsers, FaComments, FaLightbulb } from 'react-icons/fa';
 import Projects from '@/components/templates/Projects';
+import BienvSpinnerTemp from '@/components/templates/BIenvSpinnerTemp';
 
 const skillsIcons = {
   JavaScript: <SiJavascript />,
@@ -58,7 +59,7 @@ export default function Index() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 300000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [])
@@ -72,7 +73,7 @@ export default function Index() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
        {isLoading ? (
-        <TextoAnimadoTemplate/>
+        <BienvSpinnerTemp/>
       ) : (
         <>
          <Navbar/>
