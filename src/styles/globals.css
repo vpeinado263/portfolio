@@ -44,8 +44,8 @@ li {
 /* Media Queries */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #19b8cd;
-    --foreground: #2e2727;
+    --background: #262a2b;
+    --foreground: #dde5e9;
     --button-primary-hover: #ccc;
     --button-secondary-hover: #050202;
   }
