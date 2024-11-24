@@ -1,24 +1,21 @@
 .logo {
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 2;
-  }
-  to {
-    opacity: 2;
-  }
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-third); 
+  color: var(--rgb0);
 }
 .logoTitle {
-  font-family: var(--font-third);
-  font-weight: 500;
-  color: var(--rgb5); 
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: var(--rgb1);
+  text-shadow: 2px 2px 4px var(--rgb6);  
+  transition: transform 0.2s ease-in-out;
 }
 .logoTitle:hover {
-  color: var(--hover-color); 
-  animation: fadeIn 0.5s ease-out;
-  transform: scale(1.1);
+  transform: scale(1.01); 
+  color: var(--rgb5); 
 }
-
