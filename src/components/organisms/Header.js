@@ -10,8 +10,10 @@ const Header = () => {
     animate={{ opacity: 2 }}   
     transition={{ duration: 3 }} 
     >
-       <header className={styles.header}>
-        <SectionProfile/>
+       <header>
+        <div className={styles.header}>
+         <SectionProfile/>
+        </div>
       </header>
     </motion.div>
   );
