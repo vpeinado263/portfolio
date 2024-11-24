@@ -1,7 +1,13 @@
 .header {
-    height: 100svh;
-    display: flex;
-    flex-direction: row;
-    color: var(--rgb5);
-    padding: 1rem;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100%; 
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    padding: 20px; 
+  }
 }

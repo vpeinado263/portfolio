@@ -1,6 +1,6 @@
 import styles from '@/styles/Header.module.css';
-import SectionHome from './SectionHome';
 import { motion } from 'framer-motion';
+import SectionProfile from './SectionProfile';
 
 const Header = () => {
 
@@ -11,7 +11,7 @@ const Header = () => {
     transition={{ duration: 3 }} 
     >
        <header className={styles.header}>
-        <SectionHome />
+        <SectionProfile/>
       </header>
     </motion.div>
   );
