@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <motion.div
     initial={{ opacity: 0 }}  
-    animate={{ opacity: 1 }}   
-    transition={{ duration: 2 }} 
+    animate={{ opacity: 2 }}   
+    transition={{ duration: 3 }} 
     >
        <header className={styles.header}>
         <SectionHome />
