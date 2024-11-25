@@ -14,12 +14,6 @@
           { "key": "X-Content-Type-Options", "value": "nosniff" }
         ]
       }
-    ],
-    "errorRoutes": [
-      {
-        "statusCode": 404,
-        "destination": "/404.html"
-      }
     ]
   }
   
