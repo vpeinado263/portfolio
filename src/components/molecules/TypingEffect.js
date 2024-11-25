@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import TypedText from '../atoms/TypedText';
+import TypedText from '@/components/atoms/TypedText';
 
 const TypingEffect = ({ text }) => {
   const elementRef = useRef(null);

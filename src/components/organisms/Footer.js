@@ -1,5 +1,5 @@
 import styles from '@/styles/Footer.module.css';
-import SocialLink from '../molecules/SocialLink';
+import SocialLink from '@/components/molecules/SocialLink';
 
 const Footer = () => {
   return (

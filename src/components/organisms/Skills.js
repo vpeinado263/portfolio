@@ -1,5 +1,5 @@
 import styles from '@/styles/Skills.module.css';
-import SkillCategory from '../molecules/SkillCategory';
+import SkillCategory from '@/components/molecules/SkillCategory';
 
 const Skills = ({ skillsData, skillsIcons }) => (
   <section id="skillset">

@@ -1,4 +1,4 @@
-import Profile from '../molecules/Profile';
+import Profile from '@/components/molecules/Profile';
 import styles from '@/styles/SectionProfile.module.css';
 
 const SectionProfile = () => {

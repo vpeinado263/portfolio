@@ -1,6 +1,6 @@
 import styles from '@/styles/Header.module.css';
 import { motion } from 'framer-motion';
-import SectionProfile from './SectionProfile';
+import SectionProfile from '@/components/organisms/SectionProfile';
 
 const Header = () => {
   return (

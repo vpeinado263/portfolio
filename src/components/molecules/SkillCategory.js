@@ -1,5 +1,5 @@
 import styles from '@/styles/Skills.module.css';
-import ListemItem from '../atoms/ListemItem';
+import ListemItem from '@/components/atoms/ListemItem';
 
 const SkillCategory = ({ category, items, skillsIcons }) => (
   <div className={styles.skillCategory}>

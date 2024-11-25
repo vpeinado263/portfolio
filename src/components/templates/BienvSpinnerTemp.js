@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import SpinnerAtomico from '../atoms/SpinnerAtomico';
+import SpinnerAtomico from '@/components/atoms/SpinnerAtomico';
 import styles from '@/styles/BienvSpinnerTemp.module.css';
 
 const BienvSpinnerTemp = () => {

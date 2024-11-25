@@ -1,4 +1,4 @@
-import WhatsappLink from '../atoms/WhatsappLink';
+import WhatsappLink from '@/components/atoms/WhatsappLink';
 
 const Whatsapp = ({ message }) => {
   const phoneNumber = '+542612448018';

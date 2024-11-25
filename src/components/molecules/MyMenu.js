@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import LinkItem from '../atoms/LinkItem';
+import LinkItem from '@/components/atoms/LinkItem';
 import styles from '@/styles/MyMenu.module.css';
 import { FaBars } from 'react-icons/fa';
 
