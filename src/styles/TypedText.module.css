@@ -1,23 +1,25 @@
 .typedText {
   font-family: var(--font-first);
   white-space: nowrap;
-  overflow: hidden; 
+  overflow: hidden;
   border-right: 2px solid var(--rgb0);
   padding-right: 0.1rem;
-  animation: typing 5s steps(30) 1 normal both, blink 0.80s step-end infinite;
+  animation:
+    typing 5s steps(30) 1 normal both,
+    blink 0.8s step-end infinite;
 }
 
 @keyframes typing {
   from {
-    width: 0; 
+    width: 0;
   }
   to {
-    width: 67%; 
+    width: 67%;
   }
 }
 
 @keyframes blink {
   50% {
-    border-color: var(--hover-bg); 
+    border-color: var(--hover-bg);
   }
 }

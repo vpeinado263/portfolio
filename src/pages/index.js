@@ -1,15 +1,44 @@
 import { useState, useEffect } from 'react';
-import Head from "next/head";
+import Head from 'next/head';
 import Navbar from '@/components/organisms/Navbar';
 import Home from '@/components/templates/Home';
 import Footer from '@/components/organisms/Footer';
 import SkillsTemplate from '@/components/templates/SkillsTemplate';
-import { FaReact, FaNodeJs, FaGit, FaHtml5, FaCss3Alt, FaGithub, FaSlack, FaBootstrap } from 'react-icons/fa';
-import { SiJavascript, SiTypescript, SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiGraphql, SiJquery, SiAxios, SiTailwindcss, SiPostman, SiNpm, SiHeroku, SiVercel } from 'react-icons/si';
-import { FaClipboardList, FaTasks, FaUsers, FaComments, FaLightbulb } from 'react-icons/fa';
+import {
+  FaReact,
+  FaNodeJs,
+  FaGit,
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub,
+  FaSlack,
+  FaBootstrap,
+} from 'react-icons/fa';
+import {
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiGraphql,
+  SiJquery,
+  SiAxios,
+  SiTailwindcss,
+  SiPostman,
+  SiNpm,
+  SiHeroku,
+  SiVercel,
+} from 'react-icons/si';
+import {
+  FaClipboardList,
+  FaTasks,
+  FaUsers,
+  FaComments,
+  FaLightbulb,
+} from 'react-icons/fa';
 import Projects from '@/components/templates/Projects';
 import BienvSpinnerTemp from '@/components/templates/BienvSpinnerTemp';
-
 
 const skillsIcons = {
   JavaScript: <SiJavascript />,
@@ -17,16 +46,16 @@ const skillsIcons = {
   CSS: <FaCss3Alt />,
   TypeScript: <SiTypescript />,
   React: <FaReact />,
-  "Next.js": <SiNextdotjs />,
-  "Express.js": <SiExpress />,
+  'Next.js': <SiNextdotjs />,
+  'Express.js': <SiExpress />,
   jQuery: <SiJquery />,
   Axios: <SiAxios />,
   Bootstrap: <FaBootstrap />,
-  "Tailwind CSS": <SiTailwindcss />,
-  "Node.js": <FaNodeJs />,
+  'Tailwind CSS': <SiTailwindcss />,
+  'Node.js': <FaNodeJs />,
   MongoDB: <SiMongodb />,
   MySQL: <SiMysql />,
-  "REST APIs": <FaClipboardList />,
+  'REST APIs': <FaClipboardList />,
   GraphQL: <SiGraphql />,
   Git: <FaGit />,
   GitHub: <FaGithub />,
@@ -37,20 +66,38 @@ const skillsIcons = {
   Heroku: <SiHeroku />,
   Scrum: <FaClipboardList />,
   Kanban: <FaTasks />,
-  "Trabajo en equipo": <FaUsers />,
+  'Trabajo en equipo': <FaUsers />,
   Comunicación: <FaComments />,
-  "Resolución de problemas": <FaLightbulb />,
+  'Resolución de problemas': <FaLightbulb />,
 };
 
 const skillsData = [
-  { category: "Lenguajes de Programación", items: ["JavaScript", "HTML", "CSS", "TypeScript"] },
-  { category: "Frameworks", items: ["React", "Next.js", "Express.js"] },
-  { category: "Librerías", items: ["jQuery", "Axios", "Bootstrap", "Tailwind CSS"] },
-  { category: "Tecnologías", items: ["Node.js", "MongoDB", "MySQL", "REST APIs", "GraphQL"] },
-  { category: "Herramientas", items: ["Git", "GitHub", "NPM", "Postman", "Slack", "Vercel", "Heroku"] },
-  { category: "Metodologías", items: ["Scrum", "Kanban"] },
-  { category: "Certificaciones", items: ["Diploma en Desarrollo Web Full Stack", "Cursos en línea"] },
-  { category: "Soft Skills", items: ["Trabajo en equipo", "Comunicación", "Resolución de problemas"] },
+  {
+    category: 'Lenguajes de Programación',
+    items: ['JavaScript', 'HTML', 'CSS', 'TypeScript'],
+  },
+  { category: 'Frameworks', items: ['React', 'Next.js', 'Express.js'] },
+  {
+    category: 'Librerías',
+    items: ['jQuery', 'Axios', 'Bootstrap', 'Tailwind CSS'],
+  },
+  {
+    category: 'Tecnologías',
+    items: ['Node.js', 'MongoDB', 'MySQL', 'REST APIs', 'GraphQL'],
+  },
+  {
+    category: 'Herramientas',
+    items: ['Git', 'GitHub', 'NPM', 'Postman', 'Slack', 'Vercel', 'Heroku'],
+  },
+  { category: 'Metodologías', items: ['Scrum', 'Kanban'] },
+  {
+    category: 'Certificaciones',
+    items: ['Diploma en Desarrollo Web Full Stack', 'Cursos en línea'],
+  },
+  {
+    category: 'Soft Skills',
+    items: ['Trabajo en equipo', 'Comunicación', 'Resolución de problemas'],
+  },
 ];
 
 export default function Index() {
@@ -62,7 +109,7 @@ export default function Index() {
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -72,18 +119,17 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-       {isLoading ? (
-        <BienvSpinnerTemp/>
+      {isLoading ? (
+        <BienvSpinnerTemp />
       ) : (
         <>
-         <Navbar/>
-         <Home/>
-         <SkillsTemplate skillsData={skillsData} skillsIcons={skillsIcons}/>
-         <Projects/>
-         <Footer/>
+          <Navbar />
+          <Home />
+          <SkillsTemplate skillsData={skillsData} skillsIcons={skillsIcons} />
+          <Projects />
+          <Footer />
         </>
       )}
-
     </>
   );
-};
+}

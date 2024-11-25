@@ -10,26 +10,26 @@
 .menu {
   display: flex;
   gap: 3rem;
-  color: var(--rgb0); 
+  color: var(--rgb0);
   text-transform: uppercase;
-  padding: 1rem; 
+  padding: 1rem;
   transition: all 0.3s ease;
   font-family: var(--font-);
 }
 .menu.activar {
-  display: flex; 
+  display: flex;
 }
 .menu:hover {
-  color: var(--hover-bg); 
-  transform: scale(1.05); 
+  color: var(--hover-bg);
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
   .burgerContainer {
-    display: flex; 
+    display: flex;
   }
   .menu {
-    display: none; 
+    display: none;
     position: absolute;
     top: 65px;
     left: 0;
@@ -42,7 +42,6 @@
   }
 
   .menu.activar {
-    display: flex; 
+    display: flex;
   }
 }
-

@@ -1,19 +1,17 @@
 .footContainer {
   justify-items: center;
   padding: 7rem;
-  font-family: var(--font-primary);  
+  font-family: var(--font-primary);
 }
 .footer {
   display: flex;
   gap: 24px;
 }
 .a {
-    padding: 0 20px;
-    border: 1px solid transparent;
-    cursor: pointer;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 .a:hover {
-    text-decoration: underline;
-} 
-
-  
+  text-decoration: underline;
+}

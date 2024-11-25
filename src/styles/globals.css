@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 li {
-  list-style: none; 
+  list-style: none;
 }
 /* Paleta de colores */
 :root {
@@ -79,7 +79,7 @@ li {
     align-items: center;
     flex-direction: column;
   }
- 
+
   .secondary {
     min-width: auto;
     text-align: center;

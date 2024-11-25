@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const LinkText = ({ href, children, className }) => {
   return (
@@ -9,4 +9,3 @@ const LinkText = ({ href, children, className }) => {
 };
 
 export default LinkText;
-

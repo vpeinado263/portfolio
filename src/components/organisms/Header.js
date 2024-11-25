@@ -3,16 +3,15 @@ import { motion } from 'framer-motion';
 import SectionProfile from './SectionProfile';
 
 const Header = () => {
-
   return (
     <motion.div
-    initial={{ opacity: 0 }}  
-    animate={{ opacity: 2 }}   
-    transition={{ duration: 3 }} 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 2 }}
+      transition={{ duration: 3 }}
     >
-       <header>
+      <header>
         <div className={styles.header}>
-         <SectionProfile/>
+          <SectionProfile />
         </div>
       </header>
     </motion.div>

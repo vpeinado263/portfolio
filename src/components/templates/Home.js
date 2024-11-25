@@ -1,12 +1,11 @@
-import Header from "../organisms/Header";
+import Header from '../organisms/Header';
 
 const Home = () => {
-
   return (
     <div>
-        <Header/> 
+      <Header />
     </div>
-  )
-}
+  );
+};
 
 export default Home;

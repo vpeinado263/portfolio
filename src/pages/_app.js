@@ -1,7 +1,7 @@
-import { DefaultSeo } from "next-seo";
-import "@/styles/globals.css";
+import { DefaultSeo } from 'next-seo';
+import '@/styles/globals.css';
 
- const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <DefaultSeo
@@ -10,7 +10,8 @@ import "@/styles/globals.css";
         openGraph={{
           url: 'https://my-portfolio-victor-nu.vercel.app/',
           title: 'Mi Portafolio',
-          description: 'Portafolio de desarrollador web con proyectos interactivos y tecnologías modernas.',
+          description:
+            'Portafolio de desarrollador web con proyectos interactivos y tecnologías modernas.',
           images: [
             {
               url: 'https://my-portfolio-victor-nu.vercel.app/public/maletin.svg',
@@ -28,8 +29,8 @@ import "@/styles/globals.css";
         }}
       />
       <Component {...pageProps} />
-    </> 
-   );
+    </>
+  );
 };
 
 export default App;

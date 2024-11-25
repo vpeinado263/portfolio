@@ -1,24 +1,29 @@
-import { useState } from "react";
-import LinkItem from "../atoms/LinkItem";
-import styles from "@/styles/MyMenu.module.css";
+import { useState } from 'react';
+import LinkItem from '../atoms/LinkItem';
+import styles from '@/styles/MyMenu.module.css';
 import { FaBars } from 'react-icons/fa';
 
 const MyMenu = () => {
- const [isMyMenuOpen, setIsMyMenuOpen] = useState(false);
- const toggleMyMenu = () => setIsMyMenuOpen(!isMyMenuOpen);
+  const [isMyMenuOpen, setIsMyMenuOpen] = useState(false);
+  const toggleMyMenu = () => setIsMyMenuOpen(!isMyMenuOpen);
 
   return (
     <>
-    <div className={styles.burgerContainer} >
-      <button className={styles.burger} onClick={toggleMyMenu} aria-expanded={isMyMenuOpen} aria-label={"MyMenu"}>
-       <FaBars size={30} color="white"/> 
-      </button>  
-    </div>  
- 
-      <ul className={`${styles.menu} ${isMyMenuOpen ? styles.activar : ""}`}>
-       <LinkItem href="#My Projects" text="My Projects" />
-       <LinkItem href="#skillset" text="The Skillset"/>
-       <LinkItem href="" text="Insights"/>
+      <div className={styles.burgerContainer}>
+        <button
+          className={styles.burger}
+          onClick={toggleMyMenu}
+          aria-expanded={isMyMenuOpen}
+          aria-label={'MyMenu'}
+        >
+          <FaBars size={30} color="white" />
+        </button>
+      </div>
+
+      <ul className={`${styles.menu} ${isMyMenuOpen ? styles.activar : ''}`}>
+        <LinkItem href="#My Projects" text="My Projects" />
+        <LinkItem href="#skillset" text="The Skillset" />
+        <LinkItem href="" text="Insights" />
       </ul>
     </>
   );

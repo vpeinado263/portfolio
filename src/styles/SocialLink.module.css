@@ -1,8 +1,10 @@
 .socialLink {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 0.2rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   font-family: var(--font-first);
 }
 .socialLink:hover {
