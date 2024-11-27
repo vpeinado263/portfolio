@@ -5,7 +5,6 @@ import Home from '@/components/templates/Home';
 import Footer from '@/components/organisms/Footer';
 import BienvSpinnerTemp from '@/components/templates/BienvSpinnerTemp';
 import Projects from '@/components/templates/Projects';
-import SkillChart from '@/components/organisms/SkillChart';
 
 export default function Index() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +31,6 @@ export default function Index() {
         <>
           <Navbar />
           <Home />
-          <SkillChart/>
           <Projects/>
           <Footer />
         </>
