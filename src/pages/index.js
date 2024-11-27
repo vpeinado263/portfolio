@@ -74,31 +74,69 @@ const skillsIcons = {
 const skillsData = [
   {
     category: 'Lenguajes de Programación',
-    items: ['JavaScript', 'HTML', 'CSS', 'TypeScript'],
+    skills: [
+      { name: 'JavaScript', value: 80 },
+      { name: 'HTML', value: 90 },
+      { name: 'CSS', value: 85 },
+      { name: 'TypeScript', value: 70 },
+    ],
   },
-  { category: 'Frameworks', items: ['React', 'Next.js', 'Express.js'] },
+  {
+    category: 'Frameworks',
+    skills: [
+      { name: 'React', value: 90 },
+      { name: 'Next.js', value: 75 },
+      { name: 'Express.js', value: 80 },
+    ],
+  },
   {
     category: 'Librerías',
-    items: ['jQuery', 'Axios', 'Bootstrap', 'Tailwind CSS'],
+    skills: [
+      { name: 'jQuery', value: 60 },
+      { name: 'Axios', value: 80 },
+      { name: 'Bootstrap', value: 85 },
+      { name: 'Tailwind CSS', value: 90 },
+    ],
   },
   {
     category: 'Tecnologías',
-    items: ['Node.js', 'MongoDB', 'MySQL', 'REST APIs', 'GraphQL'],
+    skills: [
+      { name: 'Node.js', value: 80 },
+      { name: 'MongoDB', value: 70 },
+      { name: 'MySQL', value: 75 },
+      { name: 'REST APIs', value: 85 },
+      { name: 'GraphQL', value: 70 },
+    ],
   },
   {
     category: 'Herramientas',
-    items: ['Git', 'GitHub', 'NPM', 'Postman', 'Slack', 'Vercel', 'Heroku'],
+    skills: [
+      { name: 'Git', value: 90 },
+      { name: 'GitHub', value: 85 },
+      { name: 'NPM', value: 80 },
+      { name: 'Postman', value: 70 },
+      { name: 'Slack', value: 75 },
+      { name: 'Vercel', value: 80 },
+      { name: 'Heroku', value: 70 },
+    ],
   },
-  { category: 'Metodologías', items: ['Scrum', 'Kanban'] },
   {
-    category: 'Certificaciones',
-    items: ['Diploma en Desarrollo Web Full Stack', 'Cursos en línea'],
+    category: 'Metodologías',
+    skills: [
+      { name: 'Scrum', value: 80 },
+      { name: 'Kanban', value: 75 },
+    ],
   },
   {
     category: 'Soft Skills',
-    items: ['Trabajo en equipo', 'Comunicación', 'Resolución de problemas'],
+    skills: [
+      { name: 'Trabajo en equipo', value: 90 },
+      { name: 'Comunicación', value: 85 },
+      { name: 'Resolución de problemas', value: 80 },
+    ],
   },
 ];
+
 
 export default function Index() {
   const [isLoading, setIsLoading] = useState(true);
