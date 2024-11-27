@@ -1,12 +1,15 @@
+.skillsContainer {
+  margin: 20px 0;
+  text-align: center;
+}
+
 .chartContainer {
-    margin: 2rem 0;
-    text-align: center;
-    background-color: blue;
-  }
-  
-  .chartContainer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    background-color: aliceblue;
-  }
-  
+  margin-top: 20px;
+}
+
+.tooltip {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
