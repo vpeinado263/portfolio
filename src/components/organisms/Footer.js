@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className={styles.a}>
           <SocialLink
-            href="/CV.pdf"
+            href="/CV-Peinado-Victor.pdf"
             iconSrc="/file.svg"
             iconAlt="CV icon"
             iconWidth={20}
