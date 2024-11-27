@@ -26,12 +26,12 @@ export default function Index() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
       {isLoading ? (
-        <BienvSpinnerTemp/>
+        <BienvSpinnerTemp />
       ) : (
         <>
           <Navbar />
           <Home />
-          <Projects/>
+          <Projects />
           <Footer />
         </>
       )}
