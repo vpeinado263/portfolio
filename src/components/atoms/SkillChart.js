@@ -1,14 +1,6 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import styles from '@/styles/SkillChart.module.css';
 
-const skillsData = [
-    { name: 'JavaScript', level: 90 },
-    { name: 'React', level: 85 },
-    { name: 'Node.js', level: 80 },
-    { name: 'HTML', level: 95 },
-    { name: 'CSS', level: 90 },
-  ];
-
 const SkillChart = () => {
   return (
     <>
