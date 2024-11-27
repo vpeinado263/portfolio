@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Navbar from '@/components/organisms/Navbar';
 import Home from '@/components/templates/Home';
 import Footer from '@/components/organisms/Footer';
-import SkillsTemplate from '@/components/templates/SkillsTemplate';
+
 import {
   FaReact,
   FaNodeJs,
@@ -39,6 +39,7 @@ import {
 } from 'react-icons/fa';
 import Projects from '@/components/templates/Projects';
 import BienvSpinnerTemp from '@/components/templates/BienvSpinnerTemp';
+import SkillChart from '@/components/atoms/SkillChart';
 
 const skillsIcons = {
   JavaScript: <SiJavascript />,
@@ -163,7 +164,7 @@ export default function Index() {
         <>
           <Navbar />
           <Home />
-          <SkillsTemplate skillsData={skillsData} skillsIcons={skillsIcons} />
+          <SkillChart/>
           <Projects />
           <Footer />
         </>
