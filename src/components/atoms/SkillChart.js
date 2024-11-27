@@ -15,7 +15,7 @@ const SkillChart = () => {
      <div className={styles.skillsContainer}>
       <div className={styles.chartContainer}>
       <h3>Gráfico de habilidades</h3>
-      <div style={{ width: '100%', height: 300 }}>
+      <div style={{ width: '50%', height: 200 }}>
        <ResponsiveContainer width="100%" height="100%">
          <BarChart data={skillsData}>
            <CartesianGrid strokeDasharray="3 3" />
