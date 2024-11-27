@@ -1,19 +1,18 @@
 {
-    "redirects": [
-      {
-        "source": "/cv", 
-        "destination": "/CV.pdf",
-        "permanent": true
-      }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          { "key": "Cache-Control", "value": "max-age=31536000, immutable" },
-          { "key": "X-Content-Type-Options", "value": "nosniff" }
-        ]
-      }
-    ]
-  }
-  
+  "redirects": [
+    {
+      "source": "/cv",
+      "destination": "/CV.pdf",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=31536000, immutable" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}

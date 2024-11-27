@@ -1,5 +1,4 @@
-import Skills from "@/components/organisms/Skills";
-
+import Skills from '@/components/organisms/Skills';
 
 const SkillsTemplate = ({ skillsData, skillsIcons }) => (
   <main>
