@@ -6,6 +6,9 @@
 .footer {
   display: flex;
   gap: 24px;
+  text-align: center;
+  padding: 1rem;
+ 
 }
 .a {
   padding: 0 20px;
