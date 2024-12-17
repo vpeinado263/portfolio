@@ -8,11 +8,11 @@
   font-family: var(--font-first);
 }
 .socialLink:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .icon {
   background-color: transparent;
 }
 .icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
