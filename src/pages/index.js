@@ -1,22 +1,11 @@
-import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/organisms/Navbar';
 import Home from '@/components/templates/Home';
 import Footer from '@/components/organisms/Footer';
-import BienvSpinnerTemp from '@/components/templates/BienvSpinnerTemp';
 import Projects from '@/components/templates/Projects';
 
 export default function Index() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+ 
   return (
     <>
       <Head>
@@ -25,16 +14,11 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      {isLoading ? (
-        <BienvSpinnerTemp />
-      ) : (
-        <>
-          <Navbar />
-          <Home />
-          <Projects />
-          <Footer />
-        </>
-      )}
+      
+      <Navbar />
+      <Home />
+      <Projects />
+      <Footer />
     </>
   );
 }
