@@ -11,8 +11,7 @@ const Logo = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
-        <h2 className={styles.logoTitle}>Victor Peinado </h2>
-        <h3 className={styles.logoTitle}>Portfolio</h3>
+        <h2 className={styles.logoTitle}>Portfolio</h2>
       </motion.div>
     </Link>
   );
