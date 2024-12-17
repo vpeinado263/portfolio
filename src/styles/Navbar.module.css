@@ -1,19 +1,40 @@
 .navbar {
-  position: fixed;
+  position: fixed; 
   top: 0;
-  width: 100%;
+  left: 0; 
+  width: 250px; 
+  height: 100%; 
   padding: 1rem;
   background-color: transparent;
   transition: background-color 0.5s ease;
   color: var(--rgb5);
   z-index: 10;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
 }
+
 .navContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
 }
+
 .scrolled {
   background-color: var(--rgb1);
   color: var(--rgb5);
+}
+
+.navbar a {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit; 
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: var(--rgb2);  
+  color: var(--rgb5);  
 }
