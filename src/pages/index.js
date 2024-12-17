@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Navbar from '@/components/organisms/Navbar';
 import Home from '@/components/templates/Home';
-import Footer from '@/components/organisms/Footer';
 import Projects from '@/components/templates/Projects';
 
 export default function Index() {
@@ -20,7 +19,6 @@ export default function Index() {
       <Navbar />
       <Home />
       <Projects />
-      <Footer />
     </>
   );
 }

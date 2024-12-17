@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from '@/styles/Navbar.module.css';
 import Logo from '@/components/atoms/Logo';
 import MyMenu from '@/components/molecules/MyMenu';
+import Footer from './Footer';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,6 +24,7 @@ const Navbar = () => {
         <Logo />
         <MyMenu />
       </nav>
+      <Footer />
     </header>
   );
 };
