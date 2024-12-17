@@ -1,14 +1,10 @@
 .footContainer {
-  justify-items: center;
   padding: 7rem;
   font-family: var(--font-primary);
 }
 .footer {
   display: flex;
-  gap: 24px;
   text-align: center;
-  padding: 1rem;
- 
 }
 .a {
   padding: 0 20px;
