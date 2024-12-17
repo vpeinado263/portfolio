@@ -5,7 +5,6 @@ import Footer from '@/components/organisms/Footer';
 import Projects from '@/components/templates/Projects';
 
 export default function Index() {
- 
   return (
     <>
       <Head>
@@ -14,7 +13,7 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      
+
       <Navbar />
       <Home />
       <Projects />
