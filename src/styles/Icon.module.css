@@ -1,14 +1,22 @@
+/* Contenedor de iconos */
 .icon {
-  display: inline-block;
-  width: 100%; /* Ajustable según el diseño */
-  height: auto;
-  filter: grayscale(100%);
-  transition:
-    filter 0.3s ease,
-    transform 0.3s ease;
+  display: inline-block;  /* Para alinear los iconos en fila */
+  width: 40px;            /* Tamaño del icono */
+  height: 40px;           /* Tamaño del icono */
+  filter: grayscale(100%); /* Aplica filtro en gris */
+  transition: filter 0.3s ease, transform 0.3s ease; /* Transición para los efectos */
 }
 
+/* Efecto al pasar el mouse */
 .icon:hover {
-  filter: grayscale(0%);
-  transform: scale(1.1);
+  filter: grayscale(0%);  /* Elimina el filtro gris */
+  transform: scale(1.1);  /* Agranda el icono al pasar el mouse */
+}
+
+/* Para el contenedor de los iconos si lo necesitas */
+.iconsContainer {
+  display: flex;            /* Alineación horizontal */
+  gap: 15px;                /* Espacio entre iconos */
+  justify-content: flex-start; /* Alineación de los iconos a la izquierda */
+  align-items: center;      /* Centra los iconos verticalmente */
 }

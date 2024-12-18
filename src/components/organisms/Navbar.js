@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Navbar.module.css';
-import Logo from '@/components/atoms/Logo';
 import MyMenu from '@/components/molecules/MyMenu';
 import TypingEffect from '../molecules/TypingEffect';
 import Footer from './Footer';
@@ -27,7 +26,6 @@ const Navbar = () => {
         className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}
       >
         <nav className={styles.navContainer}>
-          <Logo />
           <MyMenu />
         </nav>
         <TypingEffect
