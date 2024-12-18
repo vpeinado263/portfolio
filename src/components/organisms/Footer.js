@@ -3,7 +3,6 @@ import SocialLink from '@/components/molecules/SocialLink';
 
 const Footer = () => {
   return (
-    <div className={styles.footContainer}>
       <footer className={styles.footer}>
         <div className={styles.a}>
           <SocialLink
@@ -39,7 +38,6 @@ const Footer = () => {
           </SocialLink>
         </div>
       </footer>
-    </div>
   );
 };
 

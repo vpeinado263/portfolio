@@ -35,6 +35,6 @@
 }
 
 .navbar a:hover {
-  background-color: var(--rgb2);  
+   
   color: var(--rgb5);  
 }

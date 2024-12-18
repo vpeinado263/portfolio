@@ -3,6 +3,7 @@ import styles from '@/styles/Navbar.module.css';
 import Logo from '@/components/atoms/Logo';
 import MyMenu from '@/components/molecules/MyMenu';
 import TypingEffect from '../molecules/TypingEffect';
+import Footer from './Footer';
 
 const Navbar = () => {
   const text = "Hello, I'm Victor.";
@@ -21,6 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <nav className={styles.navContainer}>
         <Logo />
@@ -33,7 +35,11 @@ const Navbar = () => {
         avatarHeight={150}
         text={text}
        />
+       <Footer />
     </header>
+    
+    </>
+   
   );
 };
 

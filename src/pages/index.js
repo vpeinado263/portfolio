@@ -1,3 +1,4 @@
+
 import Header from '@/components/templates/Header';
 import Projects from '@/components/templates/Projects';
 import Head from 'next/head';

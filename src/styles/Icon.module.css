@@ -1,9 +1,12 @@
 .icon {
   display: inline-block;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  width: 100%; /* Ajustable según el diseño */
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
+
 .icon:hover {
+  filter: grayscale(0%);
   transform: scale(1.1);
 }

@@ -1,16 +1,14 @@
-.footContainer {
-  padding: 7rem;
-  font-family: var(--font-primary);
-}
 .footer {
-  display: flex;
+  color: #4b4848;
+  padding: 1.5rem;
   text-align: center;
 }
+
 .a {
-  padding: 0 20px;
-  border: 1px solid transparent;
-  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
+
 .a:hover {
-  text-decoration: underline;
+  color: #0070f3;
 }
