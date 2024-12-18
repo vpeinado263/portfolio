@@ -1,9 +1,9 @@
 .footer {
   display: flex;
-  justify-content: center; /* Centra los iconos horizontalmente */
-  align-items: center;     /* Centra los iconos verticalmente */
-  gap: 20px;               /* Espacio entre los iconos */
-  padding: 20px;           /* Espaciado alrededor del pie de página */
+  justify-content: center; 
+  align-items: center;     
+  gap: 20px;               
+  padding: 20px;         
 }
 
 .a {

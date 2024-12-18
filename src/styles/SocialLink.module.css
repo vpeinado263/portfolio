@@ -1,9 +1,10 @@
 .socialLink {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Espacio entre el ícono y el texto */
+  gap: 0.5rem; 
   color: inherit;
   text-decoration: none;
+  font-family: var(--font-first);
   font-size: 0.9rem;
   transition:
     transform 0.2s ease,
