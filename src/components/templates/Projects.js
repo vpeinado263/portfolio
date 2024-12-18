@@ -66,7 +66,7 @@ const projectsData = [
     projects: [
       {
         title: 'Primera Tarea React',
-        link: 'https://1ra-tarea-react-next-js.vercel.app/',
+        link: 'https://el-habito-de-fumar.vercel.app/',
       },
       {
         title: 'Segunda Tarea React',
