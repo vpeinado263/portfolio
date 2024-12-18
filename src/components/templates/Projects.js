@@ -7,8 +7,14 @@ const projectsData = [
     description:
       'Proyectos simples que me ayudaron a entender la estructura básica de las páginas web y la semántica de HTML.',
     projects: [
-      { title: 'Cuchillos Personalizados-HTML-5', link: 'https://tarea-1-clase-html.vercel.app/' },
-      { title: 'Cuchillos Personalizados-2-HTML-5', link: 'https://tarea-2-clase-html.vercel.app/' },
+      {
+        title: 'Cuchillos Personalizados-HTML-5',
+        link: 'https://tarea-1-clase-html.vercel.app/',
+      },
+      {
+        title: 'Cuchillos Personalizados-2-HTML-5',
+        link: 'https://tarea-2-clase-html.vercel.app/',
+      },
     ],
   },
   {
@@ -16,11 +22,23 @@ const projectsData = [
     description:
       'Aprendí sobre estilos, diseño responsivo, y cómo dar vida a las interfaces.',
     projects: [
-      { title: 'Cuchillos Personalizados-3-CSS-3', link: 'https://tarea-3-clase-css.vercel.app/' },
-      { title: 'Cuchillos Personalizados-4-CSS-3', link: 'https://tarea-4-clase-css.vercel.app/' },
+      {
+        title: 'Cuchillos Personalizados-3-CSS-3',
+        link: 'https://tarea-3-clase-css.vercel.app/',
+      },
+      {
+        title: 'Cuchillos Personalizados-4-CSS-3',
+        link: 'https://tarea-4-clase-css.vercel.app/',
+      },
       { title: 'Orco-Elfo', link: 'https://tarea-5-clase-css.vercel.app/' },
-      { title: 'Practica-ResponsiveGrid', link: 'https://tarea-6-clase-css.vercel.app/' },
-      { title: 'Cuchillos Artesanales', link: 'https://tarea-7-clase-css.vercel.app/' },
+      {
+        title: 'Practica-ResponsiveGrid',
+        link: 'https://tarea-6-clase-css.vercel.app/',
+      },
+      {
+        title: 'Cuchillos Artesanales',
+        link: 'https://tarea-7-clase-css.vercel.app/',
+      },
     ],
   },
   {
