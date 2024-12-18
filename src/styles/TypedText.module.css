@@ -6,7 +6,7 @@
   padding-right: 0.1rem;
   animation:
     typing 5s steps(30) 1 normal both,
-    blink 0.8s step-end infinite;
+    blink 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -14,7 +14,7 @@
     width: 0;
   }
   to {
-    width: 67%;
+    width: 65.6%;
   }
 }
 

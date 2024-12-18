@@ -2,8 +2,8 @@
   position: fixed; 
   top: 0;
   left: 0; 
-  width: 250px; 
-  height: 100%; 
+  width: 35rem; 
+  height: 100vh; 
   padding: 1rem;
   background-color: transparent;
   transition: background-color 0.5s ease;

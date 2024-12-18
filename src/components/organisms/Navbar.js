@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import styles from '@/styles/Navbar.module.css';
 import Logo from '@/components/atoms/Logo';
 import MyMenu from '@/components/molecules/MyMenu';
-import Footer from './Footer';
+import TypingEffect from '../molecules/TypingEffect';
 
 const Navbar = () => {
+  const text = "Hello, I'm Victor.";
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -24,7 +26,13 @@ const Navbar = () => {
         <Logo />
         <MyMenu />
       </nav>
-      <Footer />
+        <TypingEffect 
+        avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
+        avatarAlt="Foto personal"
+        avatarWidth={165}
+        avatarHeight={150}
+        text={text}
+       />
     </header>
   );
 };
