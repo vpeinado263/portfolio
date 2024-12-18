@@ -3,7 +3,13 @@ import TypedText from '@/components/atoms/TypedText';
 import styles from '@/styles/TypingEffect.module.css';
 import Avatar from '../atoms/Avatar';
 
-const TypingEffect = ({avatarSrc, avatarAlt, avatarWidth, avatarHeight, text }) => {
+const TypingEffect = ({
+  avatarSrc,
+  avatarAlt,
+  avatarWidth,
+  avatarHeight,
+  text,
+}) => {
   const elementRef = useRef(null);
 
   useEffect(() => {
@@ -31,15 +37,15 @@ const TypingEffect = ({avatarSrc, avatarAlt, avatarWidth, avatarHeight, text }) 
 
   return (
     <div className={styles.typing}>
-      <Avatar 
-      src={avatarSrc}
-      alt={avatarAlt}
-      width={avatarWidth}
-      height={avatarHeight}
+      <Avatar
+        src={avatarSrc}
+        alt={avatarAlt}
+        width={avatarWidth}
+        height={avatarHeight}
       />
       <TypedText ref={elementRef} />
     </div>
-  ); 
+  );
 };
 
 export default TypingEffect;

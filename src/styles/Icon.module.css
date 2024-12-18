@@ -3,7 +3,9 @@
   width: 100%; /* Ajustable según el diseño */
   height: auto;
   filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
 }
 
 .icon:hover {

@@ -1,25 +1,25 @@
 .navbar {
-  position: fixed; 
+  position: fixed;
   top: 0;
-  left: 0; 
-  width: 35rem; 
-  height: 100vh; 
+  left: 0;
+  width: 35rem;
+  height: 100vh;
   padding: 1rem;
   background-color: transparent;
   transition: background-color 0.5s ease;
   color: var(--rgb5);
   z-index: 10;
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .navContainer {
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .scrolled {
@@ -30,11 +30,10 @@
 .navbar a {
   padding: 10px;
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
   display: block;
 }
 
 .navbar a:hover {
-   
-  color: var(--rgb5);  
+  color: var(--rgb5);
 }

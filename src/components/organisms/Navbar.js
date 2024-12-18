@@ -23,23 +23,23 @@ const Navbar = () => {
 
   return (
     <>
-    <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
-      <nav className={styles.navContainer}>
-        <Logo />
-        <MyMenu />
-      </nav>
-        <TypingEffect 
-        avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
-        avatarAlt="Foto personal"
-        avatarWidth={165}
-        avatarHeight={150}
-        text={text}
-       />
-       <Footer />
-    </header>
-    
+      <header
+        className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}
+      >
+        <nav className={styles.navContainer}>
+          <Logo />
+          <MyMenu />
+        </nav>
+        <TypingEffect
+          avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
+          avatarAlt="Foto personal"
+          avatarWidth={165}
+          avatarHeight={150}
+          text={text}
+        />
+        <Footer />
+      </header>
     </>
-   
   );
 };
 
