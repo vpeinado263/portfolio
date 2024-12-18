@@ -72,6 +72,30 @@ const projectsData = [
         title: 'Segunda Tarea React',
         link: 'https://2da-tarea-react-next-js.vercel.app/',
       },
+       {
+        title: 'Ulceras',
+        link: '3ra-Tarea-REACT-NEXT.JS](https://3ra-tarea-react-next-js.vercel.app/',
+      },
+       {
+        title: 'Relojes',
+        link: 'https://4ta-tarea-react-next-js.vercel.app/',
+      },
+       {
+        title: 'Modo-claro-oscuro',
+        link: 'https://5ta-tarea-react-next-js.vercel.app/',
+      },
+       {
+        title: 'Shopping-Cart',
+        link: 'https://6ta-tarea-react-next-1e3yvlp76-vhp-projects-694c293c.vercel.app/',
+      },
+       {
+        title: 'Inventario Hospitalario',
+        link: 'https://8va-tarea-react-next-js.vercel.app/',
+      },
+       {
+        title: 'Breaking-Bad',
+        link: 'https://7ma-tarea-react-next-js.vercel.app/',
+      },
     ],
   },
   {
