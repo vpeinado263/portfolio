@@ -74,7 +74,7 @@ const projectsData = [
       },
       {
         title: 'Ulceras',
-        link: '3ra-Tarea-REACT-NEXT.JS](https://3ra-tarea-react-next-js.vercel.app/',
+        link: 'https://3ra-tarea-react-next-js.vercel.app/',
       },
       {
         title: 'Relojes',
