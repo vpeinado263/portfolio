@@ -7,15 +7,10 @@
   cursor: pointer;
   display: flex;
 }
-.logoContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.menuContainer {
   font-family: var(--font-third);
-  color: var(--rgb0);
 }
 .menu {
-  display: flex;
   gap: 3rem;
   color: var(--rgb0);
   text-transform: uppercase;

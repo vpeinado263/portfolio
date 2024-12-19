@@ -25,9 +25,6 @@ const Navbar = () => {
       <header
         className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}
       >
-        <nav className={styles.navContainer}>
-          <MyMenu />
-        </nav>
         <TypingEffect
           avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
           avatarAlt="Foto personal"
@@ -35,6 +32,9 @@ const Navbar = () => {
           avatarHeight={150}
           text={text}
         />
+         <nav className={styles.navContainer}>
+          <MyMenu />
+        </nav>
         <Footer />
       </header>
     </>
