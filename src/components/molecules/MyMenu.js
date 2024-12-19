@@ -28,9 +28,9 @@ const MyMenu = () => {
         transition={{ duration: 1, ease: 'easeOut' }}
       >
         <ul className={`${styles.menu} ${isMyMenuOpen ? styles.activar : ''}`}>
-           <LinkItem href="#About" text="About" />
-           <LinkItem href="#My Projects" text="Projects" />
-           <LinkItem href="" text="Insights" />
+          <LinkItem href="#About" text="About" />
+          <LinkItem href="#My Projects" text="Projects" />
+          <LinkItem href="" text="Insights" />
         </ul>
       </motion.div>
     </>

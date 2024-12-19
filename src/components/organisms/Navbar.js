@@ -32,7 +32,7 @@ const Navbar = () => {
           avatarHeight={150}
           text={text}
         />
-         <nav className={styles.navContainer}>
+        <nav className={styles.navContainer}>
           <MyMenu />
         </nav>
         <Footer />
