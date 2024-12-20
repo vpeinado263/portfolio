@@ -42,17 +42,6 @@ const projectsData = [
     ],
   },
   {
-    category: 'Bootstrap y diseño moderno',
-    description:
-      'Introducción a Bootstrap para crear diseños rápidos y profesionales.',
-    projects: [
-      {
-        title: 'Proyecto Bootstrap',
-        link: 'https://tarea-8-clase-bootstrap.vercel.app/',
-      },
-    ],
-  },
-  {
     category: 'Proyectos con Vanilla JavaScript',
     description:
       'Desarrollé habilidades de programación, manejo de APIs y lógica en proyectos interactivos.',
@@ -83,16 +72,8 @@ const projectsData = [
       'Implementé componentes dinámicos, manejo de rutas y despliegues modernos.',
     projects: [
       {
-        title: 'Primera Tarea React',
-        link: 'https://el-habito-de-fumar.vercel.app/',
-      },
-      {
         title: 'Segunda Tarea React',
         link: 'https://2da-tarea-react-next-js.vercel.app/',
-      },
-      {
-        title: 'Ulceras',
-        link: 'https://3ra-tarea-react-next-js.vercel.app/',
       },
       {
         title: 'Relojes',
@@ -105,10 +86,6 @@ const projectsData = [
       {
         title: 'Shopping-Cart',
         link: 'https://6ta-tarea-react-next-1e3yvlp76-vhp-projects-694c293c.vercel.app/',
-      },
-      {
-        title: 'Inventario Hospitalario',
-        link: 'https://8va-tarea-react-next-js.vercel.app/',
       },
       {
         title: 'Breaking-Bad',
