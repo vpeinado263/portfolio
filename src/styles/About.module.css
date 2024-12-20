@@ -1,0 +1,11 @@
+.aboutContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin-left: 35rem;
+    font-family: var(--font-first);
+}
+.aboutSection {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}

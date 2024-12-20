@@ -1,5 +1,6 @@
 import styles from '@/styles/Header.module.css';
 import { motion } from 'framer-motion';
+import About from '../atoms/About';
 
 import Navbar from '../organisms/Navbar';
 
@@ -12,6 +13,7 @@ const Header = () => {
     >
       <div className={styles.header}>
         <Navbar />
+        <About />
       </div>
     </motion.div>
   );

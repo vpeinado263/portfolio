@@ -22,6 +22,7 @@ export default function Index() {
       </Head>
       <Header />
       <Projects />
+     
     </>
   );
 }
