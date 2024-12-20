@@ -5,35 +5,37 @@ const About = () => {
     <section id="About" className={styles.aboutContainer}>
       <div className={styles.aboutSection}>
         <p>
-          Soy un desarrollador apasionado por crear experiencias web accesibles,
-          funcionales y con atención a los detalles. Mi enfoque se centra en el
-          desarrollo <strong>full stack</strong>, con especial interés en{' '}
-          <strong>React</strong>, donde disfruto diseñar interfaces de usuario
-          que combinan una estética atractiva con un rendimiento optimizado y
-          una sólida ingeniería.
+          Soy un profesional con una combinación única de habilidades y
+          pasiones. Como enfermero especializado en cuidados intensivos, trabajé
+          durante la pandemia de COVID-19 en el Hospital Central de Mendoza,
+          brindando atención crítica a pacientes en un entorno desafiante y
+          exigente. Mi experiencia en el sector salud me ha dotado de una gran
+          capacidad para resolver problemas bajo presión y colaborar
+          interdisciplinariamente.
         </p>
         <p>
-          Actualmente, estoy fortaleciendo mis habilidades técnicas a través de
-          proyectos propios y prácticas diarias que abarcan desde el diseño
-          responsivo y manejo de estado avanzado hasta la integración de APIs y
-          optimización del rendimiento. También utilizo herramientas como{' '}
-          <strong>Mimo</strong> y <strong>Coderware</strong> para fomentar un
-          aprendizaje constante y mantenerme actualizado con las mejores
-          prácticas.
-        </p>
-        <p>
-          En el pasado, he desarrollado soluciones que combinan tecnología y
-          creatividad, como un sistema para evaluar temperaturas corporales con
-          recomendaciones personalizadas y la implementación de diseños modernos
-          utilizando
+          Además, soy desarrollador web Full Stack, con un enfoque en React y la
+          creación de aplicaciones dinámicas. Disfruto diseñar soluciones
+          tecnológicas que combinen funcionalidad y estética, y he desarrollado
+          proyectos como herramientas para evaluar temperaturas corporales con
+          recomendaciones personalizadas y diseños modernos utilizando{' '}
           <strong>CSS Grid</strong> y <strong>box modeling</strong>.
         </p>
         <p>
-          Mi objetivo es seguir creciendo como desarrollador, aplicando mi
-          conocimiento técnico y pasión por la tecnología para crear proyectos
-          innovadores y de impacto. En mi tiempo libre, disfruto aprendiendo
-          nuevas herramientas, perfeccionando mis habilidades en React y
-          explorando las infinitas posibilidades del desarrollo web.
+          Fuera del ámbito profesional, encuentro inspiración en la artesanía.
+          Mi pasatiempo es la creación de cuchillos artesanales, un arte que me
+          permite explorar la precisión, la creatividad y el detalle, valores
+          que también aplico en mi trabajo como enfermero y desarrollador. Este
+          equilibrio entre tecnología, salud y manualidades refleja mi
+          compromiso con la innovación y la dedicación en cada proyecto que
+          emprendo.
+        </p>
+        <p>
+          Mi objetivo es continuar creciendo en ambos mundos, desarrollando
+          herramientas tecnológicas que impacten positivamente en la calidad de
+          vida de las personas y perfeccionando mis habilidades artesanales.
+          Estoy en constante aprendizaje, explorando nuevas tecnologías,
+          herramientas y técnicas para lograrlo.
         </p>
       </div>
     </section>
