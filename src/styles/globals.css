@@ -57,7 +57,7 @@ li {
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 3rem;
   }
 
