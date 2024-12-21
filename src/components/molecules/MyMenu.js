@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const MyMenu = () => {
   return (
     <>
-      <nav>
+      <nav >
         <div className={styles.menuContainer}>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 35rem;
+    width: 12rem;
     height: 100vh;
     padding: 1rem;
     background-color: transparent;
@@ -26,9 +26,10 @@
     align-items: flex-start;
   }
   .navContainer {
-    background-color: transparent;
+    padding: 2rem;
+    text-align: center;
   }
   .scrolled {
-    display: none;
+    background-color: white;
   }
 }

@@ -1,17 +1,13 @@
 .linkItem {
   color: var(--rgb3);
   transition: all 0.5s ease;
+  font-family: var(--font-second);
+  font-size: 1.5em;
 }
 .linkItem:hover {
   color: var(--hover-color);
   transform: scale(1.1);
 }
-.link {
-  background-color: transparent;
-  border-radius: 2rem;
-  color: inherit;
-}
-
 @media (min-width: 1025px) {
   .linkItem {
     color: var(--rgb3);
@@ -20,10 +16,5 @@
   .linkItem:hover {
     color: var(--hover-color);
     transform: scale(1.1);
-  }
-  .link {
-    background-color: transparent;
-    border-radius: 2rem;
-    color: inherit;
   }
 }
