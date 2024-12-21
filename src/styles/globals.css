@@ -49,7 +49,7 @@ li {
   --foreground: rgb(214, 214, 214);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   body {
     background-color: var(--background);
     color: var(--foreground);

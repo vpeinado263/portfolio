@@ -2,7 +2,7 @@
   gap: 0.3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 481px) and (min-width: 768px) {
   .socialLink {
     display: flex;
     align-items: center;

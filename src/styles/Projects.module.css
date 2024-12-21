@@ -44,7 +44,7 @@
   color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .projectsSection {
     display: flex;
     justify-content: flex-start;
