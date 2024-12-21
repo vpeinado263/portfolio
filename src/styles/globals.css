@@ -62,6 +62,7 @@ li {
   }
 
   a {
+    color: var(--rgb8);
     font-size: 0.8em;
     word-wrap: break-word;
   }
