@@ -1,39 +1,41 @@
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 35rem;
-  height: 100vh;
-  padding: 1rem;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-  color: var(--rgb5);
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@media (max-width: 480px) {
+  .scrolled {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .scrolled {
+    display: none;
+  }
 }
 
-.navContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.scrolled {
-  background-color: var(--rgb1);
-  color: var(--rgb5);
-}
-
-.navbar a {
-  padding: 10px;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.navbar a:hover {
-  color: var(--rgb5);
+@media (min-width: 1024px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35rem;
+    height: 100vh;
+    padding: 1rem;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    color: var(--rgb5);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .navContainer {
+    background-color: transparent;
+  }
+  .scrolled {
+    background-color: var(--rgb1);
+    color: var(--rgb5);
+  }
+  /* Cuando el usuario hace scroll */
+  .scrolled {
+    background-color: var(--rgb1);
+    color: var(--rgb5);
+  }
 }

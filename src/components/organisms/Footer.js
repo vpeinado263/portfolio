@@ -1,5 +1,6 @@
 import styles from '@/styles/Footer.module.css';
 import SocialLink from '@/components/molecules/SocialLink';
+import Whatsapp from '../molecules/Whatsapp';
 
 const Footer = () => {
   return (
@@ -11,9 +12,7 @@ const Footer = () => {
           iconAlt="Github icon"
           iconWidth={20}
           iconHeight={20}
-        >
-          GitHub
-        </SocialLink>
+        ></SocialLink>
       </div>
       <div className={styles.a}>
         <SocialLink
@@ -22,9 +21,10 @@ const Footer = () => {
           iconAlt="LinkedIn icon"
           iconWidth={20}
           iconHeight={20}
-        >
-          Linkedin
-        </SocialLink>
+        ></SocialLink>
+      </div>
+      <div className={styles.a}>
+        <Whatsapp />
       </div>
       <div className={styles.a}>
         <SocialLink
@@ -34,7 +34,7 @@ const Footer = () => {
           iconWidth={20}
           iconHeight={20}
         >
-          Download CV ↓
+          CV ↓
         </SocialLink>
       </div>
     </footer>

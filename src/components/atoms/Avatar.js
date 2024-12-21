@@ -7,14 +7,16 @@ const Avatar = ({ src, alt, width, height }) => {
   }
 
   return (
-    <Image
-      className={styles.avatar}
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      priority
-    />
+    <div className={styles.avatarContainer}>
+      <Image
+        className={styles.avatar}
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        priority
+      />
+    </div>
   );
 };
 

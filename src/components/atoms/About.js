@@ -3,6 +3,7 @@ import styles from '@/styles/About.module.css';
 const About = () => {
   return (
     <section id="About" className={styles.aboutContainer}>
+      <h2 className={styles.aboutTitle}>About</h2>
       <div className={styles.aboutSection}>
         <p>
           Soy un profesional con una combinación única de habilidades y

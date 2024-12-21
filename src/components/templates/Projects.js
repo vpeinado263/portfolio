@@ -107,6 +107,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <section id="My Projects">
+      <h2 className={styles.projectsTitle}>Projects</h2>
       <div className={styles.projectsSection}>
         <div className={styles.projectsContainer}>
           {projectsData.map((category, index) => (

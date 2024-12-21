@@ -1,24 +1,34 @@
-.link {
-  display: inline-block;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  border-radius: 50%;
-  overflow: hidden;
+@media (max-width: 480px) {
+  .link {
+    width: 2rem;
+    height: 2rem;
+  }
+  .image {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .link {
+    display: inline-block;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px var(--rgb6);
+    background-color: var(--rgb7);
+  }
+  .link:focus {
+    outline: 2px solid var(--rgb5);
+    outline-offset: 2px;
+  }
+  .image {
+    display: block;
+    border-radius: 50%;
+  }
 }
 
-.link:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px var(--rgb6);
-  background-color: var(--rgb7);
-}
-
-.link:focus {
-  outline: 2px solid var(--rgb5);
-  outline-offset: 2px;
-}
-
-.image {
-  display: block;
-  border-radius: 50%; /* Redondeo adicional */
-}

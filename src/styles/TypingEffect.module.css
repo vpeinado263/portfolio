@@ -1,13 +1,20 @@
-.typing {
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 10px var(--rgb0);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  gap: 0.5rem;
+@media (max-width: 480px) {
+  .typing {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
-.typing:hover {
-  transform: scale(1);
-  box-shadow: 0 8px 20px var(--rgb0);
+@media (max-width: 768px) {
+  .typing {
+    align-items: center;
+    box-shadow: 0 4px 10px var(--rgb0);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  .typing:hover {
+    transform: scale(1);
+    box-shadow: 0 8px 20px var(--rgb0);
+  }
 }
+

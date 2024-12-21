@@ -9,15 +9,20 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-first);
   background-color: var(--rgb0);
   color: var(--rgb5);
-  max-width: 100vw;
-  overflow-x: hidden;
   line-height: 1.6;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-third); 
+  overflow-wrap: break-word;
+}
+
+code, pre {
+  font-family: var(--font-second); 
+}
 a {
-  color: inherit;
   text-decoration: none;
 }
 li {
@@ -29,68 +34,49 @@ li {
   --rgb1: rgb(10, 40, 54);
   --rgb2: rgb(92, 158, 187);
   --rgb3: rgb(66, 143, 176);
-  --rgb4: rgb(28, 187, 216);
-  --rgb5: rgb(202, 213, 218);
+  --rgb4: rgb(71, 184, 204);
+  --rgb5: rgb(17, 19, 20);
   --rgb6: rgb(80, 120, 116);
-  --rgb7: rgb(243, 246, 248);
-  --background: rgb(14, 125, 172);
-  --foreground: rgb(1, 80, 115);
+  --rgb7: rgb(52, 55, 58);
   --hover-bg: rgb(106, 117, 122);
-  --hover-color: rgb(255, 255, 255);
-  --font-first: 'Roboto Mono';
-  --font-second: 'Inerti';
+  --hover-color: rgb(8, 6, 6);
+  --font-first: 'Roboto Mono', monospace;
+  --font-second: 'Inerti', sans-serif;
   --font-third: 'Cormorant SC', serif;
+  --background: rgb(38, 46, 97);
+  --foreground: rgb(17, 19, 20);
 }
 /* Media Queries */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #262a2b;
-    --foreground: #dde5e9;
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #050202;
+    --background: rgb(79, 178, 227);
+    --foreground: rgb(38, 15, 72);
   }
-
+}
+@media (max-width: 480px) {
   body {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: var(--background);
     color: var(--foreground);
-    background: var(--background);
   }
 
-  .logo {
-    filter: invert();
+  a {
+    font-size: 10rem;
+    word-wrap: break-word;
   }
 }
 
-/* Pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   body {
-    font-size: 16px;
-  }
-}
-/* Pantallas extra pequeñas (hasta 600px) */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  .page {
-    padding: 20px;
-    padding-bottom: 60px;
-  }
-  .main {
-    align-items: center;
-    flex-direction: column;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-size: 0.8em;
+    padding: 3rem;
   }
 
-  .secondary {
-    min-width: auto;
-    text-align: center;
-  }
-  h1 {
-    font-size: 0.9em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: 18px;
+  a {
+    font-size: 0.8em;
+    word-wrap: break-word;
   }
 }

@@ -1,4 +1,7 @@
+import About from '@/components/atoms/About';
+import Footer from '@/components/organisms/Footer';
 import Header from '@/components/templates/Header';
+import Insights from '@/components/templates/Insights';
 import Projects from '@/components/templates/Projects';
 import Head from 'next/head';
 
@@ -17,11 +20,14 @@ export default function Index() {
           name="description"
           content="Explora mis proyectos y habilidades."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
       <Header />
+      <Footer />
+      <About />
       <Projects />
+      <Insights />
     </>
   );
 }

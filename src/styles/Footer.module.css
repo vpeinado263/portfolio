@@ -1,22 +1,24 @@
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+@media (max-width: 480px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 0.1rem;
+  }
+  .a {
+    display: inline-block;
+    text-align: center;
+  }
 }
-
-.a {
-  display: inline-block;
-  text-align: center;
-}
-
-.a svg {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
-}
-
-.a:hover svg {
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .a {
+    text-align: center;
+    background-color: transparent;
+  }
 }

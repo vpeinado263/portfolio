@@ -1,16 +1,22 @@
-.socialLink {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: inherit;
-  text-decoration: none;
-  font-family: var(--font-first);
-  font-size: 0.9rem;
-  transition:
-    transform 0.2s ease,
-    color 0.3s ease;
+/***Media Query***/
+@media (max-width: 480px) {
+  .socialLink {
+    gap: 0.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .socialLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-first);
+    font-size: 0.9rem;
+    transition:
+      transform 0.2s ease,
+      color 0.3s ease;
+  }
+  .socialLink:hover {
+    transform: scale(1.05);
+  }
 }
 
-.socialLink:hover {
-  transform: scale(1.05);
-}
