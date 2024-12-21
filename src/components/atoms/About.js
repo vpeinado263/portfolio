@@ -7,24 +7,15 @@ const About = () => {
       <div className={styles.aboutSection}>
         <p>
           Soy un profesional con una combinación única de habilidades y
-          pasiones. Como enfermero especializado en cuidados intensivos, trabajé
-          durante la pandemia de COVID-19 en el Hospital Central de Mendoza,
+          pasiones. Como enfermero, trabajé durante la pandemia COVID-19 en el Hospital Central de Mendoza,
           brindando atención crítica a pacientes en un entorno desafiante y
-          exigente. Mi experiencia en el sector salud me ha dotado de una gran
-          capacidad para resolver problemas bajo presión y colaborar
-          interdisciplinariamente.
-        </p>
-        <p>
-          Además, soy desarrollador web Full Stack, con un enfoque en React y la
+          exigente. Además, soy desarrollador web Full Stack, con un enfoque en React en
           creación de aplicaciones dinámicas. Disfruto diseñar soluciones
-          tecnológicas que combinen funcionalidad y estética, y he desarrollado
-          proyectos como herramientas para evaluar temperaturas corporales con
-          recomendaciones personalizadas y diseños modernos utilizando{' '}
-          <strong>CSS Grid</strong> y <strong>box modeling</strong>.
+          tecnológicas que combinen funcionalidad y estética.
         </p>
         <p>
-          Fuera del ámbito profesional, encuentro inspiración en la artesanía.
-          Mi pasatiempo es la creación de cuchillos artesanales, un arte que me
+          Fuera del ámbito profesional, encuentro inspiración en la forja.
+          Mi pasatiempo es forjar de cuchillos, un arte que me
           permite explorar la precisión, la creatividad y el detalle, valores
           que también aplico en mi trabajo como enfermero y desarrollador. Este
           equilibrio entre tecnología, salud y manualidades refleja mi
@@ -34,7 +25,7 @@ const About = () => {
         <p>
           Mi objetivo es continuar creciendo en ambos mundos, desarrollando
           herramientas tecnológicas que impacten positivamente en la calidad de
-          vida de las personas y perfeccionando mis habilidades artesanales.
+          vida de las personas y perfeccionando mis habilidades.
           Estoy en constante aprendizaje, explorando nuevas tecnologías,
           herramientas y técnicas para lograrlo.
         </p>
