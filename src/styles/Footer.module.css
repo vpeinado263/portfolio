@@ -17,7 +17,6 @@
   }
   .a {
     text-align: center;
-    background-color: transparent;
   }
 }
 @media (min-width: 1025px) {
@@ -30,6 +29,5 @@
   }
   .a {
     text-align: center;
-    background-color: transparent;
   }
 }
