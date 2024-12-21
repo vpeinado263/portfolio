@@ -14,16 +14,6 @@ body {
   color: var(--rgb5);
   line-height: 1.6;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-third);
-  overflow-wrap: break-word;
-}
-
 a {
   text-decoration: none;
 }
@@ -64,4 +54,15 @@ li {
 }
 
 @media (min-width: 1025px) {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-size: 0.8em;
+    padding: 3rem;
+  }
+
+  a {
+    font-size: 0.8em;
+    word-wrap: break-word;
+  }
 }

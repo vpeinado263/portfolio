@@ -21,4 +21,15 @@
   }
 }
 @media (min-width: 1025px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .a {
+    text-align: center;
+    background-color: transparent;
+  }
 }

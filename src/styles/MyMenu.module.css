@@ -9,4 +9,7 @@
 }
 
 @media (min-width: 1025px) {
+  .menuContainer {
+    display: none;
+  }
 }

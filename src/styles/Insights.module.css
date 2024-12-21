@@ -102,4 +102,63 @@
 }
 
 @media (min-width: 1025px) {
+  .insightsSection {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: var(--rgb0);
+  }
+  .InsightsTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .insightsContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .insightsCategory {
+    background-color: var(--rgb1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--rgb2);
+  }
+  .insightsCategory:hover {
+    background-color: transparent;
+  }
+  .categoryTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .categoryDescription {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .insightsList {
+    list-style-type: none;
+    padding: 0;
+  }
+  .insightsList li {
+    margin: 8px 0;
+  }
+  .insightsList a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  .insightsList a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
 }
