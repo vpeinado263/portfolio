@@ -14,13 +14,19 @@ body {
   color: var(--rgb5);
   line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-third); 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-third);
   overflow-wrap: break-word;
 }
 
-code, pre {
-  font-family: var(--font-second); 
+code,
+pre {
+  font-family: var(--font-second);
 }
 a {
   text-decoration: none;
