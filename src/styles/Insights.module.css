@@ -2,7 +2,6 @@
   display: flex;
   justify-content: flex-start;
   padding: 1rem;
-  min-height: 100vh;
   background-color: var(--rgb0);
 }
 .InsightsTitle {
@@ -63,7 +62,6 @@
     display: flex;
     justify-content: flex-start;
     padding: 1rem;
-    min-height: 100vh;
     background-color: var(--rgb0);
   }
   .InsightsTitle {
@@ -125,7 +123,6 @@
     display: flex;
     justify-content: flex-start;
     padding: 1rem;
-    min-height: 100vh;
     background-color: var(--rgb0);
   }
   .InsightsTitle {
