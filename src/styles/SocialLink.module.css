@@ -2,7 +2,7 @@
   gap: 0.3rem;
 }
 
-@media (min-width: 481px) and (min-width: 768px) {
+@media (min-width: 481px) and (min-width: 1024px) {
   .socialLink {
     display: flex;
     align-items: center;
@@ -16,4 +16,7 @@
   .socialLink:hover {
     transform: scale(1.05);
   }
+}
+
+@media (min-width: 1025px) {
 }

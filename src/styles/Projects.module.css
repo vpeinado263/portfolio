@@ -44,7 +44,7 @@
   color: #0056b3;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .projectsSection {
     display: flex;
     justify-content: flex-start;
@@ -104,4 +104,7 @@
     color: #0056b3;
     text-decoration: underline;
   }
+}
+
+@media (min-width: 1025px) {
 }

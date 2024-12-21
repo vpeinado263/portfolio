@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .textContainer {
     display: grid;
     place-items: center;
@@ -70,4 +70,7 @@
       border-color: var(--hover-bg);
     }
   }
+}
+
+@media (min-width: 1025px) {
 }

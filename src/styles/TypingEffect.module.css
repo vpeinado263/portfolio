@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .typing {
     align-items: center;
     box-shadow: 0 4px 10px var(--rgb0);
@@ -15,4 +15,7 @@
     transform: scale(1);
     box-shadow: 0 8px 20px var(--rgb0);
   }
+}
+
+@media (min-width: 1025px) {
 }

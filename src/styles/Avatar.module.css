@@ -13,7 +13,7 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .avatarContainer {
     display: grid;
     place-items: center;
@@ -31,4 +31,6 @@
   .avatar:hover {
     transform: scale(1.1);
   }
+}
+@media (min-width: 1025px) {
 }

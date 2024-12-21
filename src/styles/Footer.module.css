@@ -7,7 +7,7 @@
   display: inline-block;
   text-align: center;
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .footer {
     display: flex;
     justify-content: center;
@@ -19,4 +19,6 @@
     text-align: center;
     background-color: transparent;
   }
+}
+@media (min-width: 1025px) {
 }

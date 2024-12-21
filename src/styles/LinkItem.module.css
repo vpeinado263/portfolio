@@ -11,3 +11,6 @@
   border-radius: 2rem;
   color: inherit;
 }
+
+@media (min-width: 1025px) {
+}

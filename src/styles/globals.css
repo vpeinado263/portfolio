@@ -49,7 +49,7 @@ li {
   --foreground: rgb(214, 214, 214);
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -61,4 +61,7 @@ li {
     font-size: 0.8em;
     word-wrap: break-word;
   }
+}
+
+@media (min-width: 1025px) {
 }

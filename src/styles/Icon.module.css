@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .icon {
     display: inline-block;
     width: 1rem;
@@ -35,4 +35,7 @@
     justify-content: flex-start;
     align-items: center;
   }
+}
+
+@media (min-width: 1025px) {
 }

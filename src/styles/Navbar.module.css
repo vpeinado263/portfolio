@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 481px) and (min-width: 768px) {
+@media (min-width: 481px) and (min-width: 1024px) {
   .scrolled {
     display: none;
   }
@@ -37,4 +37,7 @@
     background-color: var(--rgb1);
     color: var(--rgb5);
   }
+}
+
+@media (min-width: 1025px) {
 }

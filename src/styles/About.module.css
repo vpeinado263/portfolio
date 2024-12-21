@@ -15,7 +15,7 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .aboutContainer {
     width: 100%;
     padding: 0.1rem;
@@ -34,14 +34,28 @@
     margin-bottom: 1rem;
   }
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 1025px) {
   .aboutContainer {
-    margin-left: 25rem;
-    font-size: 1.1em;
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .aboutTitle {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .aboutSection {
-    padding: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: left;
+  }
+
+  .aboutSection p {
+    margin-bottom: 1.5rem;
   }
 }

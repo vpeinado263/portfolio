@@ -3,7 +3,7 @@
   height: 1.5rem;
   margin-top: 4rem;
 }
-@media (min-width: 481px) and (min-width: 768px) {
+@media (min-width: 481px) and (min-width: 1024px) {
   .spinner {
     border: 4px solid var(--hover-bg);
     border-left-color: var(--rgb0);
@@ -21,4 +21,7 @@
       transform: rotate(360deg);
     }
   }
+}
+
+@media (min-width: 1025px) {
 }
