@@ -1,9 +1,8 @@
-@media (max-width: 480px) {
-  .typing {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.typing {
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
 @media (max-width: 768px) {
   .typing {
     align-items: center;

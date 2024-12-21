@@ -1,13 +1,12 @@
-@media (max-width: 480px) {
-  .link {
-    width: 2rem;
-    height: 2rem;
-  }
-  .image {
-    width: 2rem;
-    height: 2rem;
-  }
+.link {
+  width: 2rem;
+  height: 2rem;
 }
+.image {
+  width: 2rem;
+  height: 2rem;
+}
+
 @media (max-width: 768px) {
   .link {
     display: inline-block;

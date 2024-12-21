@@ -24,10 +24,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-code,
-pre {
-  font-family: var(--font-second);
-}
 a {
   text-decoration: none;
 }
@@ -49,28 +45,8 @@ li {
   --font-first: 'Roboto Mono', monospace;
   --font-second: 'Inerti', sans-serif;
   --font-third: 'Cormorant SC', serif;
-  --background: rgb(38, 46, 97);
-  --foreground: rgb(17, 19, 20);
-}
-/* Media Queries */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: rgb(79, 178, 227);
-    --foreground: rgb(38, 15, 72);
-  }
-}
-@media (max-width: 480px) {
-  body {
-    font-size: 1.2rem;
-    padding: 1rem;
-    background-color: var(--background);
-    color: var(--foreground);
-  }
-
-  a {
-    font-size: 10rem;
-    word-wrap: break-word;
-  }
+  --background: rgb(50, 61, 131);
+  --foreground: rgb(214, 214, 214);
 }
 
 @media (max-width: 768px) {

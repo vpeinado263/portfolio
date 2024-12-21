@@ -1,13 +1,11 @@
-@media (max-width: 480px) {
-  .footer {
-    display: flex;
-    justify-content: center;
-    gap: 0.1rem;
-  }
-  .a {
-    display: inline-block;
-    text-align: center;
-  }
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.a {
+  display: inline-block;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .footer {

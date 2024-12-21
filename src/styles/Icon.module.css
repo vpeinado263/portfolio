@@ -1,22 +1,20 @@
-/* Media Queries */
-@media (max-width: 480px) {
-  .icon {
-    filter: grayscale(100%);
-    transition:
-      filter 0.3s ease,
-      transform 0.3s ease;
-  }
-  .icon:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-  }
-  .iconsContainer {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.icon {
+  filter: grayscale(100%);
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
 }
+.icon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.iconsContainer {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .icon {
     display: inline-block;

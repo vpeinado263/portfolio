@@ -1,9 +1,7 @@
-/***Media Query***/
-@media (max-width: 480px) {
-  .socialLink {
-    gap: 0.3rem;
-  }
+.socialLink {
+  gap: 0.3rem;
 }
+
 @media (min-width: 768px) {
   .socialLink {
     display: flex;

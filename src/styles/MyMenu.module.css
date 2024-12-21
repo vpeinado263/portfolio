@@ -1,8 +1,7 @@
-@media (max-width: 480px) {
-  .menuContainer {
-    display: none;
-  }
+.menuContainer {
+  display: none;
 }
+
 @media (max-width: 768px) {
   .menuContainer {
     display: none;
