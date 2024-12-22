@@ -1,27 +1,25 @@
 .projectsContainer {
   min-height: 100vh;
-  padding: 4rem 2rem;
-  margin-bottom: 2rem;
 }
 .projectCategory {
   background-color: var(--rgb1);
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
   box-shadow: 0 2px 5px var(--rgb2);
 }
 .categoryTitle {
   font-size: 1.5rem;
   color: var(--rgb2);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 .categoryDescription {
   font-size: 1rem;
   color: var(--rgb6);
-  margin-bottom: 2rem;
+  margin-bottom: 0.1rem;
 }
 
 .projectList a {
-  font-size: 1rem;
+  font-size: 0.1rem;
   transition: color 0.3s ease;
 }
 .projectList a:hover {
@@ -32,19 +30,16 @@
 @media (min-width: 481px) and (max-width: 1024px) {
   .projectsContainer {
     min-height: 100vh;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
   }
   .projectCategory {
     background-color: var(--rgb1);
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1rem;
     box-shadow: 0 2px 5px var(--rgb2);
   }
   .categoryTitle {
     font-size: 1.5rem;
     color: var(--rgb2);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
   .categoryDescription {
     font-size: 1rem;
@@ -63,33 +58,31 @@
 }
 @media (min-width: 1025px) {
   .projectsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10rem;
     min-height: 100vh;
-    width: calc(100% - 100px);
-    margin-left: 9rem;
   }
   .projectCategory {
     background-color: var(--rgb1);
+    margin-bottom: 0.5rem;
     box-shadow: 0 2px 5px var(--rgb2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .categoryTitle {
     font-size: 1.5rem;
     color: var(--rgb2);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
   .categoryDescription {
     font-size: 1rem;
-    transition: color 0.3s ease;
-    display: block;
+    color: var(--rgb6);
+    margin-bottom: 0.1rem;
   }
 
   .projectList a {
-    font-size: 1rem;
+    font-size: 0.1rem;
     transition: color 0.3s ease;
   }
   .projectList a:hover {
