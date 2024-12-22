@@ -4,9 +4,7 @@ import styles from '@/styles/LinkItem.module.css';
 const LinkItem = ({ href, text }) => {
   return (
     <li className={styles.linkItem}>
-      <Link href={href}>
-        {text}
-      </Link>
+      <Link href={href}>{text}</Link>
     </li>
   );
 };

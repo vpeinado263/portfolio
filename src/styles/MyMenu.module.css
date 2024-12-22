@@ -11,10 +11,8 @@
 @media (min-width: 1025px) {
   .menuContainer {
     display: block;
-    
   }
   .menu {
-   
     display: flex;
     flex-direction: column;
     gap: 3rem;
