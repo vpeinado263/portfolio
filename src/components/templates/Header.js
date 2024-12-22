@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Footer from '../organisms/Footer';
 import Navbar from '../organisms/Navbar';
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
         transition={{ duration: 3 }}
       >
         <Navbar />
+        <Footer />
       </motion.div>
     </header>
   );

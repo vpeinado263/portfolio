@@ -24,10 +24,16 @@ export default function Index() {
         <link rel="icon" href="/maletin.svg" />
       </Head>
       <Header />
+      <main>
+        <About />
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <Insights />
+        </section>
+      </main>
       <Footer />
-      <About />
-      <Projects />
-      <Insights />
     </>
   );
 }

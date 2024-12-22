@@ -37,10 +37,9 @@
 
 @media (min-width: 1025px) {
   .aboutContainer {
-    width: 80%;
-    max-width: 1200px;
-    padding: 2rem;
-    margin: 0 auto;
+    height: 100vh;
+    width: calc(80% - 80px);
+    margin-left: 14rem;
   }
 
   .aboutTitle {
@@ -52,7 +51,6 @@
   .aboutSection {
     font-size: 1.2em;
     line-height: 1.8;
-    text-align: left;
   }
 
   .aboutSection p {

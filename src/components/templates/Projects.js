@@ -91,48 +91,40 @@ const projectsData = [
         title: 'Breaking-Bad',
         link: 'https://7ma-tarea-react-next-js.vercel.app/',
       },
-    ],
-  },
-  {
-    category: 'Full Stack con React/Next.js y TypeScript',
-    description:
-      'Proyectos integrales donde combiné frontend y backend, aprendiendo a desplegarlos de forma individual y conjunta.',
-    projects: [
-      { title: 'Infinito JG', link: 'https://infinito-jg.vercel.app/' },
-      { title: 'Tienda X', link: 'https://tienda-x--swart.vercel.app/' },
+      {
+        title: 'Infinito JG',
+        link: 'https://infinito-jg.vercel.app/',
+      },
+      {
+        title: 'Tienda X',
+        link: 'https://tienda-x--swart.vercel.app/',
+      },
     ],
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="My Projects">
-      <h2 className={styles.projectsTitle}>Projects</h2>
-      <div className={styles.projectsSection}>
-        <div className={styles.projectsContainer}>
-          {projectsData.map((category, index) => (
-            <div key={index} className={styles.projectCategory}>
-              <h3 className={styles.categoryTitle}>{category.category}</h3>
-              <p className={styles.categoryDescription}>
-                {category.description}
-              </p>
-              <ul className={styles.projectList}>
-                {category.projects.map((project, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {project.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <section id="My Projects" className={styles.projectsContainer}>
+      {projectsData.map((category, index) => (
+        <div key={index} className={styles.projectCategory}>
+          <h3 className={styles.categoryTitle}>{category.category}</h3>
+          <p className={styles.categoryDescription}>{category.description}</p>
+          <ul className={styles.projectList}>
+            {category.projects.map((project, idx) => (
+              <li key={idx}>
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      ))}
     </section>
   );
 };

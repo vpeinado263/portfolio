@@ -16,9 +16,11 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--rgb8);
 }
 li {
   list-style: none;
+  margin: 8px 0;
 }
 /* Paleta de colores */
 :root {

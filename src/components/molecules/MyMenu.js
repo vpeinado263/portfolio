@@ -13,6 +13,7 @@ const MyMenu = () => {
             transition={{ duration: 1, ease: 'easeOut' }}
           >
             <ul className={styles.menu}>
+              <LinkItem href="/" text="Home" />
               <LinkItem href="#About" text="About" />
               <LinkItem href="#My Projects" text="Projects" />
               <LinkItem href="#Insights" text="Insights" />
