@@ -3,9 +3,10 @@ import Footer from '@/components/organisms/Footer';
 import Header from '@/components/templates/Header';
 import Insights from '@/components/templates/Insights';
 import Projects from '@/components/templates/Projects';
+import ThemeContextProvider from '@/context/ThemeContextProvider';
 import Head from 'next/head';
 
-export default function Index() {
+export default function Home() {
   return (
     <>
       <Head>
@@ -23,17 +24,22 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/maletin.svg" />
       </Head>
-      <Header />
-      <main>
-        <About />
-        <section>
-          <Projects />
-        </section>
-        <section>
-          <Insights />
-        </section>
-      </main>
-      <Footer />
+
+      <ThemeContextProvider>
+       <Header />
+        <main role="main">
+          <section role="region" aria-labelledby="about-section">
+           <About />
+          </section>
+          <section role="region" aria-labelledby="projects-section">
+           <Projects />
+          </section>
+          <section role="region" aria-labelledby="insights-section">
+           <Insights />
+          </section>
+        </main>
+        <Footer />
+      </ThemeContextProvider>
     </>
   );
 }

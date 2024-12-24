@@ -1,7 +1,6 @@
 import { ThemeContext } from '@/context/ThemeContextProvider';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
-import Footer from '../organisms/Footer';
 import Navbar from '../organisms/Navbar';
 import Image from 'next/image';
 
@@ -10,13 +9,16 @@ const Header = () => {
   const [toggleTheme, handleTheme] = data;
 
   return (
-    <header className={toggleTheme}>
-      <button onClick={handleTheme}>
+    <header className={`header ${toggleTheme}`}>
+      <button 
+       className="button" 
+       onClick={handleTheme} 
+       aria-label={`Switch to ${toggleTheme === "light" ? "dark" : "light"} mode`}>
         <Image
-        src={toggleTheme === "light" ? "/sun.png" : "/sunDark.png"}
-        alt="Theme"
-        width={30}
-        height={30}
+          src={toggleTheme === "light" ? "/sun.png" : "/sunDark.png"}
+          alt="Theme-logos"
+          width={30}
+          height={30}
         />
       </button>
       <motion.div
@@ -25,7 +27,6 @@ const Header = () => {
         transition={{ duration: 3 }}
       >
         <Navbar />
-        <Footer />
       </motion.div>
     </header>
   );
