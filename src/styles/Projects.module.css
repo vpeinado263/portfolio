@@ -2,14 +2,11 @@
   min-height: 100vh;
 }
 .projectCategory {
-  background-color: var(--rgb1);
   padding: 1rem;
-  margin-bottom: 0.5rem;
-  box-shadow: 0 2px 5px var(--rgb2);
 }
 .categoryTitle {
   font-size: 1.5rem;
-  color: var(--rgb2);
+  color: var(--rgb5);
   margin-bottom: 0.3rem;
 }
 .categoryDescription {
@@ -18,57 +15,32 @@
   margin-bottom: 0.1rem;
 }
 
-.projectList a {
-  font-size: 0.1rem;
-  transition: color 0.3s ease;
-}
-.projectList a:hover {
-  color: var(--rgb0);
-  text-decoration: underline;
-}
-
 @media (min-width: 481px) and (max-width: 1024px) {
   .projectsContainer {
     min-height: 100vh;
   }
   .projectCategory {
-    background-color: var(--rgb1);
     padding: 1rem;
-    box-shadow: 0 2px 5px var(--rgb2);
   }
   .categoryTitle {
     font-size: 1.5rem;
-    color: var(--rgb2);
+    color: var(--rgb5);
     margin-bottom: 0.3rem;
   }
   .categoryDescription {
     font-size: 1rem;
-    color: var(--rgb6);
-    margin-bottom: 2rem;
-  }
-
-  .projectList a {
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  .projectList a:hover {
-    color: var(--rgb0);
-    text-decoration: underline;
+    color: var(--rgb4);
   }
 }
 @media (min-width: 1025px) {
   .projectsContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     margin-left: 10rem;
     min-height: 100vh;
   }
   .projectCategory {
-    background-color: var(--rgb1);
     margin-bottom: 0.5rem;
-    box-shadow: 0 2px 5px var(--rgb2);
   }
   .categoryTitle {
     font-size: 1.5rem;
@@ -79,14 +51,5 @@
     font-size: 1rem;
     color: var(--rgb6);
     margin-bottom: 0.1rem;
-  }
-
-  .projectList a {
-    font-size: 0.1rem;
-    transition: color 0.3s ease;
-  }
-  .projectList a:hover {
-    color: var(--rgb0);
-    text-decoration: underline;
   }
 }
