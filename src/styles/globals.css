@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  color: var(--foreground);
 }
 a {
   text-decoration: none;
@@ -22,7 +24,25 @@ body {
   font-size: 0.8em;
   padding: 3rem;
 }
+/* Tema claro (por defecto, fuera de .dark) */
 :root {
+  --rgb0: rgb(255, 255, 255);
+  --rgb1: rgb(240, 240, 240);
+  --rgb2: rgb(150, 150, 150);
+  --rgb3: rgb(120, 120, 120);
+  --rgb4: rgb(90, 90, 90);
+  --rgb5: rgb(200, 200, 200);
+  --rgb6: rgb(170, 170, 170);
+  --rgb7: rgb(60, 60, 60);
+  --hover-bg: rgb(230, 230, 230);
+  --hover-color: rgb(0, 0, 0);
+  --font-first: 'Roboto Mono', monospace;
+  --font-second: 'Urbanist', sans-serif;
+  --font-third: 'Cormorant SC', serif;
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(30, 30, 30);
+}
+.dark {
   --rgb0: rgb(38, 46, 97);
   --rgb1: rgb(10, 40, 54);
   --rgb2: rgb(92, 158, 187);
@@ -40,14 +60,6 @@ body {
   --foreground: rgb(214, 214, 214);
 }
 
-/* Paleta de colores para el modo oscuro*/
-.dark {
-  --background: rgb(3, 3, 3);
-  --foreground: rgb(235, 221, 221);
-  --link-color: rgb(82, 76, 76);
-  --hover-bg: rgb(55, 18, 189);
-  --hover-color: rgb(97, 95, 231);
-}
 
 .button {
   background-color: transparent;
@@ -71,8 +83,6 @@ body {
   body {
     font-size: 1em;
     padding: 3rem;
-    --background: rgb(3, 3, 3);
-    --foreground: rgb(235, 221, 221);
   }
 
   a {

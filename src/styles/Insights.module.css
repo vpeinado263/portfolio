@@ -2,8 +2,6 @@
   min-height: 100vh;
   padding: 4rem 2rem;
   margin-bottom: 2rem;
-  background-color: var(--background);
-  color: var(--foreground);
 }
 
 .insightsCategory {
@@ -11,7 +9,6 @@
   padding: 1rem;
   border: 1px solid var(--rgb3);
   border-radius: 8px;
-  background-color: var(--rgb2);
 }
 
 .categoryTitle {
@@ -57,7 +54,6 @@
     padding: 1rem;
     border: 1px solid var(--rgb3);
     border-radius: 8px;
-    background-color: var(--rgb2);
   }
 
   .categoryTitle {
@@ -107,7 +103,7 @@
     padding: 1rem;
     border: 1px solid var(--rgb3);
     border-radius: 8px;
-    background-color: var(--rgb2);
+
   }
 
   .categoryTitle {
