@@ -81,7 +81,7 @@ const projectsData = [
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1', 
+        title: 'Consumiendo API Rest Countries 1',
         link: 'https://consumiendo-api-rest-contries.vercel.app/',
         icon: (
           <FaJsSquare

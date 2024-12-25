@@ -1,24 +1,24 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from 'react';
 
-export const ThemeContext = createContext()
+export const ThemeContext = createContext();
 
-const ThemeContextProvider = ({children}) => {
+const ThemeContextProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem("theme");
-      return storedTheme ? storedTheme === "dark" : false;
+    if (typeof window !== 'undefined') {
+      const storedTheme = localStorage.getItem('theme');
+      return storedTheme ? storedTheme === 'dark' : false;
     }
     return false;
   });
 
   useEffect(() => {
-    const rootElement = document.documentElement; 
+    const rootElement = document.documentElement;
     if (theme) {
-      rootElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      rootElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
-      rootElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      rootElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   }, [theme]);
 
@@ -26,14 +26,10 @@ const ThemeContextProvider = ({children}) => {
     setTheme((prevTheme) => !prevTheme);
   };
 
-    const toggleTheme = theme ? "dark" : "light";
-    const data = [toggleTheme, handleTheme];
+  const toggleTheme = theme ? 'dark' : 'light';
+  const data = [toggleTheme, handleTheme];
 
-  return (
-    <ThemeContext.Provider value={data}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={data}>{children}</ThemeContext.Provider>;
 };
 
 export default ThemeContextProvider;

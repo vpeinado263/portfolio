@@ -10,10 +10,9 @@ const Header = () => {
 
   return (
     <header className={toggleTheme}>
-      <button className="button" onClick={handleTheme} 
-       >
+      <button className="button" onClick={handleTheme}>
         <Image
-          src={toggleTheme === "light" ? "/sun.png" : "/sunDark.png"}
+          src={toggleTheme === 'light' ? '/sun.png' : '/sunDark.png'}
           alt="Theme-logos"
           width={30}
           height={30}
