@@ -65,7 +65,7 @@ body {
 .button {
   background-color: transparent;
   border: none;
-  width: 30px;
+  width: 40px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
