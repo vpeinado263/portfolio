@@ -9,11 +9,9 @@ const Header = () => {
   const [toggleTheme, handleTheme] = data;
 
   return (
-    <header className={`header ${toggleTheme}`}>
-      <button 
-       className="button" 
-       onClick={handleTheme} 
-       aria-label={`Switch to ${toggleTheme === "light" ? "dark" : "light"} mode`}>
+    <header className={toggleTheme}>
+      <button className="button" onClick={handleTheme} 
+       >
         <Image
           src={toggleTheme === "light" ? "/sun.png" : "/sunDark.png"}
           alt="Theme-logos"

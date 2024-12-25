@@ -12,15 +12,9 @@ export default function Home() {
       <Head>
         <title>Victor Peinado</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="keywords"
-          content="Bienvenido a mi Portafolio soy Victor Peinado, desarrollador web en formación en tecnologías modernas como React, Next.js y más. Descubre mis proyectos y habilidades."
-        />
+        <meta name="keywords" content="Bienvenido a mi Portafolio soy Victor Peinado, desarrollador web en formación en tecnologías modernas como React, Next.js y más. Descubre mis proyectos y habilidades." />
         <meta name="author" content="Victor Peinado" />
-        <meta
-          name="description"
-          content="Explora mis proyectos y habilidades."
-        />
+        <meta name="description" content="Explora mis proyectos y habilidades." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/maletin.svg" />
       </Head>

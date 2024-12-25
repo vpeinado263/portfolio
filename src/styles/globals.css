@@ -8,13 +8,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-size: 0.8em;
-  padding: 3rem;
-}
 a {
   text-decoration: none;
   color: var(--rgb8);
@@ -23,33 +16,47 @@ li {
   list-style: none;
   margin: 8px 0;
 }
-/* Paleta de colores para el modo claro*/
-:root.light {
-  --background: rgb(245, 245, 245);
-  --foreground: rgb(255, 255, 255);
-  --link-color: rgb(255, 255, 255);
-  --hover-bg: rgb(255, 255, 255);
-  --hover-color: rgb(255, 255, 255);
-  --font-first: 'Roboto Mono', monospace;
-  --font-second: 'Inerti', sans-serif;
-  --font-third: 'Cormorant SC', serif;
+body {
+  background-color: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.8em;
+  padding: 3rem;
 }
-/* Paleta de colores para el modo oscuro*/
-:root.dark {
-  --background: rgb(0, 0, 0);
-  --foreground: rgb(34, 34, 34);
-  --link-color: rgb(0, 0, 0);
-  --hover-bg: rgb(0, 0, 0);
-  --hover-color: rgb(0, 0, 0);
+:root {
+  --rgb0: rgb(38, 46, 97);
+  --rgb1: rgb(10, 40, 54);
+  --rgb2: rgb(92, 158, 187);
+  --rgb3: rgb(66, 143, 176);
+  --rgb4: rgb(71, 184, 204);
+  --rgb5: rgb(17, 19, 20);
+  --rgb6: rgb(80, 120, 116);
+  --rgb7: rgb(52, 55, 58);
+  --hover-bg: rgb(106, 117, 122);
+  --hover-color: rgb(8, 6, 6);
   --font-first: 'Roboto Mono', monospace;
   --font-second: 'Inerti', sans-serif;
   --font-third: 'Cormorant SC', serif;
+  --background: rgb(50, 61, 131);
+  --foreground: rgb(214, 214, 214);
+}
+
+/* Paleta de colores para el modo oscuro*/
+.dark {
+  --background: rgb(3, 3, 3);
+  --foreground: rgb(235, 221, 221);
+  --link-color: rgb(82, 76, 76);
+  --hover-bg: rgb(55, 18, 189);
+  --hover-color: rgb(97, 95, 231);
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  width: 30px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
-    background-color: var(--background);
-    color: var(--foreground);
     font-size: 0.8em;
     padding: 3rem;
   }
@@ -62,15 +69,19 @@ li {
 
 @media (min-width: 1025px) {
   body {
-    background-color: var(--background);
-    color: var(--foreground);
     font-size: 1em;
     padding: 3rem;
+    --background: rgb(3, 3, 3);
+    --foreground: rgb(235, 221, 221);
   }
 
   a {
-    color: var(--rgb8);
     font-size: 0.8em;
     word-wrap: break-word;
   }
+  .button {
+    background-color: transparent;
+    border: none;
+    width: 30rem;
+}
 }
