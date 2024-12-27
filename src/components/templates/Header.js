@@ -12,7 +12,7 @@ const Header = () => {
     <header className={toggleTheme}>
       <button className="button" onClick={handleTheme}>
         <Image
-          src={toggleTheme === 'light' ? '/sun.png' : '/sunDark.png'}
+          src={toggleTheme === 'dark' ? '/sunDark.png' : '/sun.png'}
           alt="Theme-logos"
           width={80}
           height={40}
