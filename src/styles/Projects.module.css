@@ -36,7 +36,6 @@
   .categoryDescription {
     text-align: center;
     font-size: 1.2rem;
- ;
   }
   .projectStiles {
     background-color: var(--rgb0);
@@ -44,7 +43,6 @@
     font-family: var(--font-third);
     transition: all 0.5s ease;
     width: auto;
-    
   }
   .projectStiles:hover {
     color: var(--rgb4);

@@ -31,13 +31,11 @@ body {
   --rgb1: rgb(213, 220, 242);
   --rgb2: rgb(193, 200, 223);
   --rgb3: rgb(89, 76, 89);
-  --rgb4: #594C59;
-  --rgb5: #C4CBF2;
-  --rgb6: #58608C;
+  --rgb4: #594c59;
+  --rgb5: #c4cbf2;
+  --rgb6: #58608c;
   --rgb7: #212126;
   --rgb8: rgb(133, 126, 126);
-
- 
 
   /*fuentes*/
   --font-first: 'Urbanist', sans-serif;
@@ -49,9 +47,9 @@ body {
   --rgb1: #011526;
   --rgb2: #012340;
   --rgb3: #024873;
-  --rgb4: #034C8C;
-  --rgb5: #594C59;
-  --rgb6: #58608C;
+  --rgb4: #034c8c;
+  --rgb5: #594c59;
+  --rgb6: #58608c;
   --rgb7: #d7d7e2;
   --rgb8: rgb(255, 255, 255);
   --background: #012340;
