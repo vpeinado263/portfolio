@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import TypedText from '@/components/atoms/TypedText';
-import styles from '@/styles/TypingEffect.module.css';
 import Avatar from '../atoms/Avatar';
 
 const TypingEffect = ({
@@ -36,7 +35,7 @@ const TypingEffect = ({
   }, [text]);
 
   return (
-    <div className={styles.typing}>
+    <div>
       <Avatar
         src={avatarSrc}
         alt={avatarAlt}

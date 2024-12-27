@@ -2,30 +2,20 @@
   min-height: 100vh;
 }
 .projectCategory {
-  padding: 1rem;
+  padding: 2rem;
+  border: solid var(--rgb0);
 }
 .categoryTitle {
   font-size: 1.5rem;
   color: var(--rgb5);
-  margin-bottom: 0.3rem;
 }
 .categoryDescription {
-  font-size: 1rem;
   color: var(--rgb6);
-  margin-bottom: 0.1rem;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-  .projectsContainer {
-    min-height: 100vh;
-  }
-  .projectCategory {
-    padding: 1rem;
-  }
   .categoryTitle {
     font-size: 1.5rem;
-    color: var(--rgb5);
-    margin-bottom: 0.3rem;
   }
   .categoryDescription {
     font-size: 1rem;
@@ -36,20 +26,28 @@
   .projectsContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
-    min-height: 100vh;
-  }
-  .projectCategory {
-    margin-bottom: 0.5rem;
+    margin-left: 12rem;
+    border: none;
   }
   .categoryTitle {
-    font-size: 1.5rem;
-    color: var(--rgb2);
-    margin-bottom: 0.3rem;
+    text-align: center;
+    font-size: 1.6rem;
   }
   .categoryDescription {
-    font-size: 1rem;
-    color: var(--rgb6);
-    margin-bottom: 0.1rem;
+    text-align: center;
+    font-size: 1.2rem;
+ ;
+  }
+  .projectStiles {
+    background-color: var(--rgb0);
+    text-align: center;
+    font-family: var(--font-third);
+    transition: all 0.5s ease;
+    width: auto;
+    
+  }
+  .projectStiles:hover {
+    color: var(--rgb4);
+    transform: scale(1.2);
   }
 }

@@ -6,7 +6,7 @@
 }
 .avatar {
   border-radius: 50%;
-  border: 2px solid var(--rgb4);
+  border: 2px solid var(--rgb6);
   box-shadow: 0 4px 6px var(--rgb6);
   object-fit: cover;
   transition:
@@ -22,7 +22,6 @@
   }
   .avatar {
     border-radius: 50%;
-    border: 2px solid var(--rgb4);
     object-fit: cover;
     transition:
       transform 0.3s ease,
@@ -41,7 +40,6 @@
   }
   .avatar {
     border-radius: 50%;
-    border: 2px solid var(--rgb4);
     object-fit: cover;
     transition:
       transform 0.3s ease,

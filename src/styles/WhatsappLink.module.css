@@ -1,4 +1,7 @@
 .link {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
   width: 2rem;
   height: 2rem;
 }
@@ -6,51 +9,14 @@
   width: 2rem;
   height: 2rem;
 }
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  .link {
-    display: inline-block;
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  .link:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px var(--rgb6);
-    background-color: var(--rgb7);
-  }
-  .link:focus {
-    outline: 2px solid var(--rgb5);
-    outline-offset: 2px;
-  }
-  .image {
-    display: block;
-    border-radius: 50%;
-  }
-}
-
 @media (min-width: 1025px) {
   .link {
-    display: inline-block;
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease;
-    border-radius: 50%;
-    overflow: hidden;
   }
   .link:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 10px var(--rgb6);
-    background-color: var(--rgb7);
-  }
-  .link:focus {
-    outline: 2px solid var(--rgb5);
-    outline-offset: 2px;
-  }
-  .image {
-    display: block;
-    border-radius: 50%;
+    background-color: var(--rgb8);
   }
 }

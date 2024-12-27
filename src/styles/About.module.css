@@ -1,7 +1,8 @@
 .aboutContainer {
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   margin: 0 auto;
+  
 }
 .aboutTitle {
   text-align: center;
@@ -18,10 +19,11 @@
 @media (min-width: 481px) and (max-width: 1024px) {
   .aboutContainer {
     width: 100%;
-    padding: 0.1rem;
+    padding: 2rem;
+    background-color: none;
   }
   .aboutTitle {
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -32,20 +34,18 @@
   }
   .aboutSection p {
     margin-bottom: 1rem;
+    font-size: 1.3em;
   }
 }
 
 @media (min-width: 1025px) {
   .aboutContainer {
-    height: 100vh;
     width: calc(80% - 80px);
     margin-left: 14rem;
   }
 
   .aboutTitle {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 2rem;
+    display: none;
   }
 
   .aboutSection {

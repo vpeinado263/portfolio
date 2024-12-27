@@ -1,45 +1,7 @@
 .socialLink {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-first);
-  font-size: 0.9rem;
-  transition:
-    transform 0.2s ease,
-    color 0.3s ease;
-}
-.socialLink:hover {
-  transform: scale(1.05);
+  font-family: var(--font-third);
 }
 
-@media (min-width: 481px) and (min-width: 1024px) {
-  .socialLink {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-first);
-    font-size: 0.9rem;
-    transition:
-      transform 0.2s ease,
-      color 0.3s ease;
-  }
-  .socialLink:hover {
-    transform: scale(1.05);
-  }
-}
 
-@media (min-width: 1025px) {
-  .socialLink {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-first);
-    font-size: 0.9rem;
-    transition:
-      transform 0.2s ease,
-      color 0.3s ease;
-  }
-  .socialLink:hover {
-    transform: scale(1.05);
-  }
-}

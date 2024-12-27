@@ -17,6 +17,7 @@ li {
   margin: 8px 0;
 }
 body {
+  font-family: var(--font-first);
   background-color: var(--background);
   color: var(--rgb6);
   transition:
@@ -28,29 +29,31 @@ body {
 :root {
   --rgb0: rgb(213, 220, 242);
   --rgb1: rgb(213, 220, 242);
-  --rgb2: rgb(213, 220, 242);
+  --rgb2: rgb(193, 200, 223);
   --rgb3: rgb(89, 76, 89);
-  --rgb4: rgb(13, 13, 13);
-  --rgb5: rgb(200, 200, 200);
-  --rgb6: rgb(170, 170, 170);
-  --rgb7: rgb(60, 60, 60);
-  --hover-bg: rgb(230, 230, 230);
-  --hover-color: rgb(0, 0, 0);
-  --font-first: 'Roboto Mono', monospace;
-  --font-second: 'Urbanist', sans-serif;
-  --font-third: 'Cormorant SC', serif;
+  --rgb4: #594C59;
+  --rgb5: #C4CBF2;
+  --rgb6: #58608C;
+  --rgb7: #212126;
+  --rgb8: rgb(133, 126, 126);
+
+ 
+
+  /*fuentes*/
+  --font-first: 'Urbanist', sans-serif;
+  --font-second: 'Cormorant SC', serif;
+  --font-third: 'Roboto Mono', monospace;
 }
 .dark {
-  --rgb0: #00070D;
+  --rgb0: #04081f;
   --rgb1: #011526;
   --rgb2: #012340;
   --rgb3: #024873;
   --rgb4: #034C8C;
-  --rgb5: rgb(17, 19, 20);
-  --rgb6: rgb(80, 120, 116);
-  --rgb7: rgb(52, 55, 58);
-  --hover-bg: rgb(106, 117, 122);
-  --hover-color: rgb(8, 6, 6);
+  --rgb5: #594C59;
+  --rgb6: #58608C;
+  --rgb7: #d7d7e2;
+  --rgb8: rgb(255, 255, 255);
   --background: #012340;
 }
 
@@ -61,8 +64,8 @@ body {
 
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
-    font-size: 0.8em;
-    padding: 3rem;
+    font-size: 0.7em;
+    padding: 2rem;
   }
 
   a {
@@ -73,7 +76,6 @@ body {
 
 @media (min-width: 1025px) {
   body {
-    font-size: 1em;
     padding: 3rem;
   }
 

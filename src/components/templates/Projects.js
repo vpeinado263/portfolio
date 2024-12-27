@@ -194,7 +194,7 @@ const Projects = () => {
           <p className={styles.categoryDescription}>{category.description}</p>
           <ul>
             {category.projects.map((project, idx) => (
-              <li key={idx}>
+              <li key={idx} className={styles.projectStiles}>
                 <Link
                   href={project.link}
                   target="_blank"

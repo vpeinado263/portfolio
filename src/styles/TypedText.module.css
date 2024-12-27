@@ -15,7 +15,7 @@
     blink 1s step-end infinite;
 }
 .titleText {
-  font-family: var(--font-first);
+  font-family: var(--font-third);
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -30,7 +30,7 @@
 }
 @keyframes blink {
   40% {
-    border-color: var(--hover-bg);
+    border-color: var(--rgb8);
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -49,9 +49,6 @@
       typing 4s steps(20) 1 normal both,
       blink 1s step-end infinite;
   }
-  .titleText {
-    font-family: var(--font-first);
-  }
   @keyframes typing {
     from {
       width: 2px;
@@ -62,7 +59,7 @@
   }
   @keyframes blink {
     50% {
-      border-color: var(--hover-bg);
+      border-color: var(--rgb8);
     }
   }
 }
@@ -84,7 +81,6 @@
   }
 
   .titleText {
-    font-family: var(--font-first);
     font-size: 2em;
     line-height: 1;
   }
@@ -100,7 +96,7 @@
 
   @keyframes blink {
     50% {
-      border-color: transparent;
+      border-color: var(--rgb8);
     }
   }
 }

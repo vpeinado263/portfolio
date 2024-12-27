@@ -16,8 +16,6 @@
     width: 12rem;
     height: 100vh;
     padding: 1rem;
-    transition: background-color 0.5s ease;
-    z-index: 10;
     display: flex;
   }
   .navContainer {
@@ -25,6 +23,6 @@
     text-align: center;
   }
   .scrolled {
-    background-color: var(--rgb1);
+    background-color: var(--rgb0);
   }
 }
