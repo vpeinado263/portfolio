@@ -14,8 +14,8 @@ const Header = () => {
         <Image
           src={toggleTheme === 'light' ? '/sun.png' : '/sunDark.png'}
           alt="Theme-logos"
-          width={30}
-          height={30}
+          width={90}
+          height={40}
         />
       </button>
       <motion.div
