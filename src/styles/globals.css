@@ -7,8 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  color: var(--foreground);
 }
 a {
   text-decoration: none;
@@ -20,19 +18,19 @@ li {
 }
 body {
   background-color: var(--background);
+  color: var(--rgb6);
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
-  font-size: 0.8em;
   padding: 3rem;
 }
 /* Tema claro (por defecto, fuera de .dark) */
 :root {
-  --rgb0: rgb(255, 255, 255);
-  --rgb1: rgb(240, 240, 240);
-  --rgb2: rgb(150, 150, 150);
-  --rgb3: rgb(120, 120, 120);
-  --rgb4: rgb(90, 90, 90);
+  --rgb0: rgb(213, 220, 242);
+  --rgb1: rgb(213, 220, 242);
+  --rgb2: rgb(213, 220, 242);
+  --rgb3: rgb(89, 76, 89);
+  --rgb4: rgb(13, 13, 13);
   --rgb5: rgb(200, 200, 200);
   --rgb6: rgb(170, 170, 170);
   --rgb7: rgb(60, 60, 60);
@@ -41,25 +39,19 @@ body {
   --font-first: 'Roboto Mono', monospace;
   --font-second: 'Urbanist', sans-serif;
   --font-third: 'Cormorant SC', serif;
-  --background: rgb(255, 255, 255);
-  --foreground: rgb(30, 30, 30);
 }
 .dark {
-  --rgb0: rgb(38, 46, 97);
-  --rgb1: rgb(10, 40, 54);
-  --rgb2: rgb(92, 158, 187);
-  --rgb3: rgb(66, 143, 176);
-  --rgb4: rgb(71, 184, 204);
+  --rgb0: #00070D;
+  --rgb1: #011526;
+  --rgb2: #012340;
+  --rgb3: #024873;
+  --rgb4: #034C8C;
   --rgb5: rgb(17, 19, 20);
   --rgb6: rgb(80, 120, 116);
   --rgb7: rgb(52, 55, 58);
   --hover-bg: rgb(106, 117, 122);
   --hover-color: rgb(8, 6, 6);
-  --font-first: 'Roboto Mono', monospace;
-  --font-second: 'Inerti', sans-serif;
-  --font-third: 'Cormorant SC', serif;
-  --background: rgb(50, 61, 131);
-  --foreground: rgb(214, 214, 214);
+  --background: #012340;
 }
 
 .button {

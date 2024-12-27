@@ -14,7 +14,7 @@ const Header = () => {
         <Image
           src={toggleTheme === 'light' ? '/sun.png' : '/sunDark.png'}
           alt="Theme-logos"
-          width={90}
+          width={80}
           height={40}
         />
       </button>
