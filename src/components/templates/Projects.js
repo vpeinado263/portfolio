@@ -9,14 +9,14 @@ const projectsData = [
       'Proyectos simples que me ayudaron a entender la estructura básica de las páginas web y la semántica de HTML.',
     projects: [
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Gamer Master Kanives',
         link: 'https://tarea-1-clase-html.vercel.app/',
         icon: (
           <FaHtml5 style={{ color: 'rgb(233, 98, 40)', fontSize: '2rem' }} />
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Gamer Master Kanives',
         link: 'https://tarea-2-clase-html.vercel.app/',
         icon: (
           <FaHtml5 style={{ color: 'rgb(233, 98, 40)', fontSize: '2rem' }} />
@@ -30,35 +30,35 @@ const projectsData = [
       'Aprendí sobre estilos, diseño responsivo, y cómo dar vida a las interfaces.',
     projects: [
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Gamer Master Kanives',
         link: 'https://tarea-3-clase-css.vercel.app/',
         icon: (
           <FaCss3Alt style={{ color: 'rgb(21, 114, 182)', fontSize: '2rem' }} />
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Gamer Master Kanives',
         link: 'https://tarea-4-clase-css.vercel.app/',
         icon: (
           <FaCss3Alt style={{ color: 'rgb(21, 114, 182)', fontSize: '2rem' }} />
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Tarjetas Interactivas',
         link: 'https://tarea-5-clase-css.vercel.app/',
         icon: (
           <FaCss3Alt style={{ color: 'rgb(21, 114, 182)', fontSize: '2rem' }} />
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Tarjetas Interactivas',
         link: 'https://tarea-6-clase-css.vercel.app/',
         icon: (
           <FaCss3Alt style={{ color: 'rgb(21, 114, 182)', fontSize: '2rem' }} />
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Gamer Master Kanives',
         link: 'https://tarea-7-clase-css.vercel.app/',
         icon: (
           <FaCss3Alt style={{ color: 'rgb(21, 114, 182)', fontSize: '2rem' }} />
@@ -81,7 +81,7 @@ const projectsData = [
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Explorando Países',
         link: 'https://consumiendo-api-rest-contries.vercel.app/',
         icon: (
           <FaJsSquare
@@ -90,7 +90,7 @@ const projectsData = [
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 1',
+        title: 'Portada Libro Elocuent Java Script',
         link: 'https://consumiendo-api-rest-contries-yhyq.vercel.app/',
         icon: (
           <FaJsSquare
@@ -99,7 +99,7 @@ const projectsData = [
         ),
       },
       {
-        title: 'Consumiendo API Rest Countries 2',
+        title: 'Herramientas Prácticas',
         link: 'https://herramientas-de-precisi-n.vercel.app/',
         icon: (
           <FaJsSquare
@@ -108,7 +108,7 @@ const projectsData = [
         ),
       },
       {
-        title: 'Herramientas de Precisión',
+        title: 'Notas',
         link: 'https://notas-interactivas.vercel.app/',
         icon: (
           <FaJsSquare
@@ -117,7 +117,7 @@ const projectsData = [
         ),
       },
       {
-        title: 'Notas Interactivas',
+        title: 'Api Nasa',
         link: 'https://nasa-api-wheat.vercel.app/',
         icon: (
           <FaJsSquare

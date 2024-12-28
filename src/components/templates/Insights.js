@@ -19,7 +19,7 @@ const InsightData = [
       'Implementé componentes dinámicos, manejo de rutas y despliegues modernos.',
     projects: [
       {
-        title: 'Primera Tarea React',
+        title: 'Deja el Hábito',
         link: 'https://el-habito-de-fumar.vercel.app/',
       },
       {
