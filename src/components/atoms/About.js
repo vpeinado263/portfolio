@@ -9,12 +9,12 @@ const About = () => {
           Soy un profesional con una combinación única de habilidades y
           pasiones. Como enfermero, trabajé durante la pandemia COVID-19 en el
           Hospital Central de Mendoza, brindando atención crítica a pacientes en
-          un entorno desafiante y exigente. Además, soy Desarrollador web en formación, 
-          con experiencia en proyectos personales que abarcan desde el diseño de interfaces 
-          hasta la implementación de back-end con Node.js y MongoDB, con un enfoque en React
-          en creación de aplicaciones dinámicas.
-          Disfruto diseñar soluciones tecnológicas que combinen funcionalidad y
-          estética.
+          un entorno desafiante y exigente. Además, soy Desarrollador web en
+          formación, con experiencia en proyectos personales que abarcan desde
+          el diseño de interfaces hasta la implementación de back-end con
+          Node.js y MongoDB, con un enfoque en React en creación de aplicaciones
+          dinámicas. Disfruto diseñar soluciones tecnológicas que combinen
+          funcionalidad y estética.
         </p>
         <p>
           Fuera del ámbito profesional, encuentro inspiración en la forja. Mi
@@ -26,10 +26,10 @@ const About = () => {
         <p>
           Mi objetivo es continuar creciendo en ambos mundos, desarrollando
           herramientas tecnológicas que impacten positivamente en la calidad de
-          vida de las personas y perfeccionando mis habilidades. Busco mi primera experiencia laboral en
-          desarrollo full stack para aplicar y seguir ampliando mis conocimientos. 
-          Estoy en constante aprendizaje, explorando nuevas tecnologías, herramientas y
-          técnicas para lograrlo.
+          vida de las personas y perfeccionando mis habilidades. Busco mi
+          primera experiencia laboral en desarrollo full stack para aplicar y
+          seguir ampliando mis conocimientos. Estoy en constante aprendizaje,
+          explorando nuevas tecnologías, herramientas y técnicas para lograrlo.
         </p>
       </div>
     </section>
