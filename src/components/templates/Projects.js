@@ -174,13 +174,6 @@ const projectsData = [
           <FaReact style={{ color: 'rgb(18, 155, 194)', fontSize: '2rem' }} />
         ),
       },
-      {
-        title: 'Tienda - X -',
-        link: 'https://tienda-x--swart.vercel.app/',
-        icon: (
-          <FaReact style={{ color: 'rgb(18, 155, 194)', fontSize: '2rem' }} />
-        ),
-      },
     ],
   },
 ];
