@@ -1,5 +1,6 @@
 import About from '@/components/atoms/About';
 import Footer from '@/components/organisms/Footer';
+import Certifications from '@/components/templates/Certifications';
 import Header from '@/components/templates/Header';
 import Insights from '@/components/templates/Insights';
 import Projects from '@/components/templates/Projects';
@@ -36,6 +37,9 @@ export default function Home() {
           </section>
           <section role="region" aria-labelledby="insights-section">
             <Insights />
+          </section>
+          <section role="region" aria-labelledby="insights-section">
+            <Certifications />
           </section>
         </main>
         <Footer />
