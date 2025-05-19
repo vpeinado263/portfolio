@@ -5,8 +5,7 @@ import Link from 'next/link';
 const CertificationsData = [
   {
     category: 'Enfermero Profesional',
-    description:
-      'IDICSA',
+    description: 'IDICSA',
     projects: [
       {
         title: 'Enfermero Profesional',
@@ -16,8 +15,7 @@ const CertificationsData = [
   },
   {
     category: 'Diplomatura en Desarrollo Web Full Stack',
-    description:
-      'Academia Numen',
+    description: 'Academia Numen',
     projects: [
       {
         title: 'Desarrollo Web',
@@ -27,15 +25,15 @@ const CertificationsData = [
   },
   {
     category: 'IPAP',
-    description:
-      'Instituto Provincial de Administración Pública de Mendoza',
+    description: 'Instituto Provincial de Administración Pública de Mendoza',
     projects: [
       {
         title: 'Educación Financiera y Finanzas Personales',
         link: 'https://drive.google.com/file/d/14PG1qQg321lY_h4xiQ0G5aMcEPZGfD9c/view?usp=sharing',
       },
       {
-        title: 'Perspectiva de Género y violencia contra las Mujeres Ley Micaela',
+        title:
+          'Perspectiva de Género y violencia contra las Mujeres Ley Micaela',
         link: 'https://drive.google.com/file/d/1TVH503Cc0kTDgV6wRH7Im63t0gWqOTY8/view?usp=sharing',
       },
       {
@@ -51,15 +49,15 @@ const CertificationsData = [
         link: 'https://drive.google.com/file/d/1s9C-RpNm_DGLPc809m3Crwv24s1uD_Id/view?usp=sharing',
       },
       {
-        title: 'Violencia Obstétrica: persepectiva de género y acciones transformadoras',
+        title:
+          'Violencia Obstétrica: persepectiva de género y acciones transformadoras',
         link: 'https://drive.google.com/file/d/1MkYOcEppojlOWaxQ2oChedzdehufcVMJ/view?usp=sharing',
       },
     ],
   },
   {
     category: 'Alkemy',
-    description:
-      'Mis Certificados',
+    description: 'Mis Certificados',
     projects: [
       {
         title: 'Muro',
