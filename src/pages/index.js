@@ -38,7 +38,7 @@ export default function Home() {
           <section role="region" aria-labelledby="insights-section">
             <Insights />
           </section>
-          <section role="region" aria-labelledby="insights-section">
+          <section role="region" aria-labelledby="certifications-section">
             <Certifications />
           </section>
         </main>
