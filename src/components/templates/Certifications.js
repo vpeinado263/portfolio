@@ -9,7 +9,17 @@ const CertificationsData = [
     projects: [
       {
         title: 'Enfermero Profesional',
-        link: 'https://partners.alkemy.org/certificates/auth0|66c78e3125702b5570a032ee',
+        link: 'https://drive.google.com/file/d/1TIhB5dh97p6NjgRom6BwUSe2h_PE96vb/view?usp=sharing',
+      },
+    ],
+  },
+  {
+    category: 'Hospital Dr. Humberto Notti',
+    description: 'Mega Curso de Reanimación Cardiopulmonar para la Comunidad',
+    projects: [
+      {
+        title: 'RCP',
+        link: 'https://drive.google.com/file/d/11JfOEb3p1F1DtVpJFWz-HPSKBlvwq9ce/view?usp=sharing',
       },
     ],
   },
