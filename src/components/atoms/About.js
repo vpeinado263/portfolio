@@ -13,23 +13,24 @@ const About = () => {
           formación, con experiencia en proyectos personales que abarcan desde
           el diseño de interfaces hasta la implementación de back-end con
           Node.js y MongoDB, con un enfoque en React en creación de aplicaciones
-          dinámicas. Disfruto diseñar soluciones tecnológicas que combinen
-          funcionalidad y estética.
+          dinámicas.
         </p>
         <p>
-          Fuera del ámbito profesional, encuentro inspiración en la forja. Mi
-          pasatiempo es forjar de cuchillos, un arte que me permite explorar la
-          precisión, la creatividad y el detalle. Este equilibrio entre
-          tecnología, salud y manualidades refleja mi compromiso con la
-          innovación y la dedicación en cada proyecto que emprendo.
+          A lo largo de mi trayectoria profesional he desarrollado una gran capacidad 
+          para comunicarme con personas que atraviesan situaciones estresantes, 
+          críticas o de alto impacto emocional.
+          Estoy acostumbrado a interactuar con usuarios que expresan su malestar de forma
+          intensa incluso con enojo y sé responder con calma, empatía y eficacia.
+          Considero que una comunicación efectiva, respetuosa y clara es fundamental para 
+          resolver situaciones urgentes y restaurar la confianza, especialmente cuando se 
+          trata de servicios sensibles o emergencias.
         </p>
         <p>
-          Mi objetivo es continuar creciendo en ambos mundos, desarrollando
-          herramientas tecnológicas que impacten positivamente en la calidad de
-          vida de las personas y perfeccionando mis habilidades. Busco mi
-          primera experiencia laboral en desarrollo full stack para aplicar y
-          seguir ampliando mis conocimientos. Estoy en constante aprendizaje,
-          explorando nuevas tecnologías, herramientas y técnicas para lograrlo.
+          Estoy dando mis primeros pasos en el mundo IT, aplicando los 
+          conocimientos adquiridos en mi formación como Desarrollador Web Full Stack.
+          Me encuentro en constante aprendizaje, creando proyectos propios, explorando 
+          nuevas tecnologías y perfeccionando herramientas y técnicas que me permitan 
+          crecer y aportar valor en entornos reales...
         </p>
       </div>
     </section>
