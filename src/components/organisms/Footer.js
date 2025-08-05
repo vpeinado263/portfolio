@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <div className={styles.a}>
         <SocialLink
-          href="/CV-Peinado-Victor.pdf"
+          href="https://drive.google.com/file/d/1C-5VwDMs-oU2-Ah0xHupGkxTo2QPk1dN/view?usp=sharing"
           iconSrc="/file.svg"
           iconAlt="CV icon"
           iconWidth={20}
