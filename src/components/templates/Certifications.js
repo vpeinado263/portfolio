@@ -38,6 +38,10 @@ const CertificationsData = [
     description: 'Instituto Provincial de Administración Pública de Mendoza',
     projects: [
       {
+        title: 'Ley 9003. Agilidad en la Gestión',
+        link: 'https://drive.google.com/file/d/16s4Iyue2CgE6s4g395XS5qMM56WwtZh7/view?usp=sharing',
+      },
+      {
         title: 'Educación Financiera y Finanzas Personales',
         link: 'https://drive.google.com/file/d/14PG1qQg321lY_h4xiQ0G5aMcEPZGfD9c/view?usp=sharing',
       },
