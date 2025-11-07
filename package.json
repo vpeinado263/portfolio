@@ -1,18 +1,20 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",
     "gsap": "^3.12.5",
-    "next": "^15.1.2",
+    "next": "^16.0.1",
     "next-seo": "^6.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -21,8 +23,8 @@
   },
   "devDependencies": {
     "eslint": "^9.15.0",
-    "eslint-config-next": "^15.0.3",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.6.2"
   }
