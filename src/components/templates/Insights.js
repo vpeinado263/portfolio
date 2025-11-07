@@ -1,34 +1,34 @@
-import Link from 'next/link';
-import styles from '@/styles/Insights.module.css';
+import Link from "next/link";
+import styles from "@/styles/Insights.module.css";
 
 const InsightData = [
   {
-    category: 'Bootstrap y diseño moderno',
+    category: "Bootstrap y diseño moderno",
     description:
-      'Introducción a Bootstrap para crear diseños rápidos y profesionales.',
+      "Introducción a Bootstrap para crear diseños rápidos y profesionales.",
     projects: [
       {
-        title: 'Proyecto Bootstrap',
-        link: 'https://tarea-8-clase-bootstrap.vercel.app/',
+        title: "Proyecto Bootstrap",
+        link: "https://tarea-8-clase-bootstrap.vercel.app/",
       },
     ],
   },
   {
-    category: 'Proyectos con React y Next.js',
+    category: "Proyectos con React y Next.js",
     description:
-      'Implementé componentes dinámicos, manejo de rutas y despliegues modernos.',
+      "Implementé componentes dinámicos, manejo de rutas y despliegues modernos.",
     projects: [
       {
-        title: 'Deja el Hábito',
-        link: 'https://el-habito-de-fumar.vercel.app/',
+        title: "Deja el Hábito",
+        link: "https://el-habito-de-fumar.vercel.app/",
       },
       {
-        title: 'Ulceras',
-        link: 'https://3ra-tarea-react-next-js.vercel.app/',
+        title: "Ulceras",
+        link: "https://3ra-tarea-react-next-js.vercel.app/",
       },
       {
-        title: 'Inventario Hospitalario',
-        link: 'https://8va-tarea-react-next-js.vercel.app/',
+        title: "Inventario Hospitalario",
+        link: "https://8va-tarea-react-next-js.vercel.app/",
       },
     ],
   },

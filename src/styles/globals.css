@@ -1,6 +1,6 @@
 /* Importar fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Indie+Flower&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Indie+Flower&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Reset básico */
 * {
@@ -38,9 +38,9 @@ body {
   --rgb8: rgb(133, 126, 126);
 
   /*fuentes*/
-  --font-first: 'Urbanist', sans-serif;
-  --font-second: 'Cormorant SC', serif;
-  --font-third: 'Roboto Mono', monospace;
+  --font-first: "Urbanist", sans-serif;
+  --font-second: "Cormorant SC", serif;
+  --font-third: "Roboto Mono", monospace;
 }
 .dark {
   --rgb0: #04081f;

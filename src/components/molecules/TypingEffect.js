@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
-import TypedText from '@/components/atoms/TypedText';
-import Avatar from '../atoms/Avatar';
+import { useEffect, useRef } from "react";
+import TypedText from "@/components/atoms/TypedText";
+import Avatar from "../atoms/Avatar";
 
 const TypingEffect = ({
   avatarSrc,

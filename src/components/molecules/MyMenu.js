@@ -1,6 +1,6 @@
-import LinkItem from '@/components/atoms/LinkItem';
-import styles from '@/styles/MyMenu.module.css';
-import { motion } from 'framer-motion';
+import LinkItem from "@/components/atoms/LinkItem";
+import styles from "@/styles/MyMenu.module.css";
+import { motion } from "framer-motion";
 
 const MyMenu = () => {
   return (
@@ -10,7 +10,7 @@ const MyMenu = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: "easeOut" }}
           >
             <ul className={styles.menu}>
               <LinkItem href="/" text="Home" />

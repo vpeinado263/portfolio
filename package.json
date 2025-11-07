@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write \"frontend/**/*.{js,jsx,ts,tsx,json,css,md}\"",
-    "lint": "cd frontend && eslint . --ext .js,.jsx,.ts,.tsx"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",

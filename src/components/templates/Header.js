@@ -1,8 +1,8 @@
-import { ThemeContext } from '@/context/ThemeContextProvider';
-import { useContext } from 'react';
-import { motion } from 'framer-motion';
-import Navbar from '../organisms/Navbar';
-import Image from 'next/image';
+import { ThemeContext } from "@/context/ThemeContextProvider";
+import { useContext } from "react";
+import { motion } from "framer-motion";
+import Navbar from "../organisms/Navbar";
+import Image from "next/image";
 
 const Header = () => {
   const data = useContext(ThemeContext);
@@ -12,7 +12,7 @@ const Header = () => {
     <header className={toggleTheme}>
       <button className="button" onClick={handleTheme}>
         <Image
-          src={toggleTheme === 'dark' ? '/sunDark.png' : '/sun.png'}
+          src={toggleTheme === "dark" ? "/sunDark.png" : "/sun.png"}
           alt="Theme-logos"
           width={80}
           height={40}

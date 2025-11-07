@@ -1,6 +1,6 @@
-import LinkText from '@/components/atoms/LinkText';
-import Icon from '@/components/atoms/Icon';
-import styles from '@/styles/SocialLink.module.css';
+import LinkText from "@/components/atoms/LinkText";
+import Icon from "@/components/atoms/Icon";
+import styles from "@/styles/SocialLink.module.css";
 
 const SocialLink = ({
   href,

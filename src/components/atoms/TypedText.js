@@ -1,5 +1,5 @@
-import { forwardRef } from 'react';
-import styles from '@/styles/TypedText.module.css';
+import { forwardRef } from "react";
+import styles from "@/styles/TypedText.module.css";
 
 const TypedText = forwardRef(({ text }, ref) => (
   <div className={styles.textContainer}>
@@ -11,6 +11,6 @@ const TypedText = forwardRef(({ text }, ref) => (
   </div>
 ));
 
-TypedText.displayName = 'TypedText';
+TypedText.displayName = "TypedText";
 
 export default TypedText;

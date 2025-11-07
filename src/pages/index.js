@@ -1,11 +1,11 @@
-import About from '@/components/atoms/About';
-import Footer from '@/components/organisms/Footer';
-import Certifications from '@/components/templates/Certifications';
-import Header from '@/components/templates/Header';
-import Insights from '@/components/templates/Insights';
-import Projects from '@/components/templates/Projects';
-import ThemeContextProvider from '@/context/ThemeContextProvider';
-import Head from 'next/head';
+import About from "@/components/atoms/About";
+import Footer from "@/components/organisms/Footer";
+import Certifications from "@/components/templates/Certifications";
+import Header from "@/components/templates/Header";
+import Insights from "@/components/templates/Insights";
+import Projects from "@/components/templates/Projects";
+import ThemeContextProvider from "@/context/ThemeContextProvider";
+import Head from "next/head";
 
 export default function Home() {
   return (

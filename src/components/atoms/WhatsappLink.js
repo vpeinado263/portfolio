@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from '@/styles/WhatsappLink.module.css';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import Link from "next/link";
+import styles from "@/styles/WhatsappLink.module.css";
+import { motion } from "framer-motion";
 
 const WhatsappLink = ({ href, src, alt, width, height }) => {
   return (

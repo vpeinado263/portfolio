@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import styles from '@/styles/Avatar.module.css';
+import Image from "next/image";
+import styles from "@/styles/Avatar.module.css";
 
 const Avatar = ({ src, alt, width, height }) => {
   if (!src) {

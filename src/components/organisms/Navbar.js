@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import styles from '@/styles/Navbar.module.css';
-import MyMenu from '@/components/molecules/MyMenu';
-import TypingEffect from '../molecules/TypingEffect';
+import { useState, useEffect } from "react";
+import styles from "@/styles/Navbar.module.css";
+import MyMenu from "@/components/molecules/MyMenu";
+import TypingEffect from "../molecules/TypingEffect";
 
 const Navbar = () => {
   const text = "Hello, I'm Victor.";
@@ -10,15 +10,15 @@ const Navbar = () => {
     setIsScrolled(window.scrollY > 0);
   };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
-      <div className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
+      <div className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
         <nav className={styles.navContainer}>
           <MyMenu />
         </nav>
