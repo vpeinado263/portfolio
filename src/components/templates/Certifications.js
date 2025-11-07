@@ -36,6 +36,7 @@ const CertificationsData = [
   {
     category: 'IPAP',
     description: 'Instituto Provincial de Administración Pública de Mendoza',
+    /*<img decoding="async" width="250" height="123" src="https://mza-dicaws-portal-uploads-media-prod.s3.amazonaws.com/informacion-oficial/uploads/sites/14/2025/10/marca-ipap-mendoza-ok.webp" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2871 et-animated" loading="lazy">*/
     projects: [
       {
         title: 'Ley 9003. Agilidad en la Gestión',
