@@ -2,6 +2,7 @@ import About from "@/components/atoms/About";
 import Footer from "@/components/organisms/Footer";
 import Certifications from "@/components/templates/Certifications";
 import Header from "@/components/templates/Header";
+import Hobbies from "@/components/templates/Hobbies";
 import Insights from "@/components/templates/Insights";
 import Projects from "@/components/templates/Projects";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
@@ -40,6 +41,9 @@ export default function Home() {
           </section>
           <section role="region" aria-labelledby="certifications-section">
             <Certifications />
+          </section>
+          <section role="region" aria-labelledby="hobbies-section">
+            <Hobbies />
           </section>
         </main>
         <Footer />

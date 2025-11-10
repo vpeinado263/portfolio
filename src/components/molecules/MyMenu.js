@@ -18,6 +18,7 @@ const MyMenu = () => {
               <LinkItem href="#My Projects" text="Projects" />
               <LinkItem href="#Insights" text="Insights" />
               <LinkItem href="#Certifications" text="Certifications" />
+              <LinkItem href="#Hobbies" text="Hobbies" />
             </ul>
           </motion.div>
         </div>
