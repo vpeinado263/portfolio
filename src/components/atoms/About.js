@@ -6,16 +6,6 @@ const About = () => {
       <h2 className={styles.aboutTitle}>About</h2>
       <div className={styles.aboutSection}>
         <p>
-          Soy un profesional con una combinación única de habilidades y
-          pasiones. Como enfermero, trabajé durante la pandemia COVID-19 en el
-          Hospital Central de Mendoza, brindando atención crítica a pacientes en
-          un entorno desafiante y exigente. Además, soy Desarrollador web en
-          formación, con experiencia en proyectos personales que abarcan desde
-          el diseño de interfaces hasta la implementación de back-end con
-          Node.js y MongoDB, con un enfoque en React en creación de aplicaciones
-          dinámicas.
-        </p>
-        <p>
           A lo largo de mi trayectoria profesional he desarrollado una gran
           capacidad para comunicarme con personas que atraviesan situaciones
           estresantes, críticas o de alto impacto emocional. Estoy acostumbrado
