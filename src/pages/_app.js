@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }) => {
           site_name: "Victor Peinado Portfolio",
           images: [
             {
-              url: "https://my-portfolio-victor-nu.vercel.app/agile.webp", 
+              url: "https://my-portfolio-victor-nu.vercel.app/agile.png", 
               width: 800,
               height: 600,
               alt: "Victor Peinado",
