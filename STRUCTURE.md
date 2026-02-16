@@ -1,8 +1,6 @@
 ```bash
 .
-|-- node_modules
 |-- public/
-|   |-- CV-Peinado-Victor.pdf
 |   |-- file.svg
 |   |-- github.svg
 |   |-- linkedin.svg
