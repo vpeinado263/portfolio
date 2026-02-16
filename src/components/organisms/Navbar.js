@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "@/styles/Navbar.module.css";
 import MyMenu from "@/components/molecules/MyMenu";
-import TypingEffect from "../molecules/TypingEffect";
+import TypingEffect from "@/components/molecules/TypingEffect";
 
 const Navbar = () => {
   const text = "Hello, I'm Victor.";
