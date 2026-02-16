@@ -1,12 +1,13 @@
 ```bash
 .
 |-- public/
+|   |-- agile.png
 |   |-- file.svg
 |   |-- github.svg
 |   |-- linkedin.svg
-|   |-- Lus.png
-|   |-- Luz.png
 |   |-- maletin.svg
+|   |-- nurce.ico
+|   |-- nurse.png
 |   |-- sun.png
 |   |-- sunDark.png
 |   |-- whatsapp.svg
