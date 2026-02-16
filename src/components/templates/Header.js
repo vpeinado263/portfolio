@@ -1,7 +1,7 @@
 import { ThemeContext } from "@/context/ThemeContextProvider";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-import Navbar from "../organisms/Navbar";
+import Navbar from "@/components/organisms/Navbar";
 import Image from "next/image";
 
 const Header = () => {
