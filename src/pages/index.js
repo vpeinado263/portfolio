@@ -20,7 +20,7 @@ export default function Home() {
           description: "Explora mi trabajo como desarrollador web.",
           images: [
             {
-              url: "https://my-portfolio-victor-nu.vercel.app/nurse.png", 
+              url: "https://my-portfolio-victor-nu.vercel.app/agile.png", 
               width: 800,
               height: 600,
               alt: "Victor Peinado",

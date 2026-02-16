@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }) => {
           site_name: "Victor Peinado Portfolio",
           images: [
             {
-              url: "https://my-portfolio-victor-nu.vercel.app/nurse.png", 
+              url: "https://my-portfolio-victor-nu.vercel.app/agile.png", 
               width: 800,
               height: 600,
               alt: "Victor Peinado",
@@ -27,6 +27,9 @@ const App = ({ Component, pageProps }) => {
           handle: "@mi_twitter",
           site: "@mi_portafolio",
           cardType: "summary_large_image",
+        }}
+        facebook={{
+          appId: '123456789012345',
         }}
         additionalMetaTags={[
           {
