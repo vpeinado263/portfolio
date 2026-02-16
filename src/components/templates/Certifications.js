@@ -14,16 +14,6 @@ const CertificationsData = [
     ],
   },
   {
-    category: "Hospital Dr. Humberto Notti",
-    description: "Mega Curso de Reanimación Cardiopulmonar para la Comunidad",
-    projects: [
-      {
-        title: "RCP",
-        link: "https://drive.google.com/file/d/11JfOEb3p1F1DtVpJFWz-HPSKBlvwq9ce/view?usp=sharing",
-      },
-    ],
-  },
-  {
     category: "Diplomatura en Desarrollo Web Full Stack",
     description: "Academia Numen",
     projects: [

@@ -11,7 +11,7 @@
 
 /* Tema claro (default) */
 :root {
-  /* Paleta de colores - nombres semánticos */
+ 
   --primary-light: #d5dcf2;
   --primary-medium: #c1c8df;
   --primary-dark: #58608c;
@@ -29,8 +29,10 @@
   --text-primary: #212126;
   --text-secondary: #58608c;
   --text-muted: #857e7e;
+
+  --background: #ffffff;
   
-  /* Mantengo tus variables originales para compatibilidad */
+  /* Variables originales para compatibilidad */
   --rgb0: var(--primary-light);
   --rgb1: var(--primary-light);
   --rgb2: var(--primary-medium);
@@ -68,9 +70,8 @@
   --secondary-light: #594c59;
   --secondary-dark: #034c8c;
   
-  /* Mantengo tus variables originales */
   --rgb0: #04081f;
-  --rgb1: #011526;
+  --rgb1: #091f33;
   --rgb2: #012340;
   --rgb3: #024873;
   --rgb4: #034c8c;
@@ -79,6 +80,45 @@
   --rgb7: #d7d7e2;
   --rgb8: #ffffff;
   --background: var(--bg-secondary);
+}
+
+/* Clases helper */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding: 0 var(--container-padding);
+}
+
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejora de accesibilidad */
+:focus {
+  outline: 2px solid var(--primary-dark);
+  outline-offset: 2px;
+}
+
+/* Selección de texto */
+::selection {
+  background-color: var(--primary-dark);
+  color: white;
 }
 
 /* Elementos base */
