@@ -1,34 +1,58 @@
 import { DefaultSeo } from "next-seo";
+import ThemeContextProvider from "@/context/ThemeContextProvider"; 
 import "@/styles/globals.css";
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
       <DefaultSeo
-        title="Victor Peinado Portafolio"
-        description="Aqui muestro mi evolución como desarrollador Web Full Stack"
+        title="Victor Peinado | Desarrollador Web"
+        titleTemplate="%s | Victor Peinado" 
+        description="Portfolio de Victor Peinado, desarrollador web especializado en React y Next.js. Explora mis proyectos y habilidades."
         openGraph={{
+          type: "website",
+          locale: "es_ES",
           url: "https://my-portfolio-victor-nu.vercel.app/",
-          title: "Mi Portafolio",
-          description:
-            "Portafolio de desarrollador web con proyectos interactivos y tecnologías modernas.",
+          site_name: "Victor Peinado Portfolio",
           images: [
             {
-              url: "https://my-portfolio-victor-nu.vercel.app/public/maletin.svg",
+              url: "https://my-portfolio-victor-nu.vercel.app/nurse.png", 
               width: 800,
               height: 600,
-              alt: "Victor Peinado Portafolio",
+              alt: "Victor Peinado",
             },
           ],
-          site_name: "Victor Portfolio",
         }}
         twitter={{
           handle: "@mi_twitter",
           site: "@mi_portafolio",
           cardType: "summary_large_image",
         }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content: "Victor Peinado, desarrollador web, React, Next.js, portfolio, frontend, JavaScript, cuchillos artesanales",
+          },
+          {
+            name: "author",
+            content: "Victor Peinado",
+          },
+        ]}
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/maletin.svg",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/maletin.svg",
+          },
+        ]}
       />
-      <Component {...pageProps} />
+      
+      <ThemeContextProvider>
+        <Component {...pageProps} />
+      </ThemeContextProvider>
     </>
   );
 };

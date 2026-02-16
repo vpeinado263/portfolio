@@ -1,12 +1,11 @@
-
 const defaultSEO = {
   defaultTitle: 'Victor Peinado | Desarrollador Web',
   titleTemplate: '%s | Victor Peinado',
-  description: 'Portfolio de Victor Peinado, desarrollador web especializado en React y Next.js. Explora mis proyectos, certificaciones y habilidades.',
+  description: 'Portfolio de Victor Peinado, desarrollador web...',
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://github.com/vpeinado263/portfolio',
+    url: 'https://www.tudominio.com/',
     site_name: 'Victor Peinado Portfolio',
     images: [
       {
@@ -17,34 +16,21 @@ const defaultSEO = {
       },
     ],
   },
-  x: {
-    handle: '',
-    site: '',
+  twitter: {
+    handle: '@tu_usuario',
+    site: '@tu_usuario',
     cardType: 'summary_large_image',
   },
   additionalMetaTags: [
     {
       name: 'keywords',
-      content: 'Victor Peinado, desarrollador web, React, Next.js, portfolio, frontend',
-    },
-    {
-      name: 'author',
-      content: 'Victor Peinado',
-    },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1.0',
+      content: 'Victor Peinado, desarrollador web, React, Next.js',
     },
   ],
   additionalLinkTags: [
     {
       rel: 'icon',
       href: '/maletin.svg',
-    },
-    {
-      rel: 'apple-touch-icon',
-      href: '/maletin.svg',
-      sizes: '76x76',
     },
   ],
 };
