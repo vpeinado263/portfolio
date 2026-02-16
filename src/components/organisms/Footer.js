@@ -1,6 +1,6 @@
 import styles from "@/styles/Footer.module.css";
 import SocialLink from "@/components/molecules/SocialLink";
-import Whatsapp from "../molecules/Whatsapp";
+import Whatsapp from "@/components/molecules/Whatsapp";
 
 const Footer = () => {
   return (
