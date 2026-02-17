@@ -1,5 +1,5 @@
 import { DefaultSeo } from "next-seo";
-import ThemeContextProvider from "@/context/ThemeContextProvider"; 
+import ThemeContextProvider from "@/context/ThemeContextProvider";
 import "@/styles/globals.css";
 
 const App = ({ Component, pageProps }) => {
@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <DefaultSeo
         title="Victor Peinado | Desarrollador Web"
-        titleTemplate="%s | Victor Peinado" 
+        titleTemplate="%s | Victor Peinado"
         description="Portfolio de Victor Peinado, desarrollador web especializado en React y Next.js. Explora mis proyectos y habilidades."
         openGraph={{
           type: "website",
@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }) => {
           site_name: "Victor Peinado Portfolio",
           images: [
             {
-              url: "https://my-portfolio-victor-nu.vercel.app/agile.png", 
+              url: "https://my-portfolio-victor-nu.vercel.app/agile.png",
               width: 800,
               height: 600,
               alt: "Victor Peinado",
@@ -29,12 +29,13 @@ const App = ({ Component, pageProps }) => {
           cardType: "summary_large_image",
         }}
         facebook={{
-          appId: '123456789012345',
+          appId: "123456789012345",
         }}
         additionalMetaTags={[
           {
             name: "keywords",
-            content: "Victor Peinado, desarrollador web, React, Next.js, portfolio, frontend, JavaScript, cuchillos artesanales",
+            content:
+              "Victor Peinado, desarrollador web, React, Next.js, portfolio, frontend, JavaScript, cuchillos artesanales",
           },
           {
             name: "author",
@@ -52,7 +53,7 @@ const App = ({ Component, pageProps }) => {
           },
         ]}
       />
-      
+
       <ThemeContextProvider>
         <Component {...pageProps} />
       </ThemeContextProvider>

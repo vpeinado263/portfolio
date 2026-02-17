@@ -1,35 +1,60 @@
-import { createContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+  useMemo,
+} from "react";
 
 export const ThemeContext = createContext();
 
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) throw new Error("useTheme must be used within ThemeProvider");
+  return context;
+};
+
 const ThemeContextProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem("theme");
-      return storedTheme ? storedTheme === "dark" : false;
-    }
-    return false;
+    if (typeof window === "undefined") return "light";
+
+    // Intenta obtener del localStorage
+    const stored = localStorage.getItem("theme");
+    if (stored === "dark" || stored === "light") return stored;
+
+    // Si no, usa preferencia del sistema
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   });
 
+  // Memoizar el toggle
+  const toggleTheme = useCallback(() => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  }, []);
+
+  // Efecto para sincronizar
   useEffect(() => {
-    const rootElement = document.documentElement;
-    if (theme) {
-      rootElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      rootElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    const root = document.documentElement;
+    root.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
-  const handleTheme = () => {
-    setTheme((prevTheme) => !prevTheme);
-  };
+  // Memoizar el valor del contexto
+  const value = useMemo(
+    () => ({
+      theme,
+      toggleTheme,
+      isDark: theme === "dark",
+      isLight: theme === "light",
+    }),
+    [theme, toggleTheme],
+  );
 
-  const toggleTheme = theme ? "dark" : "light";
-  const data = [toggleTheme, handleTheme];
-
-  return <ThemeContext.Provider value={data}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 };
 
 export default ThemeContextProvider;

@@ -1,51 +1,224 @@
 .avatarContainer {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  display: inline-block;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background: var(--rgb0);
+  transition: all var(--transition-base);
+  width: fit-content;
 }
+
 .avatar {
-  border-radius: 50%;
-  border: 2px solid var(--rgb6);
-  box-shadow: 0 4px 6px var(--rgb6);
+  display: block;
+  border-radius: var(--radius-full);
+  border: 3px solid var(--rgb5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-@media (min-width: 481px) and (max-width: 1024px) {
-  .avatarContainer {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100%;
+
+/* Overlay que aparece en hover */
+.avatarOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  padding: var(--space-lg) var(--space-sm) var(--space-sm);
+  text-align: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
+}
+
+.avatarContainer:hover .avatarOverlay {
+  opacity: 1;
+}
+
+.overlayText {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  margin-bottom: var(--space-xs);
+}
+
+.overlaySubtext {
+  display: block;
+  font-size: var(--text-xs);
+  opacity: 0.9;
+}
+
+/* Estado de carga */
+.avatar.loaded {
+  animation: none;
+}
+
+/* Foto real vs fallback */
+.avatarFallback {
+  background: linear-gradient(135deg, var(--rgb2), var(--rgb4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: var(--radius-full);
+}
+
+.fallbackText {
+  font-size: var(--text-4xl);
+  line-height: 1;
+  color: var(--rgb0);
+  font-family: var(--font-second);
+}
+
+/* Efectos hover para dispositivos con ratón */
+@media (hover: hover) {
+  .avatarContainer:hover .avatar {
+    transform: scale(1.08);
+    border-color: var(--rgb6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
-  .avatar {
-    border-radius: 50%;
-    object-fit: cover;
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
-  }
-  .avatar:hover {
-    transform: scale(1.1);
+
+  .avatarContainer:hover {
+    transform: translateY(var(--space-xs));
   }
 }
-@media (min-width: 1025px) {
-  .avatarContainer {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100%;
+
+/* Feedback táctil para móvil */
+@media (hover: none) {
+  .avatarContainer:active .avatar {
+    transform: scale(0.98);
+    opacity: 0.9;
   }
+}
+
+/* Tamaños responsivos */
+@media (max-width: 768px) {
   .avatar {
-    border-radius: 50%;
-    object-fit: cover;
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
+    border-width: 2px;
   }
-  .avatar:hover {
+
+  .avatarFallback {
+    width: 120px;
+    height: 120px;
+  }
+
+  .fallbackText {
+    font-size: var(--text-3xl);
+  }
+
+  .avatarOverlay {
+    padding: var(--space-md) var(--space-xs) var(--space-xs);
+  }
+
+  .overlayText {
+    font-size: var(--text-xs);
+  }
+
+  .overlaySubtext {
+    font-size: 0.65rem;
+  }
+}
+
+/* Animación de entrada */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.avatarContainer {
+  animation: fadeInScale 0.4s ease-out;
+}
+
+/* Estado de carga (skeleton) */
+.avatarContainer.loading {
+  background: linear-gradient(90deg, var(--rgb1), var(--rgb2), var(--rgb1));
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Borde animado en hover */
+.avatarContainer::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  transition: all var(--transition-base);
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .avatarContainer:hover::after {
+    border-color: var(--rgb5);
     transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+/* Reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .avatarContainer,
+  .avatar,
+  .avatarContainer::after {
+    animation: none;
+    transition: none;
+  }
+
+  .avatarContainer:hover .avatar {
+    transform: none;
+  }
+
+  .avatarContainer.loading {
+    animation: none;
+    background: var(--rgb1);
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .avatarFallback {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .avatarFallback {
+    width: 160px;
+    height: 160px;
+  }
+
+  .fallbackText {
+    font-size: var(--text-4xl);
+  }
+}
+
+/* Wide */
+@media (min-width: 1280px) {
+  .avatarFallback {
+    width: 180px;
+    height: 180px;
   }
 }

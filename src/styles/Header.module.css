@@ -1,0 +1,152 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--background);
+  border-bottom: 1px solid var(--rgb2);
+  transition: all var(--transition-base);
+  backdrop-filter: blur(0px);
+}
+
+.header.scrolled {
+  backdrop-filter: blur(10px);
+  background-color: rgba(var(--background-rgb), 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.themeToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+  position: relative;
+}
+
+.themeToggle:hover {
+  background-color: var(--rgb2);
+}
+
+.themeToggle::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(-1 * var(--space-2xl));
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--rgb7);
+  color: var(--rgb0);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  pointer-events: none;
+  z-index: var(--z-tooltip);
+}
+
+.themeToggle:hover::before {
+  opacity: 1;
+}
+
+.themeIcon {
+  width: 32px;
+  height: 32px;
+  transition: transform var(--transition-base);
+}
+
+.themeToggle:hover .themeIcon {
+  transform: rotate(15deg);
+}
+
+/* Skip Link para accesibilidad */
+.skipLink {
+  position: absolute;
+  top: calc(-1 * var(--space-3xl));
+  left: 0;
+  background: var(--rgb7);
+  color: var(--rgb0);
+  padding: var(--space-sm) var(--space-md);
+  text-decoration: none;
+  z-index: calc(var(--z-fixed) + 1);
+  transition: top var(--transition-base);
+  border-radius: 0 0 var(--radius-sm) 0;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.skipLink:focus {
+  top: 0;
+  outline: 2px solid var(--rgb5);
+  outline-offset: 2px;
+}
+
+/* Desktop - ocultar header porque ya tienes navbar lateral */
+@media (min-width: 1024px) {
+  .header {
+    display: none; /* En desktop usas navbar lateral, no header superior */
+  }
+}
+
+/* Móvil */
+@media (max-width: 639px) {
+  .headerContent {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .themeIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .themeToggle::before {
+    display: none; /* Ocultar tooltip en móvil */
+  }
+
+  .skipLink {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-xs);
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .headerContent {
+    padding: var(--space-sm) var(--space-lg);
+  }
+
+  .themeIcon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .header.scrolled,
+  .themeToggle,
+  .themeIcon,
+  .skipLink {
+    transition: none;
+  }
+
+  .themeToggle:hover .themeIcon {
+    transform: none;
+  }
+}

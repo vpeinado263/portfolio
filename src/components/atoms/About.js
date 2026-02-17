@@ -1,45 +1,50 @@
 import styles from "@/styles/About.module.css";
-import PropTypes from 'prop-types';
-import { motion } from 'framer-motion';
+import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 
-const About = ({ 
-  title = "Sobre Mí", 
+const About = ({
+  title = "Sobre mi",
   paragraphs = [],
-  showEllipsis = false 
+  showEllipsis = false,
+  showDecoration = true,
 }) => {
   const defaultParagraphs = [
-    "A lo largo de mi trayectoria profesional he desarrollado una gran capacidad para comunicarme con personas que atraviesan situaciones estresantes, críticas o de alto impacto emocional. Estoy acostumbrado a interactuar con usuarios que expresan su malestar de forma intensa incluso con enojo y sé responder con calma, empatía y eficacia. Considero que una comunicación efectiva, respetuosa y clara es fundamental para resolver situaciones urgentes y restaurar la confianza, especialmente cuando se trata de servicios sensibles o emergencias.",
-    "Estoy dando mis primeros pasos en el mundo IT, aplicando los conocimientos adquiridos en mi formación como Desarrollador Web Full Stack. Me encuentro en constante aprendizaje, creando proyectos propios, explorando nuevas tecnologías y perfeccionando herramientas y técnicas que me permitan crecer y aportar valor en entornos reales."
+    "Profesional con experiencia en gestión administrativa y formación complementaria en desarrollo web. Este portfolio muestra proyectos y herramientas orientadas a la organización de información y mejora de procesos mediante tecnología.",
   ];
 
-  const contentParagraphs = paragraphs.length > 0 ? paragraphs : defaultParagraphs;
+  // Si no hay párrafos, usamos los por defecto
+  // Si showEllipsis está activo, añadimos "..." al último párrafo
+  const contentParagraphs =
+    paragraphs.length > 0
+      ? paragraphs
+      : defaultParagraphs.map((p, index) =>
+          showEllipsis && index === defaultParagraphs.length - 1
+            ? p + " ..."
+            : p,
+        );
 
   return (
     <motion.section
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
-<section id="about" className={styles.aboutContainer}>
+      id="about"
+      className={styles.aboutContainer}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <h2 className={styles.aboutTitle}>{title}</h2>
       <div className={styles.aboutSection}>
         {contentParagraphs.map((paragraph, index) => (
-          <p key={index}>
-            {paragraph}
-            {showEllipsis && index === contentParagraphs.length - 1 && " ..."}
-          </p>
+          <p key={index}>{paragraph}</p>
         ))}
       </div>
-    </section>
-</motion.section>
-   
+    </motion.section>
   );
 };
 
 About.propTypes = {
   title: PropTypes.string,
   paragraphs: PropTypes.arrayOf(PropTypes.string),
-  showEllipsis: PropTypes.bool
+  showEllipsis: PropTypes.bool,
 };
 
 export default About;

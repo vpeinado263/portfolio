@@ -1,16 +1,17 @@
 ```bash
 .
 |-- public/
-|   |-- agile.png
+|-- |-- imagenes/
+|   |   |-- agile.png
+|   |   |-- nurse.png
+|   |   |-- sun.png
+|   |   |-- sunDark.png
 |   |-- file.svg
 |   |-- github.svg
 |   |-- linkedin.svg
 |   |-- maletin.svg
-|   |-- nurce.ico
-|   |-- nurse.png
-|   |-- sun.png
-|   |-- sunDark.png
-|   |-- whatsapp.svg
+|   |-- nurse.ico
+|   |-- whatsapp.svg   
 |-- src/
 |   |-- components/
 |   |   |-- atoms/
@@ -19,7 +20,6 @@
 |   |   |   |-- Icon.js
 |   |   |   |-- LinkItem.js
 |   |   |   |-- LinkText.js
-|   |   |   |-- SpinnerAtomico.js
 |   |   |   |-- TypedText.js
 |   |   |   |-- WhatsappLink.js
 |   |   |-- molecules/

@@ -9,30 +9,76 @@
   box-sizing: border-box;
 }
 
-/* Tema claro (default) */
+/* ===== SISTEMA DE MEDIDAS UNIFICADO ===== */
 :root {
- 
+  /* Espaciado - escala progresiva */
+  --space-xs: 0.25rem;  /* 4px */
+  --space-sm: 0.5rem;   /* 8px */
+  --space-md: 1rem;     /* 16px */
+  --space-lg: 1.5rem;   /* 24px */
+  --space-xl: 2rem;     /* 32px */
+  --space-2xl: 3rem;    /* 48px */
+  --space-3xl: 4rem;    /* 64px */
+  --space-4xl: 6rem;    /* 96px */
+  
+  /* Tamaños de fuente */
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-base: 1rem;    /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+  --text-2xl: 1.5rem;   /* 24px */
+  --text-3xl: 2rem;     /* 32px */
+  --text-4xl: 2.5rem;   /* 40px */
+  
+  /* Anchuras del navbar */
+  --navbar-width: 14rem;
+  --navbar-width-lg: 16rem;
+  
+  /* Contenedor principal */
+  --container-max: 1200px;
+  --container-padding: var(--space-md);
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+  
+  /* Bordes */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ===== COLORES TEMA CLARO ===== */
   --primary-light: #d5dcf2;
   --primary-medium: #c1c8df;
   --primary-dark: #58608c;
-  
+
   --secondary-light: #c4cbf2;
   --secondary-dark: #594c59;
-  
+
   --neutral-dark: #212126;
   --neutral-medium: #857e7e;
   --neutral-light: #f5f5f5;
-  
+
   --bg-primary: #ffffff;
   --bg-secondary: #f0f2f5;
-  
+
   --text-primary: #212126;
   --text-secondary: #58608c;
   --text-muted: #857e7e;
 
-  --background: #ffffff;
-  
-  /* Variables originales para compatibilidad */
+  /* Variables originales para compatibilidad (mapeadas a las nuevas) */
   --rgb0: var(--primary-light);
   --rgb1: var(--primary-light);
   --rgb2: var(--primary-medium);
@@ -43,33 +89,30 @@
   --rgb7: var(--neutral-dark);
   --rgb8: var(--neutral-medium);
   --background: var(--bg-primary);
-  
+
   /* Fuentes */
   --font-first: "Urbanist", sans-serif;
   --font-second: "Cormorant SC", serif;
   --font-third: "Roboto Mono", monospace;
-  
-  /* Layout */
-  --container-padding: 1rem;
-  --max-width: 1200px;
 }
 
-/* Tema oscuro */
+/* ===== TEMA OSCURO ===== */
 .dark {
   --bg-primary: #04081f;
   --bg-secondary: #011526;
-  
+
   --text-primary: #d7d7e2;
   --text-secondary: #58608c;
   --text-muted: #a0a0a0;
-  
+
   --primary-light: #011526;
   --primary-medium: #012340;
   --primary-dark: #024873;
-  
+
   --secondary-light: #594c59;
   --secondary-dark: #034c8c;
-  
+
+  /* Mantener compatibilidad con variables RGB */
   --rgb0: #04081f;
   --rgb1: #091f33;
   --rgb2: #012340;
@@ -82,7 +125,51 @@
   --background: var(--bg-secondary);
 }
 
-/* Clases helper */
+/* ===== BREAKPOINTS UNIFICADOS ===== */
+/* 
+  mobile: 0 - 639px
+  tablet: 640px - 1023px  
+  desktop: 1024px - 1279px
+  wide: 1280px+
+*/
+
+/* Elementos base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-first);
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color var(--transition-base), color var(--transition-base);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Tipografía base */
+body {
+  font-size: var(--text-base);
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Listas */
+li {
+  list-style: none;
+  margin: var(--space-xs) 0;
+}
+
+/* ===== UTILIDADES ===== */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -96,106 +183,73 @@
 }
 
 .container {
-  max-width: var(--max-width);
-  max-width: 1200px;
+  max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 1rem;
   padding: 0 var(--container-padding);
 }
 
-
-/* Scroll suave */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Mejora de accesibilidad */
-:focus {
-  outline: 2px solid var(--primary-dark);
-  outline-offset: 2px;
-}
-
-/* Selección de texto */
-::selection {
-  background-color: var(--primary-dark);
-  color: white;
-}
-
-/* Elementos base */
-body {
-  font-family: var(--font-first);
-  background-color: var(--background);
-  color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-secondary);
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--primary-dark);
-}
-
-li {
-  list-style: none;
-  margin: 0.5rem 0;
-}
-
-/* Utilidades */
 .button {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: var(--space-sm) var(--space-md);
   font-family: inherit;
-  transition: opacity 0.2s ease;
+  transition: opacity var(--transition-fast);
 }
 
 .button:hover {
   opacity: 0.8;
 }
 
-/* Media Queries */
-@media (max-width: 480px) {
-  body {
-    padding: var(--container-padding);
-    font-size: 14px;
-  }
-  
-  :root {
-    --container-padding: 0.8rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  body {
-    padding: 1.5rem;
-    font-size: 15px;
-  }
-  
-  a {
-    font-size: 0.95rem;
-    word-break: break-word;
-  }
-}
-
-@media (min-width: 1025px) {
-  body {
-    padding: 2rem;
-    font-size: 16px;
-  }
-  
-  a {
-    font-size: 1rem;
-  }
-}
-
-/* Utilidades de tema */
 .theme-transition {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color var(--transition-base), 
+              color var(--transition-base), 
+              border-color var(--transition-base);
+}
+
+/* Focus visible para accesibilidad */
+:focus-visible {
+  outline: 2px solid var(--primary-dark);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+/* Móvil (0 - 639px) - estilos base ya aplicados */
+
+/* Tablet (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  body {
+    padding: var(--space-lg);
+  }
+}
+
+/* Desktop (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    padding: var(--space-xl);
+  }
+}
+
+/* Wide (1280px+) */
+@media (min-width: 1280px) {
+  body {
+    padding: var(--space-2xl);
+  }
+}
+
+/* Reducir movimiento para usuarios que lo prefieran */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,0 +1,90 @@
+.link {
+  /* Estilos base para todos los enlaces */
+  text-decoration: none;
+  color: var(--rgb6);
+  font-family: var(--font-first);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Estados de interacción */
+.link:hover {
+  color: var(--rgb5);
+  transform: translateY(-1px);
+}
+
+.link:active {
+  transform: translateY(0);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--rgb5);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Variante para enlaces destacados */
+.link.highlight {
+  font-weight: 600;
+  color: var(--rgb7);
+  border-bottom: 2px solid transparent;
+}
+
+.link.highlight:hover {
+  border-bottom-color: var(--rgb5);
+}
+
+/* Variante para botones que parecen enlaces */
+.link.buttonLike {
+  background-color: var(--rgb0);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: 1px solid var(--rgb2);
+}
+
+.link.buttonLike:hover {
+  background-color: var(--rgb1);
+  border-color: var(--rgb5);
+}
+
+/* Variante para enlaces con icono */
+.link.withIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Enlaces externos (con indicador) */
+.link.external::after {
+  content: "↗";
+  font-size: 0.8em;
+  margin-left: 0.2rem;
+  opacity: 0.7;
+}
+
+/* Enlaces deshabilitados */
+.link.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .link.buttonLike {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Modo oscuro ajustes */
+:global(.dark) .link {
+  color: var(--rgb5);
+}
+
+:global(.dark) .link:hover {
+  color: var(--rgb3);
+}

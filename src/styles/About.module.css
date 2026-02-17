@@ -1,91 +1,49 @@
-.aboutContainer {
+.nombreComponenteContainer {
   width: 100%;
-  padding: 0.8rem;
+  padding: var(--space-lg) var(--space-md);
   margin: 0 auto;
-  max-width: 1200px; 
+  max-width: var(--container-max);
 }
 
-.aboutTitle {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
+/* Estilos específicos del componente */
+.elemento {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-md);
+  /* otros estilos base */
 }
 
-.aboutSection {
-  line-height: 1.5;
-  text-align: justify;
-}
+/* ===== RESPONSIVE ===== */
 
-.aboutSection p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-  .aboutContainer {
-    padding: 2rem;
+/* Tablet (640px - 1023px) */
+@media (min-width: 640px) {
+  .nombreComponenteContainer {
+    padding: var(--space-2xl) var(--space-lg);
   }
   
-  .aboutTitle {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .aboutSection {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .aboutSection p {
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
+  .elemento {
+    font-size: var(--text-lg);
+    /* ajustes para tablet */
   }
 }
 
+/* Desktop (1024px - 1279px) */
 @media (min-width: 1024px) {
-  .aboutContainer {
-    width: 80%;
-    padding: 3rem;
-    margin-left: 14rem; 
+  .nombreComponenteContainer {
+    width: calc(100% - var(--navbar-width));
+    margin-left: var(--navbar-width);
+    padding: var(--space-3xl);
   }
-
-  .aboutTitle {
-    display: block; 
-    text-align: left; 
-    font-size: 2.5rem;
-  }
-
-  .aboutSection {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 800px; 
-  }
-
-  .aboutSection p {
-    margin-bottom: 1.5rem;
-  }
-  .aboutTitle::after {
-    margin: 0.5rem 0 0;
+  
+  .elemento {
+    font-size: var(--text-xl);
+    /* ajustes para desktop */
   }
 }
 
-@media (min-width: 1600px) {
-  .aboutContainer {
-    margin-left: auto;
-    margin-right: auto;
+/* Wide (1280px+) */
+@media (min-width: 1280px) {
+  .nombreComponenteContainer {
+    width: calc(100% - var(--navbar-width-lg));
+    margin-left: var(--navbar-width-lg);
   }
-}
-
-.aboutSection p:first-child::first-letter {
-  font-size: 2em;
-  float: left;
-  line-height: 0.8;
-  margin-right: 0.5rem;
-}
-.aboutTitle::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  margin: 0.5rem auto 0;
 }

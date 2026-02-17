@@ -9,9 +9,20 @@ const SocialLink = ({
   iconWidth,
   iconHeight,
   children,
+  platform, // 'github' | 'linkedin' | 'whatsapp' | 'cv'
 }) => {
+  // Determinar si el enlace es externo (para target="_blank")
+  const isExternal = href.startsWith("http") || href.startsWith("https");
+
+  // Clase específica para la plataforma
+  const platformClass = platform ? styles[platform] : "";
+
   return (
-    <LinkText href={href} className={styles.socialLink}>
+    <LinkText
+      href={href}
+      className={`${styles.socialLink} ${platformClass}`}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    >
       <Icon
         src={iconSrc}
         alt={iconAlt}
@@ -19,7 +30,7 @@ const SocialLink = ({
         height={iconHeight}
         className={styles.icon}
       />
-      {children}
+      {children && <span className={styles.text}>{children}</span>}
     </LinkText>
   );
 };

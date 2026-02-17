@@ -1,5 +1,79 @@
 .socialLink {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
   font-family: var(--font-third);
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--rgb7);
+  background-color: var(--rgb0);
+  border: 1px solid var(--rgb2);
+  transition: all 0.2s ease;
+}
+
+.socialLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores específicos por plataforma */
+.socialLink.github:hover {
+  background-color: #24292e;
+  border-color: #24292e;
+  color: white;
+}
+
+.socialLink.linkedin:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+  color: white;
+}
+
+.socialLink.whatsapp:hover {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: white;
+}
+
+.socialLink.cv:hover {
+  background-color: var(--rgb4);
+  border-color: var(--rgb4);
+  color: var(--rgb0);
+}
+
+.icon {
+  transition: transform 0.2s ease;
+}
+
+.socialLink:hover .icon {
+  transform: scale(1.1);
+}
+
+.text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Versión solo icono (sin texto) */
+.socialLink:not(:has(.text)) {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.socialLink:not(:has(.text)):hover .icon {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .socialLink {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .socialLink:not(:has(.text)) {
+    padding: 0.4rem;
+  }
 }
