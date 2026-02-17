@@ -1,38 +1,18 @@
-const defaultSEO = {
-  defaultTitle: "Victor Peinado | Desarrollador Web",
-  titleTemplate: "%s | Victor Peinado",
-  description: "Portfolio de Victor Peinado, desarrollador web...",
+// next-seo.config.js
+const nextSeoConfig = {
+  title: 'Mi Portafolio',
+  description: 'Portafolio profesional desarrollado con Next.js y Tailwind CSS',
   openGraph: {
-    type: "website",
-    locale: "es_ES",
-    url: "https://www.tudominio.com/",
-    site_name: "Victor Peinado Portfolio",
-    images: [
-      {
-        url: "https://www.tudominio.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Victor Peinado Portfolio",
-      },
-    ],
+    type: 'website',
+    locale: 'es_ES',
+    url: 'https://tu-dominio.com',
+    siteName: 'Mi Portafolio',
   },
   twitter: {
-    handle: "@tu_usuario",
-    site: "@tu_usuario",
-    cardType: "summary_large_image",
+    handle: '@tu_usuario',
+    site: '@tu_usuario',
+    cardType: 'summary_large_image',
   },
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content: "Victor Peinado, desarrollador web, React, Next.js",
-    },
-  ],
-  additionalLinkTags: [
-    {
-      rel: "icon",
-      href: "/maletin.svg",
-    },
-  ],
-};
+}
 
-export default defaultSEO;
+export default nextSeoConfig

@@ -1,4 +1,3 @@
-import styles from "@/styles/Projects.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -7,7 +6,6 @@ import {
   FaJsSquare,
   FaReact,
   FaExternalLinkAlt,
-  FaGithub,
 } from "react-icons/fa";
 
 const projectsData = [
@@ -23,7 +21,7 @@ const projectsData = [
         title: "Gamer Master Kanives - Versión 1",
         description: "Primera maquetación de sitio web para gamers",
         link: "https://tarea-1-clase-html.vercel.app/",
-        github: "#", // Si tienes repos
+        github: "#",
       },
       {
         title: "Gamer Master Kanives - Versión 2",
@@ -133,7 +131,7 @@ const projectsData = [
       {
         title: "Shopping Cart",
         description: "Carrito de compras con estado global",
-        link: "https://shopping-cart-jade-two.vercel.app/", // URL mejorada
+        link: "https://shopping-cart-jade-two.vercel.app/",
       },
       {
         title: "Breaking Bad API",
@@ -170,45 +168,98 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className={styles.projectsContainer}
+      className="
+        min-h-screen
+        px-8 py-16 md:px-12 md:py-20 lg:px-16 lg:py-24
+        w-full max-w-7xl mx-auto
+        lg:ml-56 lg:w-[calc(100%-14rem)]
+        xl:max-w-350
+      "
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      <h2 className={styles.sectionTitle}>Mi Trayectoria de Aprendizaje</h2>
+      <motion.h2
+        className="
+          text-3xl md:text-4xl lg:text-5xl
+          text-center
+          mb-12 md:mb-16
+          font-second
+          text-gray-800 dark:text-gray-200
+        "
+        variants={itemVariants}
+      >
+        Mi Trayectoria de Aprendizaje
+      </motion.h2>
 
       {projectsData.map((category, catIndex) => (
         <motion.div
           key={catIndex}
-          className={styles.projectCategory}
+          className="
+            mb-12 md:mb-16
+            p-6 md:p-8 lg:p-10
+            border-2 border-gray-200 dark:border-gray-800
+            rounded-2xl
+            bg-white dark:bg-gray-900
+            transition-colors duration-300
+            hover:border-opacity-100
+          "
           variants={itemVariants}
           style={{ borderColor: category.color }}
         >
-          <div className={styles.categoryHeader}>
+          {/* Header de categoría */}
+          <div className="flex items-center gap-4 mb-4">
             <div
-              className={styles.categoryIcon}
+              className="text-3xl md:text-4xl leading-none"
               style={{ color: category.color }}
             >
               {category.icon}
             </div>
-            <h3 className={styles.categoryTitle}>{category.category}</h3>
+            <h3 className="text-xl md:text-2xl font-first text-gray-800 dark:text-gray-200">
+              {category.category}
+            </h3>
           </div>
 
-          <p className={styles.categoryDescription}>{category.description}</p>
+          {/* Descripción */}
+          <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
+            {category.description}
+          </p>
 
-          <div className={styles.techStack}>
+          {/* Tecnologías */}
+          <div className="flex flex-wrap gap-2 mb-8">
             {category.technologies.map((tech, i) => (
-              <span key={i} className={styles.techBadge}>
+              <span
+                key={i}
+                className="
+                  px-3 py-1
+                  bg-gray-200 dark:bg-gray-800
+                  text-gray-700 dark:text-gray-300
+                  rounded-full
+                  text-sm font-third
+                "
+              >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className={styles.projectsGrid}>
+          {/* Grid de proyectos */}
+          <div className="
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+            gap-4 md:gap-5 lg:gap-6
+          ">
             {category.projects.map((project, projIndex) => (
               <motion.div
                 key={projIndex}
-                className={styles.projectCard}
+                className="
+                  bg-gray-50 dark:bg-gray-800
+                  rounded-xl
+                  overflow-hidden
+                  transition-all duration-300
+                  border border-gray-200 dark:border-gray-700
+                  hover:border-blue-500 dark:hover:border-blue-400
+                  hover:shadow-lg
+                "
                 whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -216,22 +267,37 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.projectLink}
+                  className="block no-underline text-inherit"
                 >
-                  <div className={styles.projectContent}>
+                  <div className="p-5">
+                    {/* Icono del proyecto */}
                     <div
-                      className={styles.projectIcon}
+                      className="text-2xl mb-3"
                       style={{ color: category.color }}
                     >
                       {category.icon}
                     </div>
-                    <h4 className={styles.projectTitle}>{project.title}</h4>
-                    <p className={styles.projectDescription}>
+
+                    {/* Título */}
+                    <h4 className="text-base md:text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                      {project.title}
+                    </h4>
+
+                    {/* Descripción */}
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
                       {project.description}
                     </p>
-                    <span className={styles.projectLinkText}>
-                      Ver proyecto{" "}
-                      <FaExternalLinkAlt className={styles.externalIcon} />
+
+                    {/* Link text con icono */}
+                    <span className="
+                      inline-flex items-center gap-2
+                      text-blue-500 dark:text-blue-400
+                      text-sm font-medium
+                      transition-all duration-200
+                      group-hover:gap-3
+                    ">
+                      Ver proyecto
+                      <FaExternalLinkAlt className="text-xs" />
                     </span>
                   </div>
                 </Link>

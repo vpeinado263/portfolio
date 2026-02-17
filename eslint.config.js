@@ -1,41 +1,29 @@
-import js from "@eslint/js";
-import globals from "globals";
-import reactPlugin from "eslint-plugin-react";
-import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
-import prettierPlugin from "eslint-plugin-prettier";
-import nextPlugin from "@next/eslint-plugin-next";
-import { defineConfig } from "eslint/config";
+import globals from "globals"
+import pluginJs from "@eslint/js"
+import pluginReact from "eslint-plugin-react"
+import pluginJsxA11y from "eslint-plugin-jsx-a11y"
 
-export default defineConfig([
+export default [
   {
-    files: ["**/*.{js,jsx}"],
+    files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+      globals: globals.browser,
       parserOptions: {
-        ecmaFeatures: { jsx: true },
-      },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true
+        }
+      }
     },
     plugins: {
-      react: reactPlugin,
-      "jsx-a11y": jsxA11yPlugin,
-      prettier: prettierPlugin,
-      "@next/next": nextPlugin,
+      react: pluginReact,
+      'jsx-a11y': pluginJsxA11y,
     },
     rules: {
-      ...js.configs.recommended.rules,
-      ...reactPlugin.configs.flat.recommended.rules,
-      ...jsxA11yPlugin.configs.recommended.rules,
-      ...nextPlugin.configs["core-web-vitals"].rules,
-      "react/react-in-jsx-scope": "off",
-      "prettier/prettier": ["error", { endOfLine: "auto" }],
-    },
-    settings: {
-      react: { version: "detect" },
-    },
+    
+    }
   },
-]);
+  pluginJs.configs.recommended,
+  pluginReact.configs.flat.recommended,
+]

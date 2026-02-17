@@ -1,18 +1,17 @@
 import React from "react";
-import styles from "@/styles/Certifications.module.css";
 import Link from "next/link";
-import { motion } from "framer-motion"; // Si quieres animaciones
+import { motion } from "framer-motion";
 
 const CertificationsData = [
   {
     category: "Enfermero Profesional",
     institution: "IDICSA",
-    icon: "🏥", // Opcional: emoji o icono
+    icon: "🏥",
     projects: [
       {
         title: "Enfermero Profesional",
         link: "https://drive.google.com/file/d/1TIhB5dh97p6NjgRom6BwUSe2h_PE96vb/view",
-        date: "2022", // Opcional
+        date: "2022",
       },
     ],
   },
@@ -42,24 +41,8 @@ const CertificationsData = [
         link: "https://drive.google.com/file/d/14PG1qQg321lY_h4xiQ0G5aMcEPZGfD9c/view",
       },
       {
-        title: "Perspectiva de Género y violencia contra las Mujeres",
-        link: "https://drive.google.com/file/d/1TVH503Cc0kTDgV6wRH7Im63t0gWqOTY8/view",
-      },
-      {
         title: "Planilla de Cálculo Avanzado",
         link: "https://drive.google.com/file/d/1oC1z8JyFqBHzI5g08Ab6ClPVD6LAeCdZ/view",
-      },
-      {
-        title: "Trata de personas: enfoque desde la perspectiva de género",
-        link: "https://drive.google.com/file/d/1WgrDvIZrzxWrqvWvBbMTgSSw7fgzoHSq/view",
-      },
-      {
-        title: "Varones y Masculinidades: Modelos para transformar",
-        link: "https://drive.google.com/file/d/1s9C-RpNm_DGLPc809m3Crwv24s1uD_Id/view",
-      },
-      {
-        title: "Violencia Obstétrica: perspectiva de género",
-        link: "https://drive.google.com/file/d/1MkYOcEppojlOWaxQ2oChedzdehufcVMJ/view",
       },
     ],
   },
@@ -77,7 +60,6 @@ const CertificationsData = [
 ];
 
 const Certifications = () => {
-  // Animación para las tarjetas
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -98,9 +80,21 @@ const Certifications = () => {
   };
 
   return (
-    <section id="certifications" className={styles.certificationsContainer}>
+    <section
+      id="certifications"
+      className="
+        w-full px-4 py-6 md:px-6 md:py-12 lg:px-8 lg:py-16
+        mx-auto max-w-7xl
+        lg:w-[calc(100%-var(--navbar-width))] lg:ml-(--navbar-width)
+        xl:w-[calc(100%-var(--navbar-width-lg))] xl:ml-(--navbar-width-lg)
+        min-h-screen
+      "
+    >
       <motion.div
-        className={styles.certificationsGrid}
+        className="
+          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]
+          gap-6 md:gap-8
+        "
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -108,33 +102,71 @@ const Certifications = () => {
         {CertificationsData.map((category, index) => (
           <motion.article
             key={index}
-            className={styles.certificationsCategory}
+            className="
+              bg-white dark:bg-gray-900
+              p-6 md:p-8
+              border border-gray-200 dark:border-gray-800
+              rounded-xl
+              transition-all duration-300
+              hover:-translate-y-2
+              hover:border-blue-500 dark:hover:border-blue-400
+              hover:shadow-lg
+            "
             variants={itemVariants}
             whileHover={{ y: -5 }}
           >
-            <div className={styles.categoryHeader}>
-              <span className={styles.categoryIcon}>{category.icon}</span>
-              <h3 className={styles.categoryTitle}>{category.category}</h3>
+            {/* Header de la categoría */}
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-3xl">{category.icon}</span>
+              <h3 className="text-xl md:text-2xl font-first text-gray-800 dark:text-gray-200">
+                {category.category}
+              </h3>
             </div>
-            <p className={styles.categoryInstitution}>{category.institution}</p>
 
-            <ul className={styles.certificationsList}>
+            {/* Institución */}
+            <p className="text-base text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+              {category.institution}
+            </p>
+
+            {/* Lista de certificaciones */}
+            <ul className="list-none p-0 m-0">
               {category.projects.map((project, idx) => (
-                <li key={idx}>
+                <li key={idx} className="mb-2 last:mb-0">
                   <Link
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.certificationLink}
+                    className="
+                      group
+                      flex items-center justify-between
+                      py-1.5 px-2 -mx-2
+                      text-blue-600 dark:text-blue-400
+                      hover:text-blue-700 dark:hover:text-blue-300
+                      rounded-md
+                      transition-all duration-200
+                      hover:translate-x-1
+                      hover:bg-gray-50 dark:hover:bg-gray-800
+                    "
                   >
-                    <span className={styles.linkText}>{project.title}</span>
+                    <span className="flex-1 text-sm md:text-base">
+                      {project.title}
+                    </span>
+                    
                     {project.date && (
-                      <span className={styles.linkDate}>{project.date}</span>
+                      <span className="
+                        text-xs text-gray-400 dark:text-gray-500
+                        mr-2
+                      ">
+                        {project.date}
+                      </span>
                     )}
+                    
                     <svg
-                      className={styles.linkIcon}
-                      width="16"
-                      height="16"
+                      className="
+                        w-4 h-4
+                        opacity-0 group-hover:opacity-100
+                        transition-opacity duration-200
+                      "
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"

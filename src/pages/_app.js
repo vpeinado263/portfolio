@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }) => {
       <DefaultSeo
         title="Victor Peinado | Desarrollador Web"
         titleTemplate="%s | Victor Peinado"
-        description="Portfolio de Victor Peinado, desarrollador web especializado en React y Next.js. Explora mis proyectos y habilidades."
+        description="Portfolio de Victor Peinado. Explora mis proyectos y habilidades."
         openGraph={{
           type: "website",
           locale: "es_ES",
@@ -35,7 +35,7 @@ const App = ({ Component, pageProps }) => {
           {
             name: "keywords",
             content:
-              "Victor Peinado, desarrollador web, React, Next.js, portfolio, frontend, JavaScript, cuchillos artesanales",
+              "Victor Peinado, desarrollador web, React, Next.js, portfolio, frontend, JavaScript",
           },
           {
             name: "author",
