@@ -1,14 +1,2 @@
 /* frontend/src/styles/globals.css */
 @import "tailwindcss";
-
-
-/* Solo mantén estilos globales MUY específicos */
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    @apply antialiased; /* Tailwind también tiene utilidades */
-  }
-}
