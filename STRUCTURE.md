@@ -65,9 +65,11 @@
 |-- next.config.js
 |-- next-seo.config
 |-- package.json
+|-- postcss.config.js
 |-- package-lock.json
 |-- prettier.config.json
 |-- README.md
 |-- STRUCTURE.md
+|-- tailwind.config.js
 |-- vercel.json
 ```
