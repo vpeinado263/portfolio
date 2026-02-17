@@ -11,7 +11,7 @@
 |   |-- linkedin.svg
 |   |-- maletin.svg
 |   |-- nurse.ico
-|   |-- whatsapp.svg   
+|   |-- whatsapp.svg
 |-- src/
 |   |-- components/
 |   |   |-- atoms/

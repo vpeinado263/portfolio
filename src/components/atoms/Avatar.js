@@ -2,13 +2,13 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "@/styles/Avatar.module.css";
 
-const Avatar = ({ 
-  src, 
-  alt, 
-  width, 
+const Avatar = ({
+  src,
+  alt,
+  width,
   height,
   priority = false,
-  fallbackIcon = "👤" // Emoji o inicial
+  fallbackIcon = "👤", // Emoji o inicial
 }) => {
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -16,17 +16,17 @@ const Avatar = ({
   if (!src || imageError) {
     return (
       <div className={`${styles.avatarContainer} ${styles.avatarFallback}`}>
-        <span className={styles.fallbackText}>
-          {fallbackIcon}
-        </span>
+        <span className={styles.fallbackText}>{fallbackIcon}</span>
       </div>
     );
   }
 
   return (
-    <div className={`${styles.avatarContainer} ${!imageLoaded ? styles.loading : ''}`}>
+    <div
+      className={`${styles.avatarContainer} ${!imageLoaded ? styles.loading : ""}`}
+    >
       <Image
-        className={`${styles.avatar} ${imageLoaded ? styles.loaded : ''}`}
+        className={`${styles.avatar} ${imageLoaded ? styles.loaded : ""}`}
         src={src}
         alt={alt}
         width={width}
@@ -35,7 +35,7 @@ const Avatar = ({
         onError={() => setImageError(true)}
         onLoad={() => setImageLoaded(true)}
       />
-      
+
       {/* Overlay sutil con tu nombre/rol */}
       <div className={styles.avatarOverlay}>
         <span className={styles.overlayText}>Victor Peinado</span>

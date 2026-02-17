@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "@/styles/LinkText.module.css"; 
+import styles from "@/styles/LinkText.module.css";
 
 const LinkText = ({
   href,

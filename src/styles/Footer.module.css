@@ -18,7 +18,9 @@
 .socialItem {
   display: flex;
   align-items: center;
-  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    opacity var(--transition-fast);
 }
 
 .socialItem:hover {

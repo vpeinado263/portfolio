@@ -60,14 +60,11 @@ const TypingEffect = ({
 
       {/* Texto con efecto typing */}
       <div className={styles.textWrapper}>
-        <TypedText 
-          text={displayText} 
-          className={styles.typedText} 
-        />
+        <TypedText text={displayText} className={styles.typedText} />
         {cursor && (isTyping || showCursor) && (
           <span className={styles.cursor}>|</span>
         )}
-        
+
         {/* Subtítulo opcional */}
         <p className={styles.subtitle}>
           Full Stack Developer | Enfermero Profesional

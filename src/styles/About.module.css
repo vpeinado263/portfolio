@@ -19,7 +19,7 @@
   .nombreComponenteContainer {
     padding: var(--space-2xl) var(--space-lg);
   }
-  
+
   .elemento {
     font-size: var(--text-lg);
     /* ajustes para tablet */
@@ -33,7 +33,7 @@
     margin-left: var(--navbar-width);
     padding: var(--space-3xl);
   }
-  
+
   .elemento {
     font-size: var(--text-xl);
     /* ajustes para desktop */
