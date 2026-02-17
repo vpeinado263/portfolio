@@ -55,22 +55,24 @@ const MyMenu = ({ mobile = false, onClose }) => {
       items: [
         { id: "", label: "Home", section: "" },
         { id: "about", label: "Sobre mí", section: "about" },
-      ]
+      ],
     },
     {
       title: "Trabajo",
       items: [
         { id: "projects", label: "Proyectos", section: "projects" },
         { id: "insights", label: "Insights", section: "insights" },
-        { id: "certifications", label: "Certificaciones", section: "certifications" },
-      ]
+        {
+          id: "certifications",
+          label: "Certificaciones",
+          section: "certifications",
+        },
+      ],
     },
     {
       title: "Personal",
-      items: [
-        { id: "hobbies", label: "Hobbies", section: "hobbies" },
-      ]
-    }
+      items: [{ id: "hobbies", label: "Hobbies", section: "hobbies" }],
+    },
   ];
 
   if (mobile) {
@@ -92,7 +94,14 @@ const MyMenu = ({ mobile = false, onClose }) => {
 
           <div className="mt-12">
             {menuGroups.map((group, groupIndex) => (
-              <div key={group.title} className={groupIndex > 0 ? 'mt-6 pt-4 border-t border-gray-200 dark:border-gray-800' : ''}>
+              <div
+                key={group.title}
+                className={
+                  groupIndex > 0
+                    ? "mt-6 pt-4 border-t border-gray-200 dark:border-gray-800"
+                    : ""
+                }
+              >
                 <h3 className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 px-4">
                   {group.title}
                 </h3>
@@ -131,7 +140,14 @@ const MyMenu = ({ mobile = false, onClose }) => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           {menuGroups.map((group, groupIndex) => (
-            <div key={group.title} className={groupIndex > 0 ? 'mt-6 pt-4 border-t border-gray-200 dark:border-gray-800' : ''}>
+            <div
+              key={group.title}
+              className={
+                groupIndex > 0
+                  ? "mt-6 pt-4 border-t border-gray-200 dark:border-gray-800"
+                  : ""
+              }
+            >
               <h3 className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2 px-3">
                 {group.title}
               </h3>
@@ -157,9 +173,10 @@ const MyMenu = ({ mobile = false, onClose }) => {
                         hover:bg-gray-100 dark:hover:bg-gray-800
                         hover:border-l-blue-500 dark:hover:border-l-blue-400
                         hover:translate-x-0.5
-                        ${activeSection === item.section ? 
-                          'bg-gray-200 dark:bg-gray-700 border-l-blue-500 dark:border-l-blue-400 text-gray-900 dark:text-white font-semibold' 
-                          : ''
+                        ${
+                          activeSection === item.section
+                            ? "bg-gray-200 dark:bg-gray-700 border-l-blue-500 dark:border-l-blue-400 text-gray-900 dark:text-white font-semibold"
+                            : ""
                         }
                       `}
                     />

@@ -5,7 +5,7 @@ const Whatsapp = ({
   phoneNumber = "+542612448018",
   showTooltip = true,
   tooltipText = "Chatear por WhatsApp",
-  tooltipPosition = "bottom", 
+  tooltipPosition = "bottom",
   pulseAnimation = true,
   iconSize = 34,
   className = "",
@@ -34,7 +34,7 @@ const Whatsapp = ({
           drop-shadow-md
           hover:scale-110 hover:rotate-5
           hover:drop-shadow-[0_4px_8px_rgba(37,211,102,0.3)]
-          ${pulseAnimation ? 'animate-pulse-slow' : ''}
+          ${pulseAnimation ? "animate-pulse-slow" : ""}
           hover:animate-none
         `}
       />
@@ -51,8 +51,8 @@ const Whatsapp = ({
             opacity-0 invisible
             group-hover:opacity-100 group-hover:visible
             transition-all duration-200
-            ${tooltipPosition === 'bottom' ? 'group-hover:-translate-y-1.25' : ''}
-            ${tooltipPosition === 'top' ? 'group-hover:translate-y-1.25' : ''}
+            ${tooltipPosition === "bottom" ? "group-hover:-translate-y-1.25" : ""}
+            ${tooltipPosition === "top" ? "group-hover:translate-y-1.25" : ""}
             shadow-lg
             pointer-events-none
             z-10

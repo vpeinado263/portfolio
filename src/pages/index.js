@@ -15,7 +15,8 @@ export default function Home() {
         description="Portfolio profesional de Victor Peinado - Desarrollador Full Stack y Enfermero Profesional"
         openGraph={{
           title: "Victor Peinado - Portfolio Profesional",
-          description: "Explora mi trabajo como desarrollador web y enfermero profesional",
+          description:
+            "Explora mi trabajo como desarrollador web y enfermero profesional",
           images: [
             {
               url: "https://my-portfolio-victor-nu.vercel.app/agile.png",
@@ -34,7 +35,8 @@ export default function Home() {
         additionalMetaTags={[
           {
             name: "keywords",
-            content: "desarrollador web, full stack, enfermero, portfolio, react, next.js",
+            content:
+              "desarrollador web, full stack, enfermero, portfolio, react, next.js",
           },
           {
             name: "author",
@@ -49,7 +51,7 @@ export default function Home() {
 
       <Header />
 
-      <main 
+      <main
         role="main"
         id="main-content"
         className="
@@ -83,7 +85,7 @@ export default function Home() {
         >
           {/* Decoración de separador */}
           <div className="absolute left-0 right-0 h-px bg-linear-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
-          
+
           <Projects />
           <Insights />
         </section>
@@ -100,7 +102,7 @@ export default function Home() {
         >
           {/* Decoración de separador */}
           <div className="absolute left-0 right-0 h-px bg-linear-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
-          
+
           <Certifications />
           <Hobbies />
         </section>

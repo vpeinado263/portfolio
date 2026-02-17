@@ -1,22 +1,21 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WhatsappLink = ({ 
-  href, 
+const WhatsappLink = ({
+  href,
   src,
   alt = "WhatsApp",
   phoneNumber,
   message = "Hola, vi tu portfolio y me gustaría contactarte",
-  width = 34, 
+  width = 34,
   height = 34,
   showGlow = true,
   glowIntensity = "medium",
-  animationType = "rotate", 
-  useIcon = false, 
+  animationType = "rotate",
+  useIcon = false,
   iconColor = "#25D366",
   showTooltip = false,
   tooltipText = "Contáctame por WhatsApp",
@@ -25,7 +24,7 @@ const WhatsappLink = ({
   const [isHovered, setIsHovered] = useState(false);
 
   // Construir href si solo se proporciona el número
-  const whatsappHref = phoneNumber 
+  const whatsappHref = phoneNumber
     ? `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     : href;
 
@@ -80,7 +79,7 @@ const WhatsappLink = ({
     transition-all duration-300 ease-in-out
     cursor-pointer no-underline bg-transparent
     relative
-    ${showGlow ? `hover:drop-shadow-[${glowShadows[glowIntensity]}]` : ''}
+    ${showGlow ? `hover:drop-shadow-[${glowShadows[glowIntensity]}]` : ""}
     active:scale-95 active:opacity-80
     md:w-auto md:h-auto
     ${className}
@@ -102,8 +101,8 @@ const WhatsappLink = ({
           className="flex items-center justify-center transition-all duration-300"
         >
           {useIcon ? (
-            <FaWhatsapp 
-              size={width} 
+            <FaWhatsapp
+              size={width}
               color={iconColor}
               className="transition-transform duration-300"
             />

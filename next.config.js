@@ -5,6 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true, // Útil para exportación estática
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

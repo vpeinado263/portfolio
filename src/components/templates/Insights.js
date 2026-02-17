@@ -143,7 +143,7 @@ const Insights = () => {
                       border border-transparent
                       hover:border-blue-500 dark:hover:border-blue-400
                       hover:bg-gray-100 dark:hover:bg-gray-700
-                      ${isExpanded ? 'border-blue-500 dark:border-blue-400' : ''}
+                      ${isExpanded ? "border-blue-500 dark:border-blue-400" : ""}
                     `}
                     whileHover={{ scale: 1.02 }}
                     onClick={() =>

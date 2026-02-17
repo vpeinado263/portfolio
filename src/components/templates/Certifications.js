@@ -151,16 +151,18 @@ const Certifications = () => {
                     <span className="flex-1 text-sm md:text-base">
                       {project.title}
                     </span>
-                    
+
                     {project.date && (
-                      <span className="
+                      <span
+                        className="
                         text-xs text-gray-400 dark:text-gray-500
                         mr-2
-                      ">
+                      "
+                      >
                         {project.date}
                       </span>
                     )}
-                    
+
                     <svg
                       className="
                         w-4 h-4

@@ -48,8 +48,8 @@ const Icon = ({
   const wrapperClasses = `
     inline-flex items-center justify-center
     leading-none transition-all duration-300
-    ${onClick ? 'cursor-pointer' : ''}
-    ${onClick ? 'focus-visible:outline-2 focus-visible:outline-blue-400 focus-visible:outline-offset-2 focus-visible:rounded' : ''}
+    ${onClick ? "cursor-pointer" : ""}
+    ${onClick ? "focus-visible:outline-2 focus-visible:outline-blue-400 focus-visible:outline-offset-2 focus-visible:rounded" : ""}
     ${className}
   `;
 
@@ -58,7 +58,7 @@ const Icon = ({
     block object-contain
     transition-all duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
     animate-fadeIn
-    ${grayscale ? 'grayscale opacity-80 hover:grayscale-0 hover:opacity-100' : ''}
+    ${grayscale ? "grayscale opacity-80 hover:grayscale-0 hover:opacity-100" : ""}
     ${getHoverClasses()}
     
     // Efectos para dispositivos táctiles

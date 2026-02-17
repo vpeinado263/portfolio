@@ -31,7 +31,7 @@ const Navbar = () => {
           z-40
           overflow-y-auto
           transition-all duration-300
-          ${isScrolled ? 'shadow-lg' : ''}
+          ${isScrolled ? "shadow-lg" : ""}
         `}
       >
         <nav className="flex flex-col gap-6">
@@ -59,21 +59,21 @@ const Navbar = () => {
             className={`
               block w-5 h-0.5 bg-gray-600 dark:bg-gray-400
               transition-all duration-300
-              ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : 'mb-1.5'}
+              ${isMobileMenuOpen ? "rotate-45 translate-y-1.5" : "mb-1.5"}
             `}
           />
           <span
             className={`
               block w-5 h-0.5 bg-gray-600 dark:bg-gray-400
               transition-all duration-300
-              ${isMobileMenuOpen ? 'opacity-0' : 'mb-1.5'}
+              ${isMobileMenuOpen ? "opacity-0" : "mb-1.5"}
             `}
           />
           <span
             className={`
               block w-5 h-0.5 bg-gray-600 dark:bg-gray-400
               transition-all duration-300
-              ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}
+              ${isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""}
             `}
           />
         </button>
@@ -94,12 +94,14 @@ const Navbar = () => {
       </div>
 
       {/* Avatar con typing effect - AHORA MÁS COMPACTO */}
-      <div className="
+      <div
+        className="
         flex items-center justify-center
         min-h-screen
         lg:ml-(--navbar-width) xl:ml-(--navbar-width-lg)
         p-4
-      ">
+      "
+      >
         <TypingEffect
           avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
           avatarAlt="Victor - Desarrollador Full Stack"

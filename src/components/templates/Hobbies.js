@@ -146,20 +146,23 @@ const Hobbies = () => {
               hover:shadow-xl
               overflow-hidden
               cursor-pointer
-              ${activeCategory === index ? 'shadow-2xl scale-[1.02]' : ''}
+              ${activeCategory === index ? "shadow-2xl scale-[1.02]" : ""}
             `}
             variants={itemVariants}
             whileHover={{ y: -5 }}
             onMouseEnter={() => setActiveCategory(index)}
             onMouseLeave={() => setActiveCategory(null)}
-            style={{ borderColor: activeCategory === index ? category.color : 'transparent' }}
+            style={{
+              borderColor:
+                activeCategory === index ? category.color : "transparent",
+            }}
           >
             {/* Barra superior de color */}
-            <div 
+            <div
               className="absolute inset-x-0 top-0 h-2 transition-opacity duration-300"
-              style={{ 
+              style={{
                 background: category.color,
-                opacity: activeCategory === index ? 1 : 0.5
+                opacity: activeCategory === index ? 1 : 0.5,
               }}
             />
 
@@ -230,7 +233,10 @@ const Hobbies = () => {
           pt-6
         "
       >
-        <p>🍯 Recientemente creador de un apiario de abejas - Apasionado por la apicultura y la naturaleza</p>
+        <p>
+          🍯 Recientemente creador de un apiario de abejas - Apasionado por la
+          apicultura y la naturaleza
+        </p>
       </motion.div>
     </section>
   );

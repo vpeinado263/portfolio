@@ -5,7 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="
+    <footer
+      className="
       bg-white dark:bg-gray-900
       border-t border-gray-200 dark:border-gray-800
       px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-6
@@ -14,22 +15,27 @@ const Footer = () => {
       lg:w-[calc(100%-var(--navbar-width))] lg:ml-(--navbar-width)
       xl:w-[calc(100%-var(--navbar-width-lg))] xl:ml-(--navbar-width-lg) xl:px-12
       2xl:max-w-(--container-max) 2xl:mx-auto 2xl:px-0
-    ">
+    "
+    >
       {/* Versión móvil/tablet: centrado vertical */}
       <div className="lg:flex lg:justify-between lg:items-center">
         {/* Enlaces sociales */}
-        <div className="
+        <div
+          className="
           flex flex-wrap justify-center items-center
           gap-6 md:gap-8 lg:gap-6 xl:gap-8
           mb-4 lg:mb-0
-        ">
+        "
+        >
           {/* GitHub */}
-          <div className="
+          <div
+            className="
             flex items-center
             transition-transform duration-200
             hover:-translate-y-1 hover:opacity-90
             active:-translate-y-0.5
-          ">
+          "
+          >
             <SocialLink
               href="https://github.com/vpeinado263"
               iconSrc="/github.svg"
@@ -45,12 +51,14 @@ const Footer = () => {
           </div>
 
           {/* LinkedIn */}
-          <div className="
+          <div
+            className="
             flex items-center
             transition-transform duration-200
             hover:-translate-y-1 hover:opacity-90
             active:-translate-y-0.5
-          ">
+          "
+          >
             <SocialLink
               href="https://www.linkedin.com/in/victor-peinado1739/"
               iconSrc="/linkedin.svg"
@@ -66,13 +74,15 @@ const Footer = () => {
           </div>
 
           {/* WhatsApp */}
-          <div className="
+          <div
+            className="
             flex items-center
             transition-transform duration-200
             hover:-translate-y-1 hover:opacity-90
             active:-translate-y-0.5
-          ">
-            <Whatsapp 
+          "
+          >
+            <Whatsapp
               iconSize={24}
               showTooltip={true}
               tooltipText="WhatsApp"
@@ -82,12 +92,14 @@ const Footer = () => {
           </div>
 
           {/* CV */}
-          <div className="
+          <div
+            className="
             flex items-center
             transition-transform duration-200
             hover:-translate-y-1 hover:opacity-90
             active:-translate-y-0.5
-          ">
+          "
+          >
             <SocialLink
               href="https://drive.google.com/file/d/1C-5VwDMs-oU2-Ah0xHupGkxTo2QPk1dN/view"
               iconSrc="/file.svg"
@@ -106,7 +118,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="
+        <div
+          className="
           text-center lg:text-right
           text-xs md:text-sm
           text-gray-400 dark:text-gray-500
@@ -114,7 +127,8 @@ const Footer = () => {
           border-dashed border-gray-200 dark:border-gray-800
           pt-4 lg:pt-0
           mt-2 lg:mt-0
-        ">
+        "
+        >
           © {currentYear} Victor Peinado. Todos los derechos reservados.
         </div>
       </div>

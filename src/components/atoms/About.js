@@ -29,17 +29,19 @@ const About = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 
+      <h2
+        className="text-3xl font-bold text-gray-900 dark:text-white mb-8 
                      md:text-4xl lg:text-5xl
                      relative inline-block
                      after:content-[''] after:absolute after:bottom-0 after:left-0 
-                     after:w-1/2 after:h-1 after:bg-primary after:rounded">
+                     after:w-1/2 after:h-1 after:bg-primary after:rounded"
+      >
         {title}
       </h2>
-      
+
       <div className="space-y-4 md:space-y-6">
         {contentParagraphs.map((paragraph, index) => (
-          <motion.p 
+          <motion.p
             key={index}
             className="text-base text-gray-700 dark:text-gray-300 leading-relaxed
                        md:text-lg lg:text-xl
@@ -56,6 +58,5 @@ const About = ({
     </motion.section>
   );
 };
-
 
 export default About;

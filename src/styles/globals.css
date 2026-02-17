@@ -2,38 +2,40 @@
 @import "tailwindcss";
 
 :root {
-    --navbar-width: 250px;
-    --navbar-width-lg: 300px;
-    --container-max: 1400px;
-    --font-first: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    --font-second: 'Georgia', 'Times New Roman', serif;
-    --font-third: 'Courier New', monospace;
+  --navbar-width: 250px;
+  --navbar-width-lg: 300px;
+  --container-max: 1400px;
+  --font-first:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  --font-second: "Georgia", "Times New Roman", serif;
+  --font-third: "Courier New", monospace;
+}
+
+/* Modo oscuro */
+.dark {
+  color-scheme: dark;
+}
+
+/* Utilidades personalizadas */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   }
-  
-  /* Modo oscuro */
-  .dark {
-    color-scheme: dark;
+
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  
-  /* Utilidades personalizadas */
-  @layer utilities {
-    .text-shadow {
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    
-    .bg-gradient-radial {
-      background-image: radial-gradient(var(--tw-gradient-stops));
-    }
+}
+
+/* Reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-  
-  /* Reducir movimiento */
-  @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
+}

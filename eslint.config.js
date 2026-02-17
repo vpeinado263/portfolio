@@ -1,7 +1,7 @@
-import globals from "globals"
-import pluginJs from "@eslint/js"
-import pluginReact from "eslint-plugin-react"
-import pluginJsxA11y from "eslint-plugin-jsx-a11y"
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import pluginReact from "eslint-plugin-react";
+import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 
 export default [
   {
@@ -9,21 +9,19 @@ export default [
     languageOptions: {
       globals: globals.browser,
       parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
+        ecmaVersion: "latest",
+        sourceType: "module",
         ecmaFeatures: {
-          jsx: true
-        }
-      }
+          jsx: true,
+        },
+      },
     },
     plugins: {
       react: pluginReact,
-      'jsx-a11y': pluginJsxA11y,
+      "jsx-a11y": pluginJsxA11y,
     },
-    rules: {
-    
-    }
+    rules: {},
   },
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
-]
+];

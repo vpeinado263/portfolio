@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const LinkItem = ({ 
-  href, 
-  text, 
-  icon, 
-  onClick, 
+const LinkItem = ({
+  href,
+  text,
+  icon,
+  onClick,
   active = false,
   variant = "default",
   hoverEffect = "translate",
@@ -30,8 +30,8 @@ const LinkItem = ({
   };
 
   // Tamaños según compact o normal
-  const sizes = compact 
-    ? "px-4 py-2 text-base md:text-sm" 
+  const sizes = compact
+    ? "px-4 py-2 text-base md:text-sm"
     : "px-5 py-3 text-lg md:text-base lg:text-xl";
 
   const baseClasses = `
@@ -56,26 +56,23 @@ const LinkItem = ({
       return `
         ${baseClasses}
         border-l-0 border-b-2 border-transparent rounded-none px-0
-        ${isActive ? 'border-b-blue-500 dark:border-b-blue-400 bg-transparent font-semibold' : ''}
+        ${isActive ? "border-b-blue-500 dark:border-b-blue-400 bg-transparent font-semibold" : ""}
       `;
     }
 
     return `
       ${baseClasses}
-      ${isActive 
-        ? 'text-blue-500 dark:text-blue-400 font-semibold bg-white dark:bg-gray-900 border-l-4 border-blue-500 dark:border-blue-400 before:opacity-10' 
-        : ''
+      ${
+        isActive
+          ? "text-blue-500 dark:text-blue-400 font-semibold bg-white dark:bg-gray-900 border-l-4 border-blue-500 dark:border-blue-400 before:opacity-10"
+          : ""
       }
     `;
   };
 
   return (
     <li className="list-none m-0 w-full animate-slideIn">
-      <Link
-        href={href}
-        className={getVariantClasses()}
-        onClick={onClick}
-      >
+      <Link href={href} className={getVariantClasses()} onClick={onClick}>
         {icon && (
           <span className="flex items-center justify-center w-6 h-6 md:w-5 md:h-5 text-lg">
             {icon}

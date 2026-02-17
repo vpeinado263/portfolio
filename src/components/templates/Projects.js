@@ -244,10 +244,12 @@ const Projects = () => {
           </div>
 
           {/* Grid de proyectos */}
-          <div className="
+          <div
+            className="
             grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
             gap-4 md:gap-5 lg:gap-6
-          ">
+          "
+          >
             {category.projects.map((project, projIndex) => (
               <motion.div
                 key={projIndex}
@@ -289,13 +291,15 @@ const Projects = () => {
                     </p>
 
                     {/* Link text con icono */}
-                    <span className="
+                    <span
+                      className="
                       inline-flex items-center gap-2
                       text-blue-500 dark:text-blue-400
                       text-sm font-medium
                       transition-all duration-200
                       group-hover:gap-3
-                    ">
+                    "
+                    >
                       Ver proyecto
                       <FaExternalLinkAlt className="text-xs" />
                     </span>

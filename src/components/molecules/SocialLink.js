@@ -12,10 +12,10 @@ const SocialLink = ({
   children,
   platform,
   variant = "default",
-  size = "md", 
+  size = "md",
   showText = true,
   showTooltip = false,
-  tooltipPosition = "top", 
+  tooltipPosition = "top",
   className = "",
   onClick,
   ...props
@@ -85,9 +85,9 @@ const SocialLink = ({
     transition-all duration-200 ease-in-out
     hover:-translate-y-0.5
     hover:shadow-md
-    ${platformColor ? platformColor.hover : 'hover:bg-gray-100 dark:hover:bg-gray-800'}
-    ${platformColor ? 'hover:text-white' : ''}
-    ${isIconOnly ? sizeClasses.iconOnly : ''}
+    ${platformColor ? platformColor.hover : "hover:bg-gray-100 dark:hover:bg-gray-800"}
+    ${platformColor ? "hover:text-white" : ""}
+    ${isIconOnly ? sizeClasses.iconOnly : ""}
     relative
     ${className}
   `;
@@ -100,7 +100,9 @@ const SocialLink = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={onClick}
-        {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        {...(isExternal
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : {})}
         {...props}
       >
         <Icon
@@ -111,13 +113,11 @@ const SocialLink = ({
           className={`
             transition-all duration-200
             ${sizeClasses.icon}
-            ${isHovered ? 'scale-110' : 'scale-100'}
+            ${isHovered ? "scale-110" : "scale-100"}
           `}
         />
         {!isIconOnly && (
-          <span className={`${sizeClasses.text} font-medium`}>
-            {children}
-          </span>
+          <span className={`${sizeClasses.text} font-medium`}>{children}</span>
         )}
       </LinkText>
 

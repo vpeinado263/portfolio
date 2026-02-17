@@ -53,7 +53,7 @@ const TypingEffect = ({
         p-8 md:p-12 lg:p-16
         w-full max-w-2xl md:max-w-4xl mx-auto
         lg:ml-56 lg:max-w-225
-        ${!displayText ? 'opacity-70' : ''}
+        ${!displayText ? "opacity-70" : ""}
         ${className}
       `}
     >
@@ -69,7 +69,7 @@ const TypingEffect = ({
             className="transition-filter duration-300 group-hover:brightness-105"
           />
         </div>
-        
+
         {/* Glow effect */}
         {showGlow && (
           <div className="absolute -inset-4 bg-blue-500/20 dark:bg-blue-400/20 rounded-full blur-xl -z-10 animate-pulse" />
@@ -83,7 +83,7 @@ const TypingEffect = ({
             text={displayText}
             className="font-second text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 text-center m-0 leading-relaxed"
           />
-          
+
           {/* Cursor parpadeante */}
           {cursor && (isTyping || showCursor) && (
             <span className="inline-block w-0.75 h-6 md:h-7 lg:h-8 bg-blue-500 dark:bg-blue-400 ml-1 animate-blink" />
