@@ -1,3 +1,4 @@
+import React from "react"; 
 import { NextSeo } from "next-seo";
 import About from "@/components/atoms/About";
 import Footer from "@/components/organisms/Footer";

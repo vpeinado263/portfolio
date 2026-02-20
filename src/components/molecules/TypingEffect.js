@@ -1,3 +1,4 @@
+import React from "react"; 
 import { useEffect, useState } from "react";
 import Avatar from "@/components/atoms/Avatar";
 import TypedText from "@/components/atoms/TypedText";

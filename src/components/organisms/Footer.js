@@ -1,3 +1,4 @@
+import React from "react"; 
 import SocialLink from "@/components/molecules/SocialLink";
 import Whatsapp from "@/components/molecules/Whatsapp";
 

@@ -1,3 +1,4 @@
+import React from "react"; 
 import Link from "next/link";
 
 const LinkText = ({
@@ -118,7 +119,7 @@ const LinkText = ({
   }
 
   return (
-    <a
+    <Link
       href={href}
       className={combinedClassName}
       onClick={onClick}
@@ -128,7 +129,7 @@ const LinkText = ({
       {...props}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 

@@ -1,3 +1,4 @@
+import React from "react"; 
 import WhatsappLink from "@/components/atoms/WhatsappLink";
 
 const Whatsapp = ({

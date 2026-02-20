@@ -1,3 +1,4 @@
+import React from "react"; 
 import LinkText from "@/components/atoms/LinkText";
 import Icon from "@/components/atoms/Icon";
 import { motion } from "framer-motion";

@@ -1,3 +1,4 @@
+import React from "react"; 
 import { DefaultSeo } from "next-seo";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
 import "@/styles/globals.css";

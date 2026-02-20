@@ -1,3 +1,4 @@
+import React from "react"; 
 import { ThemeContext } from "@/context/ThemeContextProvider";
 import { useContext, useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -92,7 +93,7 @@ const Header = () => {
             data-tooltip={theme === "dark" ? "Modo claro" : "Modo oscuro"}
           >
             <Image
-              src={theme === "dark" ? "/sunDark.png" : "/sun.png"}
+              src={theme === "dark" ? "/imagenes/sunDark.png" : "/imagenes/sun.png"}
               alt="Toggle theme"
               width={40}
               height={40}
