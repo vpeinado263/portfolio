@@ -15,7 +15,6 @@
 |-- src/
 |   |-- components/
 |   |   |-- atoms/
-|   |   |   |-- About.js
 |   |   |   |-- Avatar.js
 |   |   |   |-- Icon.js
 |   |   |   |-- LinkItem.js
@@ -41,24 +40,12 @@
 |   |-- pages/
 |   |   |-- _app.js
 |   |   |-- _document.js
+|   |   |-- certifications.js
+|   |   |-- hobbies.js
 |   |   |-- index.js
+|   |   |-- insights.js
 |   |-- styles/
-|   |   |-- About.module.css
-|   |   |-- Avatar.module.css
-|   |   |-- Certifications.module.css
-|   |   |-- Footer.module.css
 |   |   |-- globals.css
-|   |   |-- Hobbies.module.css
-|   |   |-- Icon.module.css
-|   |   |-- Insights.module.css
-|   |   |-- LinkItem.module.css
-|   |   |-- MyMenu.module.css
-|   |   |-- Navbar.module.css
-|   |   |-- Projects.module.css
-|   |   |-- SocialLink.module.css
-|   |   |-- SpinnerAtomico.module.css
-|   |   |-- TypedText.module.css
-|   |   |-- WhatsappLink.module.css
 |-- eslint.config.js
 |-- generate_tree.sh
 |-- jsconfig.json

@@ -1,17 +1,20 @@
+import React from 'react';
 import { NextSeo } from "next-seo";
-import About from "@/components/templates/About";
+import Certifications from "@/components/templates/Certifications";
 import Footer from "@/components/organisms/Footer";
 
-export default function AboutPage() {
+const certifications = () => {
   return (
     <>
-      <NextSeo title="Sobre mí | Victor Peinado" />
+      <NextSeo title="Certificaciones | Victor Peinado" />
       <main className="min-h-screen bg-linear-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 pt-20 lg:pt-0">
         <div className="lg:ml-(--navbar-width) xl:ml-(--navbar-width-lg)">
-          <About />
+          <Certifications />
         </div>
       </main>
       <Footer />
     </>
   );
-}
+};
+
+export default certifications;

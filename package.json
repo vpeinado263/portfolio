@@ -8,10 +8,7 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
-    "lint": "next lint --dir src",
-    "lint:fix": "next lint --dir src --fix",
-    "lint:all": "eslint .",
-    "lint:all:fix": "eslint . --fix"
+    "lint": "next lint src"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",
@@ -30,7 +27,7 @@
     "@types/estree": "^1.0.8",
     "autoprefixer": "^10.4.24",
     "eslint": "^9.39.1",
-    "eslint-config-next": "^16.0.1",
+    "eslint-config-next": "16.1.6",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.1",

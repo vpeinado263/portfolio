@@ -1,81 +1,37 @@
-import React from "react"; 
-import LinkItem from "@/components/atoms/LinkItem";
-import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const MyMenu = ({ mobile = false, onClose }) => {
   const router = useRouter();
-  const [activeSection, setActiveSection] = useState("");
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = [
-        "about",
-        "projects",
-        "insights",
-        "certifications",
-        "hobbies",
-      ];
-      const scrollPosition = window.scrollY + 100;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleLinkClick = (sectionId) => {
-    if (mobile && onClose) {
-      onClose();
-    }
-
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  // Agrupar items
   const menuGroups = [
     {
       title: "Principal",
       items: [
-        { id: "", label: "Home", section: "" },
-        { id: "about", label: "Sobre mí", section: "about" },
+        { path: "/", label: "Home"},
+        { path: "/about", label: "Sobre mí"},
       ],
     },
     {
       title: "Trabajo",
       items: [
-        { id: "projects", label: "Proyectos", section: "projects" },
-        { id: "insights", label: "Insights", section: "insights" },
-        {
-          id: "certifications",
-          label: "Certificaciones",
-          section: "certifications",
-        },
+        { path: "/projects", label: "Proyectos"},
+        { path: "/insights", label: "Insights"},
+        { path: "/certifications", label: "Certificaciones"},
       ],
     },
     {
       title: "Personal",
-      items: [{ id: "hobbies", label: "Hobbies", section: "hobbies" }],
+      items: [{ path: "/hobbies", label: "Hobbies"}],
     },
   ];
 
+  const handleLinkClick = () => {
+    if (mobile && onClose) onClose();
+  };
+
+  // Versión móvil
   if (mobile) {
     return (
       <AnimatePresence>
@@ -108,18 +64,23 @@ const MyMenu = ({ mobile = false, onClose }) => {
                 </h3>
                 <ul className="list-none p-0 flex flex-col gap-2">
                   {group.items.map((item) => (
-                    <li key={item.id}>
-                      <LinkItem
-                        href={item.id === "" ? "/" : `#${item.id}`}
-                        text={item.label}
-                        onClick={() => handleLinkClick(item.section)}
-                        active={
-                          item.section === ""
-                            ? router.pathname === "/"
-                            : activeSection === item.section
-                        }
-                        className="text-base py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:translate-x-1 transition-all"
-                      />
+                    <li key={item.path}>
+                      <Link
+                        href={item.path}
+                        onClick={handleLinkClick}
+                        className={`
+                          flex items-center gap-3 px-4 py-2 rounded-md
+                          transition-all duration-200
+                          ${
+                            router.pathname === item.path
+                              ? "bg-blue-500 text-white"
+                              : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                          }
+                        `}
+                      >
+                        <span className="text-xl">{item.icon}</span>
+                        <span className="text-base font-medium">{item.label}</span>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -131,7 +92,7 @@ const MyMenu = ({ mobile = false, onClose }) => {
     );
   }
 
-  // Versión desktop con grupos
+  // Versión desktop
   return (
     <nav className="hidden lg:block h-full">
       <div className="block h-full overflow-y-auto py-4">
@@ -154,33 +115,28 @@ const MyMenu = ({ mobile = false, onClose }) => {
               </h3>
               <ul className="flex flex-col gap-1 list-none p-0">
                 {group.items.map((item) => (
-                  <li key={item.id}>
-                    <LinkItem
-                      href={item.id === "" ? "/" : `#${item.id}`}
-                      text={item.label}
-                      onClick={() => handleLinkClick(item.section)}
-                      active={
-                        item.section === ""
-                          ? router.pathname === "/"
-                          : activeSection === item.section
-                      }
-                      variant="desktop"
+                  <li key={item.path}>
+                    <Link
+                      href={item.path}
                       className={`
-                        flex items-center py-2 px-3 rounded-md
-                        text-gray-700 dark:text-gray-300
-                        text-sm font-medium no-underline
+                        flex items-center gap-3 px-4 py-2.5 mx-2 rounded-lg
                         transition-all duration-200
-                        border-l-3 border-transparent
-                        hover:bg-gray-100 dark:hover:bg-gray-800
-                        hover:border-l-blue-500 dark:hover:border-l-blue-400
-                        hover:translate-x-0.5
                         ${
-                          activeSection === item.section
-                            ? "bg-gray-200 dark:bg-gray-700 border-l-blue-500 dark:border-l-blue-400 text-gray-900 dark:text-white font-semibold"
-                            : ""
+                          router.pathname === item.path
+                            ? "bg-blue-500 text-white shadow-md"
+                            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
                         }
                       `}
-                    />
+                    >
+                      <span className="text-xl">{item.icon}</span>
+                      <span className="text-sm font-medium">{item.label}</span>
+                      {router.pathname === item.path && (
+                        <motion.div
+                          className="ml-auto w-1.5 h-1.5 bg-white rounded-full"
+                          layoutId="activeIndicator"
+                        />
+                      )}
+                    </Link>
                   </li>
                 ))}
               </ul>
