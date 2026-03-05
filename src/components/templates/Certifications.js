@@ -6,7 +6,7 @@ const CertificationsData = [
   {
     category: "Enfermero Profesional",
     institution: "IDICSA",
-    icon: "🏥",
+    icon: "",
     projects: [
       {
         title: "Enfermero Profesional",
@@ -18,7 +18,7 @@ const CertificationsData = [
   {
     category: "Diplomatura en Desarrollo Web Full Stack",
     institution: "Academia Numen",
-    icon: "💻",
+    icon: "",
     projects: [
       {
         title: "Desarrollo Web Full Stack",
@@ -30,7 +30,7 @@ const CertificationsData = [
   {
     category: "Formación Complementaria",
     institution: "IPAP - Instituto Provincial de Administración Pública",
-    icon: "📚",
+    icon: "",
     projects: [
       {
         title: "Ley 9003. Agilidad en la Gestión",
@@ -49,10 +49,10 @@ const CertificationsData = [
   {
     category: "Alkemy",
     institution: "Certificados de Finalización",
-    icon: "⚡",
+    icon: "",
     projects: [
       {
-        title: "Muro - Proyecto Final",
+        title: "Muro",
         link: "https://partners.alkemy.org/certificates/auth0|66c78e3125702b5570a032ee",
       },
     ],

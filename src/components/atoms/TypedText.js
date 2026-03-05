@@ -1,6 +1,5 @@
 import React from "react"; 
 import { forwardRef } from "react";
-import Avatar from "./Avatar";
 
 const TypedText = forwardRef(
   (
@@ -55,14 +54,6 @@ const TypedText = forwardRef(
             "
               />
             )}
-
-            <Avatar
-              src={avatarSrc}
-              alt={avatarAlt}
-              width={120}
-              height={120}
-              className="relative z-10"
-            />
           </div>
         )}
 

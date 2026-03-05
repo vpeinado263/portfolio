@@ -5,74 +5,74 @@ import { useState } from "react";
 const HobbiesData = [
   {
     category: "Tecnología",
-    icon: "💻",
+    icon: "",
     color: "#58608c",
     items: [
       {
         name: "Programación",
         description: "Proyectos Full Stack y experimentación continua",
-        icon: "👨‍💻",
+        icon: "",
       },
       {
         name: "Herramientas de Gestión",
         description: "Notion para procesos, registros y organización de datos",
-        icon: "📋",
+        icon: "",
       },
     ],
   },
   {
     category: "Salud y Bienestar",
-    icon: "🧘",
+    icon: "",
     color: "#024873",
     items: [
       {
         name: "Ciclismo",
         description: "Rutas de 20km diarios para mantener el estado físico",
-        icon: "🚴",
+        icon: "",
       },
       {
         name: "Lectura",
         description: "Desarrollo personal y técnica profesional",
-        icon: "📖",
+        icon: "",
       },
       {
         name: "Meditación",
         description: "Práctica diaria de mindfulness y bienestar mental",
-        icon: "🧠",
+        icon: "",
       },
     ],
   },
   {
     category: "Arte y Cultura",
-    icon: "🔪",
+    icon: "",
     color: "#594c59",
     items: [
       {
         name: "Cuchillería Artesanal",
         description: "Diseño y creación de piezas únicas de colección",
-        icon: "⚒️",
+        icon: "",
       },
       {
         name: "Lectura",
         description: "Ciencia ficción, historia y desarrollo personal",
-        icon: "📚",
+        icon: "",
       },
     ],
   },
   {
     category: "Naturaleza",
-    icon: "🐝",
+    icon: "",
     color: "#2d5a27",
     items: [
       {
         name: "Apicultura",
         description: "Apiario de abejas recientemente creado",
-        icon: "🍯",
+        icon: "",
       },
       {
         name: "Apiario",
         description: "Cuidado y mantenimiento de colmenas",
-        icon: "🏡",
+        icon: "",
       },
     ],
   },

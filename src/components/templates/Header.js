@@ -2,7 +2,6 @@ import React from "react";
 import { ThemeContext } from "@/context/ThemeContextProvider";
 import { useContext, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/organisms/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -112,7 +111,6 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Navbar />
           </motion.div>
         </div>
       </motion.header>

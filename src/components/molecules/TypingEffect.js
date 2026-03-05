@@ -1,6 +1,5 @@
 import React from "react"; 
 import { useEffect, useState } from "react";
-import Avatar from "@/components/atoms/Avatar";
 import TypedText from "@/components/atoms/TypedText";
 
 const TypingEffect = ({
@@ -58,31 +57,13 @@ const TypingEffect = ({
         ${className}
       `}
     >
-      {/* Avatar con efecto de glow */}
-      <div className="relative group">
-        <div className="relative rounded-full overflow-hidden shadow-lg border-4 border-blue-500 dark:border-blue-400 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:border-blue-600 dark:group-hover:border-blue-300">
-          <Avatar
-            src={avatarSrc}
-            alt={avatarAlt}
-            width={avatarSize}
-            height={avatarSize}
-            priority
-            className="transition-filter duration-300 group-hover:brightness-105"
-          />
-        </div>
-
-        {/* Glow effect */}
-        {showGlow && (
-          <div className="absolute -inset-4 bg-blue-500/20 dark:bg-blue-400/20 rounded-full blur-xl -z-10 animate-pulse" />
-        )}
-      </div>
 
       {/* Contenedor de texto */}
       <div className="flex items-center justify-center min-h-15 bg-white dark:bg-gray-900 px-8 py-4 rounded-full shadow-md border border-gray-200 dark:border-gray-800 w-full md:w-auto">
         <div className="flex items-center gap-1">
           <TypedText
             text={displayText}
-            className="font-second text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 text-center m-0 leading-relaxed"
+            className="font-second text-xl md:text-2xl lg:text-3xl dark:text-gray-300 text-center m-0 leading-relaxed"
           />
 
           {/* Cursor parpadeante */}

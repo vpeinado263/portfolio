@@ -2,7 +2,6 @@ import { NextSeo } from "next-seo";
 import TypingEffect from "@/components/molecules/TypingEffect";
 import Header from "@/components/templates/Header";
 import Footer from "@/components/organisms/Footer";
-import Link from "next/link";
 import Navbar from "@/components/organisms/Navbar";
 
 export default function Home() {
@@ -20,7 +19,7 @@ export default function Home() {
             avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
             avatarAlt="Victor Peinado"
             avatarSize={150}
-            text="Hola, soy Victor Peinado"
+            text="¡Hola!"
             typingSpeed={80}
             subtitle="Full Stack Developer | Enfermero Profesional"
           />
