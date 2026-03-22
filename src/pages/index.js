@@ -13,15 +13,13 @@ export default function Home() {
       />
       <Navbar />
       <Header />
-      <main className="min-h-screen flex items-center justify-center lg:ml-(--navbar-width) xl:ml-(--navbar-width-lg)">
-        <div className="text-center p-4">
+      <main className="min-h-screen flex items-center lg:ml-(--navbar-width) xl:ml-(--navbar-width-lg)">
+        <div>
           <TypingEffect
-            avatarSrc="https://avatars.githubusercontent.com/u/132930442?v=4"
-            avatarAlt="Victor Peinado"
             avatarSize={150}
             text="¡Hola!"
-            typingSpeed={80}
-            subtitle="Full Stack Developer | Enfermero Profesional"
+            typingSpeed={150}
+            subtitle=""
           />
         </div>
       </main>
